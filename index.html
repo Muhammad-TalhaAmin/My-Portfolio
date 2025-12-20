@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+...
+<script src="script.js"></script>
+
+</head>
+<body>
+  
+
+  <!-- Custom cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Background animated gradient -->
+  <div class="bg-gradient"></div>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <header class="header">
+    <div class="logo">{ T<span>A }</span></div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button id="theme-toggle" aria-label="Toggle dark mode">
+      <span class="toggle-thumb"></span>
+    </button>
+
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="home">
+      <div class="hero-content">
+  <p class="hero-kicker reveal-up">Data Science Learner & Programmer</p>
+  <h1 class="hero-title reveal-up delay-1">
+    Hi, I’m <span>Muhammad Talha Amin</span>.
+  </h1>
+  <p class="hero-subtitle reveal-up delay-2">
+    A growing Data Science learner and programmer passionate about building clean, modern,
+    and meaningful digital experiences. I enjoy coding, exploring data, and creating
+    user-friendly designs with a focus on continuous learning and impactful solutions.
+  </p>
+
+  <div class="hero-cta reveal-up delay-3">
+    <a href="projects.html" class="btn btn-primary">
+      View Projects
+      <span class="btn-glow"></span>
+    </a>
+    <a href="about.html" class="btn btn-ghost">More About Me</a>
+  </div>
+
+  <div class="hero-stats reveal-up delay-4">
+    <div class="stat-card">
+      <span class="stat-number" data-target="1">1</span>
+      <span class="stat-label">Years in Data Science Journey</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number" data-target="10">3</span>
+      <span class="stat-label">+ Tech Skills</span>
+    </div>
+    
+  </div>
+</div>
+
+    </section>
+
+    <!-- Featured projects preview -->
+    <section class="section section-alt">
+      <div class="section-header">
+        <h2 class="section-title reveal-up">Featured Projects</h2>
+        <p class="section-subtitle reveal-up delay-1">
+          A quick look at some recent work. Explore the full gallery on the Projects page.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal-fade delay-1">
+          <div class="project-accent"></div>
+          <h3>Animated Portfolio</h3>
+          <p>High-performance, scroll-animated portfolio with custom interactions.</p>
+          <a href="projects.html" class="project-link">View Details</a>
+        </article>
+
+        <article class="project-card reveal-fade delay-2">
+          <div class="project-accent"></div>
+          <h3>Dashboard UI</h3>
+          <p>Data-rich interface with micro-animations and theme support.</p>
+          <a href="projects.html" class="project-link">View Details</a>
+        </article>
+
+        <article class="project-card reveal-fade delay-3">
+          <div class="project-accent"></div>
+          <h3>Landing Page</h3>
+          <p>Conversion-focused landing page with layered parallax visuals.</p>
+          <a href="projects.html" class="project-link">View Details</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Talha Amin. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,492 @@
+/* ================= RESET & BASE STYLES ================= */
+/* Apply box-sizing and remove default margin/padding from all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Makes width/height calculations easier */
+  margin: 0;              /* Removes default browser margin */
+  padding: 0;             /* Removes default browser padding */
+}
+
+/* ================= CSS VARIABLES ================= */
+/* Define reusable colors, sizes, shadows, and transitions */
+:root {
+  --bg: #050816;                 /* Main background color */
+  --bg-alt: #080b20;             /* Alternate background */
+  --text: #f9fafb;               /* Main text color */
+  --muted: #e5e7eb;              /* Muted/secondary text */
+  --accent: #6366f1;             /* Primary accent color */
+  --accent-soft: rgba(99, 102, 241, 0.2);
+  --accent-strong: rgba(129, 140, 248, 0.55);
+  --danger: #fb7185;             /* Error / danger color */
+  --card: rgba(15, 23, 42, 0.85);/* Card background */
+  --border-subtle: rgba(148, 163, 184, 0.3); /* Soft borders */
+  --radius-lg: 24px;             /* Large border radius */
+  --radius-md: 16px;             /* Medium border radius */
+  --radius-full: 999px;          /* Fully rounded */
+  --shadow-soft: 0 22px 55px rgba(15, 23, 42, 0.8); /* Soft shadow */
+  --transition-fast: 180ms ease-out; /* Fast transition */
+  --transition-med: 280ms ease-out;  /* Medium transition */
+}
+
+/* ================= BODY ================= */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; /* Modern font stack */
+  background: var(--bg);          /* Apply background color */
+  color: var(--text);             /* Default text color */
+  min-height: 100vh;              /* Full viewport height */
+  overflow-x: hidden;             /* Prevent horizontal scroll */
+  position: relative;             /* Base for positioned elements */
+}
+
+/* ================= BACKGROUND EFFECTS ================= */
+/* Gradient background overlay */
+.bg-gradient {
+  position: fixed;                /* Fixed so it stays on scroll */
+  inset: 0;                       /* Covers full screen */
+  background: radial-gradient(circle at top left, #1d4ed8 0, transparent 55%),
+    radial-gradient(circle at bottom right, #7c3aed 0, transparent 55%),
+    radial-gradient(circle at top right, #0ea5e9 0, transparent 45%);
+  opacity: 0.16;                  /* Soft visibility */
+  pointer-events: none;           /* Not clickable */
+  z-index: -3;                    /* Behind everything */
+}
+
+/* Glowing blurred circles */
+.bg-glow {
+  position: fixed;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;             /* Circle shape */
+  filter: blur(90px);             /* Blur effect */
+  mix-blend-mode: screen;         /* Light blending */
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: -2;
+  animation: floatGlow 22s ease-in-out infinite alternate; /* Floating animation */
+}
+
+/* First glow position and color */
+.bg-glow-1 {
+  top: -100px;
+  left: -80px;
+  background: rgba(96, 165, 250, 0.8);
+}
+
+/* Second glow position and color */
+.bg-glow-2 {
+  bottom: -120px;
+  right: -90px;
+  background: rgba(244, 114, 182, 0.7);
+  animation-delay: -6s;           /* Delay animation */
+}
+
+/* ================= PRELOADER ================= */
+/* Full-screen loading screen */
+#preloader {
+  position: fixed;
+  inset: 0;                       /* Full screen */
+  background: radial-gradient(circle at top, #020617 0, #020617 40%, #020617ef 100%);
+  display: flex;                  /* Center loader */
+  align-items: center;
+  justify-content: center;
+  z-index: 999;                   /* On top of all */
+  transition: opacity 0.4s ease, visibility 0.4s ease; /* Smooth hide */
+}
+
+/* Hide preloader after load */
+#preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Loader container */
+.loader-orbit {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+/* Loader rings */
+.loader-orbit span {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #6366f1;      /* Top border color */
+  animation: spinOrbit 1.6s linear infinite; /* Rotation */
+}
+
+/* Second ring style */
+.loader-orbit span:nth-child(2) {
+  border-top-color: #22d3ee;
+  border-bottom-color: transparent;
+  animation-direction: reverse;
+}
+
+/* Third ring smaller */
+.loader-orbit span:nth-child(3) {
+  border-top-color: #f97316;
+  inset: 8px;
+}
+
+/* Fourth ring smallest */
+.loader-orbit span:nth-child(4) {
+  border-top-color: #a855f7;
+  inset: 16px;
+}
+
+/* ================= CUSTOM CURSOR ================= */
+.cursor-dot,
+.cursor-outline {
+  position: fixed;                /* Follows mouse */
+  border-radius: 50%;             /* Circle */
+  pointer-events: none;           /* Does not block clicks */
+  z-index: 50;
+  transform: translate(-50%, -50%); /* Center on cursor */
+  transition: transform 0.08s ease-out, opacity 0.2s ease-out;
+}
+
+/* Small cursor dot */
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  background: #e5e7eb;
+}
+
+/* Cursor outline */
+.cursor-outline {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(209, 213, 219, 0.6);
+  backdrop-filter: blur(8px);
+  opacity: 0.35;
+}
+
+/* ================= HEADER ================= */
+.header {
+  max-width: 1120px;              /* Content width */
+  margin: 0 auto;                 /* Center horizontally */
+  padding: 20px 20px 0;
+  display: flex;                  /* Horizontal layout */
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+
+/* Logo styling */
+.logo {
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: linear-gradient(120deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.4));
+  box-shadow: 0 12px 25px rgba(42, 42, 15, 0.8);
+}
+
+/* Highlight part of logo */
+.logo span {
+  color: var(--accent);
+}
+
+/* ================= NAVIGATION ================= */
+.nav ul {
+  display: flex;                  /* Horizontal menu */
+  gap: 18px;
+  list-style: none;               /* Remove bullets */
+}
+
+/* Navigation links */
+.nav-link {
+  position: relative;
+  font-size: 14px;
+  color: #e5e7eb;
+  text-decoration: none;          /* Remove underline */
+  padding: 6px 0;
+  transition: color var(--transition-fast);
+}
+
+/* Animated underline */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #22d3ee, #6366f1, #f97316);
+  transition: width 200ms ease-out;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  color: #ffffff;
+}
+
+/* Active and hover underline */
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: #ffffff;
+}
+
+/* ================= MOBILE NAV BUTTON ================= */
+.nav-toggle {
+  display: none;                  /* Hidden on desktop */
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: rgba(15, 23, 42, 0.9);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 60;
+}
+
+/* Hamburger lines */
+.nav-toggle span {
+  width: 18px;
+  height: 2px;
+  border-radius: 999px;
+  background: #e5e7eb;
+}
+
+/* Open mobile nav */
+.nav.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1) translateY(0);
+}
+
+/* ================= THEME TOGGLE ================= */
+#theme-toggle {
+  width: 52px;
+  height: 26px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.5));
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.9);
+}
+
+/* Toggle circle */
+.toggle-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 30%, #f9fafb, #e5e7eb);
+  box-shadow: 0 0 0 2px rgba(148, 163, 184, 0.3),
+    0 10px 25px rgba(15, 23, 42, 0.8);
+  transform: translateX(0);
+  transition: transform 0.25s ease-out;
+}
+
+/* Light mode background */
+body.light #theme-toggle {
+  background: linear-gradient(135deg, #e5e7eb, #f9fafb);
+}
+
+/* Move toggle in light mode */
+body.light .toggle-thumb {
+  transform: translateX(24px);
+}
+
+/* ================= MAIN LAYOUT ================= */
+main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 24px 20px 56px;
+}
+
+/* Content section card */
+.section {
+  margin-top: 40px;
+  padding: 26px 26px 32px;
+  border-radius: var(--radius-lg);
+  background: radial-gradient(circle at top, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.86));
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(26px);
+  position: relative;
+  overflow: hidden;
+  color: #e5e7eb;
+}
+
+/* Alternate section style */
+.section-alt {
+  margin-top: 26px;
+  background: radial-gradient(circle at bottom, rgba(24, 35, 75, 0.94), rgba(15, 23, 42, 0.9));
+}
+
+/* Section heading wrapper */
+.section-header {
+  max-width: 620px;
+  margin-bottom: 26px;
+}
+
+.section-title {
+  font-size: 30px;
+  letter-spacing: -0.03em;
+  margin-bottom: 6px;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  color: #e5e7eb;
+}
+
+/* ================= ABOUT SECTION ================= */
+.about-layout {
+  display: grid;                  /* Two-column layout */
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Photo container */
+.about-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile image */
+.about-photo img {
+  width: 280px;
+  max-width: 100%;
+  border-radius: var(--radius-lg);
+  border: 3px solid var(--border-subtle);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover zoom effect */
+.about-photo img:hover {
+  transform: scale(1.75);
+  box-shadow: 0 32px 55px rgba(122, 92, 233, 0.9);
+}
+
+/* About text color */
+.about-text {
+  color: #e5e7eb;
+}
+
+/* ================= RESPONSIVE ABOUT ================= */
+@media (max-width: 900px) {
+  .about-layout {
+    grid-template-columns: 1fr;   /* Stack columns */
+    gap: 20px;
+  }
+  .about-photo {
+    margin: 0 auto;
+  }
+  .about-photo img {
+    width: 200px;
+  }
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: center;
+  min-height: 360px;
+}
+
+.hero-kicker {
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #e5e7eb;
+}
+
+.hero-title {
+  font-size: 40px;
+  line-height: 1.15;
+  margin: 10px 0 8px;
+  color: #f9fafb;
+}
+
+/* Gradient text */
+.hero-title span {
+  background: linear-gradient(120deg, #22d3ee, #6366f1, #f97316);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 14px;
+  color: #e5e7eb;
+  max-width: 420px;
+}
+
+/* ================= BUTTONS ================= */
+.btn {
+  overflow: visible;              /* Allow glow effects */
+}
+
+/* ================= TEXT COLORS ================= */
+.about-text p,
+.contact-details ul,
+.form-note {
+  color: #e5e7eb;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 18px 20px 26px;
+  font-size: 12px;
+  color: #e5e7eb;
+}
+
+/* ================= RESPONSIVE FIXES ================= */
+@media (max-width: 900px) {
+  .hero,
+  .about-layout,
+  .contact-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .hero-visual {
+    order: -1;                    /* Move image up */
+  }
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .header,
+  main {
+    padding-inline: 16px;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-title {
+    font-size: 28px;
+  }
+  /* Make paragraphs justified on small screens */
+  .about-text p {
+    text-align: justify;
+    hyphens: auto;
+  }
+}

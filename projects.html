@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects – My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="inner-page">
+  <div class="bg-gradient"></div>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <header class="header">
+    <div class="logo">{ T<span>A }</span></div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button id="theme-toggle" aria-label="Toggle dark mode">
+      <span class="toggle-thumb"></span>
+    </button>
+
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-header">
+        <h1 class="section-title reveal-up">Projects</h1>
+        <p class="section-subtitle reveal-up delay-1">
+          Selected work spanning interactive portfolios, dashboards and landing pages.
+        </p>
+      </div>
+<section class="section section-alt" style="margin-top:18px;">
+  <div class="section-header">
+    <h2 class="section-title reveal-up">Skills</h2>
+    <p class="section-subtitle reveal-up delay-1">
+      A blend of programming, data science, and development interests.
+    </p>
+  </div>
+
+  <div class="projects-grid">
+    <article class="project-card reveal-fade delay-1">
+      <h3>Programming & Data Science</h3>
+      <p>Python, Data Structures, Pandas, NumPy, Matplotlib, Scikit-learn.</p>
+    </article>
+    <article class="project-card reveal-fade delay-2">
+      <h3>Development & Technical</h3>
+      <p>HTML, CSS, JavaScript (basic), UI/UX design fundamentals, C++, debugging & optimization.</p>
+    </article>
+    <article class="project-card reveal-fade delay-3">
+      <h3>Tools & Concepts</h3>
+      <p>Excel (XLOOKUP, INDEX-MATCH, Pivot Tables), digital signatures concepts, algorithms.</p>
+    </article>
+  </div>
+</section>
+
+      <div class="projects-gallery">
+        <article class="project-card reveal-fade delay-1">
+          <div class="project-accent"></div>
+          <h2>Immersive Portfolio</h2>
+          <p>
+            Multi-page portfolio site with scroll-triggered animations, custom cursor and dynamic stats.
+          </p>
+          <ul class="project-tags">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+        </article>
+
+        <article class="project-card reveal-fade delay-2">
+          <div class="project-accent"></div>
+          <h2>Analytics Dashboard</h2>
+          <p>
+            Responsive dashboard with animated charts, dark mode and drag-and-drop widgets.
+          </p>
+          <ul class="project-tags">
+            <li>Responsive</li><li>Animations</li><li>Accessibility</li>
+          </ul>
+        </article>
+
+        <article class="project-card reveal-fade delay-3">
+          <div class="project-accent"></div>
+          <h2>Product Landing</h2>
+          <p>
+            High-conversion landing page with parallax hero, feature grid and testimonial carousel.
+          </p>
+          <ul class="project-tags">
+            <li>UI/UX</li><li>Performance</li><li>SEO Friendly</li>
+          </ul>
+        </article>
+
+        <article class="project-card reveal-fade delay-4">
+          <div class="project-accent"></div>
+          <h2>Micro Interaction Lab</h2>
+          <p>
+            Collection of experimental components with hover, tap and scroll micro-interactions.
+          </p>
+          <ul class="project-tags">
+            <li>Motion</li><li>Prototyping</li><li>Components</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Talha Amin. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
