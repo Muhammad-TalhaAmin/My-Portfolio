@@ -1,121 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Projects – My Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body class="inner-page">
-  <div class="bg-gradient"></div>
-  <div class="bg-glow bg-glow-1"></div>
-  <div class="bg-glow bg-glow-2"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects – My Portfolio</title>
+    <script>
+      (function () {
+        const storedTheme = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = storedTheme || (prefersDark ? "dark" : "light");
+        const isLight = theme === "light";
+        document.documentElement.classList.toggle("light", isLight);
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.style.backgroundColor = isLight ? "#f7f4ee" : "#050816";
+        document.documentElement.style.color = isLight ? "#111827" : "#f9fafb";
+      })();
+    </script>
+    <style>
+      html {
+        background-color: #050816;
+        color: #f9fafb;
+      }
+      html.light {
+        background-color: #f7f4ee;
+        color: #111827;
+      }
+      body {
+        opacity: 0;
+        transition: opacity 120ms ease;
+      }
+      html.ready body {
+        opacity: 1;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/chatbot.css" />
+  </head>
+  <body class="inner-page">
+    <div class="bg-gradient"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
 
-  <header class="header">
-    <div class="logo">{ T<span>A }</span></div>
+    <header class="header">
+      <div class="logo">{ T<span>A }</span></div>
 
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="projects.html" class="nav-link active">Projects</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
 
-    <button id="theme-toggle" aria-label="Toggle dark mode">
-      <span class="toggle-thumb"></span>
-    </button>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <span class="toggle-thumb"></span>
+      </button>
 
-    <button class="nav-toggle" aria-label="Toggle menu">
-      <span></span><span></span>
-    </button>
-  </header>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </header>
 
-  <main>
-    <section class="section">
-      <div class="section-header">
-        <h1 class="section-title reveal-up">Projects</h1>
-        <p class="section-subtitle reveal-up delay-1">
-          Selected work spanning interactive portfolios, dashboards and landing pages.
-        </p>
+    <main>
+      <section class="section">
+        <div class="section-header">
+          <h1 class="section-title reveal-up">Projects</h1>
+          <p class="section-subtitle reveal-up delay-1">
+            A focused collection of Python, automation, and data science projects from my CV and growing portfolio.
+          </p>
+        </div>
+
+        <section class="section section-alt skills-section">
+          <div class="section-header">
+            <h2 class="section-title reveal-up">Skills</h2>
+            <p class="section-subtitle reveal-up delay-1">
+              A blend of programming, data science, and development interests.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card reveal-fade delay-1">
+              <h3>Programming & Data Science</h3>
+              <p>Python, Data Structures, Pandas, NumPy, Matplotlib, Scikit-learn.</p>
+            </article>
+            <article class="project-card reveal-fade delay-2">
+              <h3>Development & Technical</h3>
+              <p>HTML, CSS, JavaScript (basic), UI/UX design fundamentals, C++, debugging & optimization.</p>
+            </article>
+            <article class="project-card reveal-fade delay-3">
+              <h3>Tools & Concepts</h3>
+              <p>Excel (XLOOKUP, INDEX-MATCH, Pivot Tables), digital signatures concepts, algorithms.</p>
+            </article>
+          </div>
+        </section>
+
+        <div class="projects-gallery">
+          <article class="project-card reveal-fade delay-1">
+            <h2>Music Recommender Model</h2>
+            <p>
+              A beginner-friendly recommendation project that explores recommendation techniques, data preprocessing, and basic machine learning in Python.
+            </p>
+            <ul class="project-tags">
+              <li>Python</li>
+              <li>Pandas</li>
+              <li>Scikit-learn</li>
+            </ul>
+            <a href="https://github.com/Muhammad-TalhaAmin/Music-Recommender-Model/blob/main/music%20(2).ipynb" target="_blank" rel="noreferrer" class="project-link">Open GitHub</a>
+          </article>
+
+          <article class="project-card reveal-fade delay-2">
+            <h2>Musical Time Machine</h2>
+            <p>
+              An application that recreates playlists from a selected historical date using the Spotify API and improved API integration skills.
+            </p>
+            <ul class="project-tags">
+              <li>Python</li>
+              <li>Requests</li>
+              <li>API Integration</li>
+            </ul>
+            <a href="https://github.com/Muhammad-TalhaAmin/Musical-Time-Machine" target="_blank" rel="noreferrer" class="project-link">Open GitHub</a>
+          </article>
+
+          <article class="project-card reveal-fade delay-3">
+            <h2>Password Manager</h2>
+            <p>
+              A desktop password manager for securely storing and retrieving credentials while learning GUI development and local data storage.
+            </p>
+            <ul class="project-tags">
+              <li>Python</li>
+              <li>Tkinter</li>
+              <li>JSON</li>
+            </ul>
+            <a href="https://github.com/Muhammad-TalhaAmin/Password-Manager-App" target="_blank" rel="noreferrer" class="project-link">Open GitHub</a>
+          </article>
+
+          <article class="project-card reveal-fade delay-4">
+            <h2>GYM Booker</h2>
+            <p>
+              A browser automation script designed to simplify online gym booking and build hands-on Selenium experience.
+            </p>
+            <ul class="project-tags">
+              <li>Python</li>
+              <li>Selenium</li>
+              <li>Automation</li>
+            </ul>
+            <a href="https://github.com/Muhammad-TalhaAmin/GYM-Booker" target="_blank" rel="noreferrer" class="project-link">Open GitHub</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Talha Amin. All rights reserved.</p>
+    </footer>
+
+    <div class="chatbot-shell">
+      <div class="chatbot-window" role="dialog" aria-label="AI Portfolio Assistant">
+        <div class="chatbot-header">
+          <div class="chatbot-header-main">
+            <div class="chatbot-avatar">AI</div>
+            <div>
+              <h3 class="chatbot-title">Ask Talha AI</h3>
+              <p class="chatbot-subtitle">AI Portfolio Assistant</p>
+            </div>
+          </div>
+          <button class="chatbot-close" aria-label="Close chat">×</button>
+        </div>
+        <div class="chatbot-body"></div>
+        <div class="chatbot-suggestions"></div>
+        <div class="chatbot-input-wrap">
+          <textarea class="chatbot-input" placeholder="Ask about Talha..." rows="1"></textarea>
+          <button class="chatbot-send" aria-label="Send message">➤</button>
+        </div>
       </div>
-<section class="section section-alt" style="margin-top:18px;">
-  <div class="section-header">
-    <h2 class="section-title reveal-up">Skills</h2>
-    <p class="section-subtitle reveal-up delay-1">
-      A blend of programming, data science, and development interests.
-    </p>
-  </div>
 
-  <div class="projects-grid">
-    <article class="project-card reveal-fade delay-1">
-      <h3>Programming & Data Science</h3>
-      <p>Python, Data Structures, Pandas, NumPy, Matplotlib, Scikit-learn.</p>
-    </article>
-    <article class="project-card reveal-fade delay-2">
-      <h3>Development & Technical</h3>
-      <p>HTML, CSS, JavaScript (basic), UI/UX design fundamentals, C++, debugging & optimization.</p>
-    </article>
-    <article class="project-card reveal-fade delay-3">
-      <h3>Tools & Concepts</h3>
-      <p>Excel (XLOOKUP, INDEX-MATCH, Pivot Tables), digital signatures concepts, algorithms.</p>
-    </article>
-  </div>
-</section>
+      <button class="chatbot-toggle" aria-label="Open AI assistant" aria-expanded="false">
+        <span class="chatbot-toggle-icon">🤖</span>
+        <span class="chatbot-toggle-label">Ask Talha AI</span>
+      </button>
+    </div>
 
-      <div class="projects-gallery">
-        <article class="project-card reveal-fade delay-1">
-          <div class="project-accent"></div>
-          <h2>Immersive Portfolio</h2>
-          <p>
-            Multi-page portfolio site with scroll-triggered animations, custom cursor and dynamic stats.
-          </p>
-          <ul class="project-tags">
-            <li>HTML</li><li>CSS</li><li>JavaScript</li>
-          </ul>
-        </article>
-
-        <article class="project-card reveal-fade delay-2">
-          <div class="project-accent"></div>
-          <h2>Analytics Dashboard</h2>
-          <p>
-            Responsive dashboard with animated charts, dark mode and drag-and-drop widgets.
-          </p>
-          <ul class="project-tags">
-            <li>Responsive</li><li>Animations</li><li>Accessibility</li>
-          </ul>
-        </article>
-
-        <article class="project-card reveal-fade delay-3">
-          <div class="project-accent"></div>
-          <h2>Product Landing</h2>
-          <p>
-            High-conversion landing page with parallax hero, feature grid and testimonial carousel.
-          </p>
-          <ul class="project-tags">
-            <li>UI/UX</li><li>Performance</li><li>SEO Friendly</li>
-          </ul>
-        </article>
-
-        <article class="project-card reveal-fade delay-4">
-          <div class="project-accent"></div>
-          <h2>Micro Interaction Lab</h2>
-          <p>
-            Collection of experimental components with hover, tap and scroll micro-interactions.
-          </p>
-          <ul class="project-tags">
-            <li>Motion</li><li>Prototyping</li><li>Components</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>© <span id="year"></span> Talha Amin. All rights reserved.</p>
-  </footer>
-
-  <script src="main.js"></script>
-</body>
+    <script src="script.js"></script>
+    <script src="assets/chatbot.js"></script>
+  </body>
 </html>

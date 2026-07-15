@@ -1,122 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>My Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-...
-<script src="script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <script>
+      (function () {
+        const storedTheme = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = storedTheme || (prefersDark ? "dark" : "light");
+        const isLight = theme === "light";
+        document.documentElement.classList.toggle("light", isLight);
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.style.backgroundColor = isLight ? "#f7f4ee" : "#050816";
+        document.documentElement.style.color = isLight ? "#111827" : "#f9fafb";
+      })();
+    </script>
+    <style>
+      html {
+        background-color: #050816;
+        color: #f9fafb;
+      }
+      html.light {
+        background-color: #f7f4ee;
+        color: #111827;
+      }
+      body {
+        opacity: 0;
+        transition: opacity 120ms ease;
+      }
+      html.ready body {
+        opacity: 1;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/chatbot.css" />
+  </head>
+  <body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
-</head>
-<body>
-  
+    <div class="bg-gradient"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
 
-  <!-- Custom cursor -->
-  <div class="cursor-dot"></div>
-  <div class="cursor-outline"></div>
+    <header class="header">
+      <div class="logo">{ T<span>A }</span></div>
 
-  <!-- Background animated gradient -->
-  <div class="bg-gradient"></div>
-  <div class="bg-glow bg-glow-1"></div>
-  <div class="bg-glow bg-glow-2"></div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
 
-  <header class="header">
-    <div class="logo">{ T<span>A }</span></div>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <span class="toggle-thumb"></span>
+      </button>
 
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html" class="nav-link active">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="projects.html" class="nav-link">Projects</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </header>
 
-    <button id="theme-toggle" aria-label="Toggle dark mode">
-      <span class="toggle-thumb"></span>
-    </button>
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-content">
+          <p class="hero-kicker reveal-up">Data Science Undergraduate & Python Programmer</p>
+          <h1 class="hero-title reveal-up delay-1">
+            Hi, I’m <span>Muhammad Talha Amin</span>.
+          </h1>
+          <p class="hero-subtitle reveal-up delay-2">
+            A Data Science undergraduate at PUCIT with a strong foundation in Python,
+            data analysis, machine learning, and practical automation projects.
+            I enjoy turning ideas into useful tools and learning through hands-on work.
+          </p>
 
-    <button class="nav-toggle" aria-label="Toggle menu">
-      <span></span><span></span>
-    </button>
-  </header>
+          <div class="hero-cta reveal-up delay-3">
+            <a href="projects.html" class="btn btn-primary">
+              View Projects
+              <span class="btn-glow"></span>
+            </a>
+            <a href="about.html" class="btn btn-ghost">More About Me</a>
+          </div>
 
-  <main>
-    <!-- Hero -->
-    <section class="hero section" id="home">
-      <div class="hero-content">
-  <p class="hero-kicker reveal-up">Data Science Learner & Programmer</p>
-  <h1 class="hero-title reveal-up delay-1">
-    Hi, I’m <span>Muhammad Talha Amin</span>.
-  </h1>
-  <p class="hero-subtitle reveal-up delay-2">
-    A growing Data Science learner and programmer passionate about building clean, modern,
-    and meaningful digital experiences. I enjoy coding, exploring data, and creating
-    user-friendly designs with a focus on continuous learning and impactful solutions.
-  </p>
+          <div class="hero-stats reveal-up delay-4">
+            <div class="stat-card">
+              <span class="stat-number" data-target="4">4</span>
+              <span class="stat-label">Hands-on Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="10">10+</span>
+              <span class="stat-label">Skills & Tools</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <div class="hero-cta reveal-up delay-3">
-    <a href="projects.html" class="btn btn-primary">
-      View Projects
-      <span class="btn-glow"></span>
-    </a>
-    <a href="about.html" class="btn btn-ghost">More About Me</a>
-  </div>
+      <section class="section section-alt">
+        <div class="section-header">
+          <h2 class="section-title reveal-up">Featured Projects</h2>
+          <p class="section-subtitle reveal-up delay-1">
+            A quick look at my recent data science and Python projects. Explore the full list on the Projects page.
+          </p>
+        </div>
 
-  <div class="hero-stats reveal-up delay-4">
-    <div class="stat-card">
-      <span class="stat-number" data-target="1">1</span>
-      <span class="stat-label">Years in Data Science Journey</span>
-    </div>
-    <div class="stat-card">
-      <span class="stat-number" data-target="10">3</span>
-      <span class="stat-label">+ Tech Skills</span>
-    </div>
+        <div class="projects-grid">
+          <article class="project-card reveal-fade delay-1">
+            <h3>Music Recommender Model</h3>
+            <p>A beginner-friendly recommendation project using Python, Pandas, and scikit-learn.</p>
+            <a href="https://github.com/Muhammad-TalhaAmin/Music-Recommender-Model/blob/main/music%20(2).ipynb" target="_blank" rel="noreferrer" class="project-link">View Project</a>
+          </article>
+
+          <article class="project-card reveal-fade delay-2">
+            <h3>Musical Time Machine</h3>
+            <p>An app that recreates playlists from a chosen historical date using API integration.</p>
+            <a href="https://github.com/Muhammad-TalhaAmin/Musical-Time-Machine" target="_blank" rel="noreferrer" class="project-link">View Project</a>
+          </article>
+
+          <article class="project-card reveal-fade delay-3">
+            <h3>Password Manager</h3>
+            <p>A desktop tool for safely storing credentials while learning GUI development.</p>
+            <a href="https://github.com/Muhammad-TalhaAmin/Password-Manager-App" target="_blank" rel="noreferrer" class="project-link">View Project</a>
+          </article>
+
+          <article class="project-card reveal-fade delay-4">
+            <h3>GYM Booker</h3>
+            <p>A browser automation script that simplifies online gym booking and builds Selenium experience.</p>
+            <a href="https://github.com/Muhammad-TalhaAmin/GYM-Booker" target="_blank" rel="noreferrer" class="project-link">View Project</a>
+          </article>
+          
+        </div>
+        </section>
+    </main>
     
-  </div>
-</div>
+    <footer class="footer">
+      <p>© <span id="year"></span> Talha Amin. All rights reserved.</p>
+    </footer>
 
-    </section>
-
-    <!-- Featured projects preview -->
-    <section class="section section-alt">
-      <div class="section-header">
-        <h2 class="section-title reveal-up">Featured Projects</h2>
-        <p class="section-subtitle reveal-up delay-1">
-          A quick look at some recent work. Explore the full gallery on my Projects page.
-        </p>
+    <div class="chatbot-shell">
+      <div class="chatbot-window" role="dialog" aria-label="AI Portfolio Assistant">
+        <div class="chatbot-header">
+          <div class="chatbot-header-main">
+            <div class="chatbot-avatar">{TA}</div>
+            <div>
+              <h3 class="chatbot-title">Ask Talha AI</h3>
+              <p class="chatbot-subtitle">AI Portfolio Assistant</p>
+            </div>
+          </div>
+          <button class="chatbot-close" aria-label="Close chat">×</button>
+        </div>
+        <div class="chatbot-body"></div>
+        <div class="chatbot-suggestions"></div>
+        <div class="chatbot-input-wrap">
+          <textarea class="chatbot-input" placeholder="Ask about Talha..." rows="1"></textarea>
+          <button class="chatbot-send" aria-label="Send message">➤</button>
+        </div>
       </div>
 
-      <div class="projects-grid">
-        <article class="project-card reveal-fade delay-1">
-          <div class="project-accent"></div>
-          <h3>Animated Portfolio</h3>
-          <p>High-performance, scroll-animated portfolio with custom interactions.</p>
-          <a href="projects.html" class="project-link">View Details</a>
-        </article>
+      <button class="chatbot-toggle" aria-label="Open AI assistant" aria-expanded="false">
+        <span class="chatbot-toggle-icon">🤖</span>
+        <span class="chatbot-toggle-label">Ask Talha AI</span>
+      </button>
+    </div>
 
-        <article class="project-card reveal-fade delay-2">
-          <div class="project-accent"></div>
-          <h3>Dashboard UI</h3>
-          <p>Data-rich interface with micro-animations and theme support.</p>
-          <a href="projects.html" class="project-link">View Details</a>
-        </article>
-
-        <article class="project-card reveal-fade delay-3">
-          <div class="project-accent"></div>
-          <h3>Landing Page</h3>
-          <p>Conversion-focused landing page with layered parallax visuals.</p>
-          <a href="projects.html" class="project-link">View Details</a>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>© <span id="year"></span> Talha Amin. All rights reserved.</p>
-  </footer>
-
-  <script src="main.js"></script>
-</body>
+    <script src="script.js"></script>
+    <script src="assets/chatbot.js"></script>
+  </body>
 </html>

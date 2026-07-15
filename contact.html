@@ -1,102 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Contact – My Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body class="inner-page">
-  <div class="bg-gradient"></div>
-  <div class="bg-glow bg-glow-1"></div>
-  <div class="bg-glow bg-glow-2"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact – My Portfolio</title>
+    <script>
+      (function () {
+        const storedTheme = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = storedTheme || (prefersDark ? "dark" : "light");
+        const isLight = theme === "light";
+        document.documentElement.classList.toggle("light", isLight);
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.style.backgroundColor = isLight ? "#f7f4ee" : "#050816";
+        document.documentElement.style.color = isLight ? "#111827" : "#f9fafb";
+      })();
+    </script>
+    <style>
+      html {
+        background-color: #050816;
+        color: #f9fafb;
+      }
+      html.light {
+        background-color: #f7f4ee;
+        color: #111827;
+      }
+      body {
+        opacity: 0;
+        transition: opacity 120ms ease;
+      }
+      html.ready body {
+        opacity: 1;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/chatbot.css" />
+  </head>
+  <body class="inner-page">
+    <div class="bg-gradient"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
 
-  <header class="header">
-    <div class="logo">{ T<span>A }</span></div>
+    <header class="header">
+      <div class="logo">{ T<span>A }</span></div>
 
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="projects.html" class="nav-link">Projects</a></li>
-        <li><a href="contact.html" class="nav-link active">Contact</a></li>
-      </ul>
-    </nav>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
 
-    <button id="theme-toggle" aria-label="Toggle dark mode">
-      <span class="toggle-thumb"></span>
-    </button>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <span class="toggle-thumb"></span>
+      </button>
 
-    <button class="nav-toggle" aria-label="Toggle menu">
-      <span></span><span></span>
-    </button>
-  </header>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </header>
 
-  <main>
-    <section class="section">
-      <div class="section-header">
-        <h1 class="section-title reveal-up">Let’s work together</h1>
-        <p class="section-subtitle reveal-up delay-1">
-          Have a project in mind or just want to say hi? Drop a message below.
-        </p>
-      </div>
+    <main>
+      <section class="section">
+        <div class="section-header">
+          <h1 class="section-title reveal-up">Let’s work together</h1>
+          <p class="section-subtitle reveal-up delay-1">
+            Have a project in mind or just want to say hi? Drop a message below.
+          </p>
+        </div>
 
-      <div class="contact-layout">
-        <form class="contact-form reveal-fade delay-1">
-          <div class="field">
-            <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Your name" required />
-          </div>
+        <div class="contact-layout">
+          <form class="contact-form reveal-fade delay-1">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your name" required />
+            </div>
 
-          <div class="field">
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="you@example.com" required />
-          </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="you@example.com" required />
+            </div>
 
-          <div class="field">
-            <label for="subject">Subject  </label>
-            <input id="subject" type="text" placeholder="Project, collaboration..." required />
-          </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input id="subject" type="text" placeholder="Project, collaboration..." required />
+            </div>
 
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" rows="1" placeholder="Share your idea..." required></textarea>
-          </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" rows="1" placeholder="Share your idea..." required></textarea>
+            </div>
 
-          <button type="submit" class="btn btn-primary">
-            Send Message
-            <span class="btn-glow"></span>
-          </button>
+            <button type="submit" class="btn btn-primary">
+              Send Message
+              <span class="btn-glow"></span>
+            </button>
 
-          <p class="form-note">This demo form does not send emails yet. Wire it to your backend or a form service.</p>
-        </form>
+            <p class="form-note">This demo form does not send emails yet. Wire it to your backend or a form service.</p>
+          </form>
 
-        <div class="contact-details reveal-fade delay-2">
-          <h2>Contact Details</h2>
-          <ul>
+          <div class="contact-details reveal-fade delay-2">
+            <h2>Contact Details</h2>
             <ul>
-  <li><strong>Name:</strong> Muhammad Talha Amin</li>
-  <li><strong>Email:</strong> talhaamin741@gmail.com</li>
-  <li><strong>Phone:</strong> +92 370 6172268</li>
-  <li><strong>Location:</strong> Pakistan</li>
-</ul>
-          </ul>
+              <li><strong>Name:</strong> Muhammad Talha Amin</li>
+              <li><strong>Email:</strong> talhaamin741@gmail.com</li>
+              <li><strong>Phone:</strong> +92 370 6172268</li>
+              <li><strong>Location:</strong> Lahore, Pakistan</li>
+            </ul>
 
-          <h3>Social</h3>
-          <ul class="social-list">
-            <li><a href="#" target="_blank">LinkedIn</a></li>
-            <li><a href="#" target="_blank">GitHub</a></li>
-            <li><a href="#" target="_blank">Dribbble</a></li>
-          </ul>
+            <h3>Social</h3>
+            <ul class="social-list">
+              <li><a href="https://www.linkedin.com/in/talha-amin-1a3785288/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com/Muhammad-TalhaAmin" target="_blank" rel="noreferrer">GitHub</a></li>
+              <li><a href="./assets/Muhammad_Talha_Amin_CV.pdf" target="_blank" rel="noreferrer">Resume</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Talha Amin. All rights reserved.</p>
+    </footer>
+
+    <div class="chatbot-shell">
+      <div class="chatbot-window" role="dialog" aria-label="AI Portfolio Assistant">
+        <div class="chatbot-header">
+          <div class="chatbot-header-main">
+            <div class="chatbot-avatar">AI</div>
+            <div>
+              <h3 class="chatbot-title">Ask Talha AI</h3>
+              <p class="chatbot-subtitle">AI Portfolio Assistant</p>
+            </div>
+          </div>
+          <button class="chatbot-close" aria-label="Close chat">×</button>
+        </div>
+        <div class="chatbot-body"></div>
+        <div class="chatbot-suggestions"></div>
+        <div class="chatbot-input-wrap">
+          <textarea class="chatbot-input" placeholder="Ask about Talha..." rows="1"></textarea>
+          <button class="chatbot-send" aria-label="Send message">➤</button>
         </div>
       </div>
-    </section>
-  </main>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Talha Amin. All rights reserved.</p>
-  </footer>
+      <button class="chatbot-toggle" aria-label="Open AI assistant" aria-expanded="false">
+        <span class="chatbot-toggle-icon">🤖</span>
+        <span class="chatbot-toggle-label">Ask Talha AI</span>
+      </button>
+    </div>
 
-  <script src="main.js"></script>
-</body>
+    <script src="script.js"></script>
+    <script src="assets/chatbot.js"></script>
+  </body>
 </html>

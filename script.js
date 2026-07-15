@@ -50,14 +50,27 @@ if (yearSpan) {
 
 // Select theme toggle button
 const themeToggle = document.getElementById("theme-toggle");
+const rootEl = document.documentElement;
 
 // Check user's system theme preference
 const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
 
 // Function to apply selected theme
 const applyTheme = (theme) => {
+  const isLight = theme === "light";
+
   // Add "light" class if theme is light
-  document.body.classList.toggle("light", theme === "light");
+  rootEl.classList.toggle("light", isLight);
+  document.body.classList.toggle("light", isLight);
+  rootEl.setAttribute("data-theme", theme);
+
+  if (themeToggle) {
+    themeToggle.setAttribute("aria-pressed", String(isLight));
+  }
+
+  window.requestAnimationFrame(() => {
+    rootEl.classList.add("ready");
+  });
 };
 
 // Get previously saved theme from localStorage
@@ -70,6 +83,9 @@ if (savedTheme) {
 // Otherwise use system preference
 else if (!prefersDark.matches) {
   applyTheme("light");
+}
+else {
+  applyTheme("dark");
 }
 
 // Toggle theme on button click

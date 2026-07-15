@@ -1,123 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>About – My Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body class="inner-page">
-  <div class="bg-gradient"></div>
-  <div class="bg-glow bg-glow-1"></div>
-  <div class="bg-glow bg-glow-2"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About – My Portfolio</title>
+    <script>
+      (function () {
+        const storedTheme = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = storedTheme || (prefersDark ? "dark" : "light");
+        const isLight = theme === "light";
+        document.documentElement.classList.toggle("light", isLight);
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.style.backgroundColor = isLight ? "#f7f4ee" : "#050816";
+        document.documentElement.style.color = isLight ? "#111827" : "#f9fafb";
+      })();
+    </script>
+    <style>
+      html {
+        background-color: #050816;
+        color: #f9fafb;
+      }
+      html.light {
+        background-color: #f7f4ee;
+        color: #111827;
+      }
+      body {
+        opacity: 0;
+        transition: opacity 120ms ease;
+      }
+      html.ready body {
+        opacity: 1;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/chatbot.css" />
+  </head>
+  <body class="inner-page">
+    <div class="bg-gradient"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
 
-  <header class="header">
-    <div class="logo">{ T<span>A }</span></div>
+    <header class="header">
+      <div class="logo">{ T<span>A }</span></div>
 
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="about.html" class="nav-link active">About</a></li>
-        <li><a href="projects.html" class="nav-link">Projects</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
 
-    <button id="theme-toggle" aria-label="Toggle dark mode">
-      <span class="toggle-thumb"></span>
-    </button>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <span class="toggle-thumb"></span>
+      </button>
 
-    <button class="nav-toggle" aria-label="Toggle menu">
-      <span></span><span></span>
-    </button>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </header>
 
-  </header>
+    <main>
+      <section class="section">
+        <div class="section-header">
+          <h1 class="section-title reveal-up">About Me</h1>
+          <p class="section-subtitle reveal-up delay-1">
+            Data Science undergraduate focused on Python, machine learning, and practical project-building.
+          </p>
+        </div>
 
-  <main>
-    <section class="section">
-      <div class="section-header">
-        <h1 class="section-title reveal-up">About Me</h1>
-        <p class="section-subtitle reveal-up delay-1">
-          Frontend developer focused on immersive, animated user experiences.
-        </p>
-      </div>
-<section class="about section" id="about">
-  <div class="about-layout">
+        <div class="about section" id="about">
+          <div class="about-layout">
+            <div class="about-text">
+              <h2 class="section-title reveal-up">A little more about me</h2>
+              <p class="section-subtitle reveal-up delay-1">
+                Hi! I’m Muhammad Talha Amin, a Data Science undergraduate at PUCIT with a growing
+                interest in machine learning, AI, and Python automation.
+              </p>
+              <p class="reveal-up delay-2">
+                I enjoy building practical projects, analyzing data, and learning through hands-on work
+                in Python, pandas, NumPy, scikit-learn, and visualization tools.
+              </p>
+              <p class="reveal-up delay-3">
+                My focus is on strengthening my technical foundation, contributing to real projects, and
+                continuing to grow in machine learning and data-driven development.
+              </p>
+            </div>
 
-    <!-- About Text -->
-    <div class="about-text">
-      <h2 class="section-title reveal-up">About Me</h2>
-      <p class="section-subtitle reveal-up delay-1">
-        Hi! I’m Muhammad Talha Amin, a Data Science learner and programmer passionate
-        about building meaningful digital experiences.
-      </p>
-      <p class="reveal-up delay-2">
-        I enjoy coding, exploring data, and creating user-friendly designs with a focus on
-        continuous learning, clean coding, and impactful solutions.
-      </p>
-      <p class="reveal-up delay-3">
-        My journey revolves around improving my skills, learning new technologies, and building
-        projects that solve real-world problems.
-      </p>
-    </div>
+            <div class="about-photo">
+              <img src="./assets/portfolio.jpg" alt="Muhammad Talha Amin" />
+            </div>
+          </div>
 
-    <!-- Profile Photo (Right Side) -->
-    <div class="about-photo">
-      <img src="portfolio.jpg.jpeg" alt="Muhammad Talha Amin" />
-    </div>
-    
+          <div class="about-pills">
+            <span class="pill">Python</span>
+            <span class="pill">Data Structures</span>
+            <span class="pill">Pandas</span>
+            <span class="pill">NumPy</span>
+            <span class="pill">Matplotlib</span>
+            <span class="pill">Scikit-learn</span>
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">UI/UX Fundamentals</span>
+            <span class="pill">C++</span>
+            <span class="pill">Excel (XLOOKUP, INDEX-MATCH, Pivot)</span>
+          </div>
 
+          <div class="about-timeline reveal-fade delay-2">
+            <h2>Education & Focus</h2>
+            <ul class="timeline">
+              <li>
+                <span class="timeline-tag">2025 – 2029</span>
+                <h3>Bachelor of Data Science</h3>
+                <p>Punjab University College of Information Technology (PUCIT).</p>
+              </li>
+              <li>
+                <span class="timeline-tag">Current</span>
+                <h3>Machine Learning & AI Learning</h3>
+                <p>Building practical experience with Python, pandas, scikit-learn, Matplotlib, and automation tools.</p>
+              </li>
+              <li>
+                <span class="timeline-tag">Tools</span>
+                <h3>Development Stack</h3>
+                <p>Git, GitHub, Jupyter Notebook, Google Colab, VS Code, and Selenium WebDriver.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  </div>
-</section>
+    <footer class="footer">
+      <p>© <span id="year"></span> Talha Amin. All rights reserved.</p>
+    </footer>
 
-      
-  <div class="about-pills">
-    <span class="pill">Python</span>
-    <span class="pill">Data Structures</span>
-    <span class="pill">Pandas</span>
-    <span class="pill">NumPy</span>
-    <span class="pill">Matplotlib</span>
-    <span class="pill">Scikit-learn</span>
-    <span class="pill">HTML</span>
-    <span class="pill">CSS</span>
-    <span class="pill">JavaScript</span>
-    <span class="pill">UI/UX Fundamentals</span>
-    <span class="pill">C++</span>
-    <span class="pill">Excel (XLOOKUP, INDEX-MATCH, Pivot)</span>
-  </div>
-</div>
-</div>
-
-        <div class="about-timeline reveal-fade delay-2">
-          <h2>Experience</h2>
-          <ul class="timeline">
-            <li>
-              <span class="timeline-tag">2023 – Now</span>
-              <h3>Junior Frontend Developer</h3>
-              <p>Building design systems and complex UIs for web apps.</p>
-            </li>
-            <li>
-              <span class="timeline-tag">2020 – 2023</span>
-              <h3>Frontend Engineer</h3>
-              <p>Shipped multiple responsive, animated marketing sites.</p>
-            </li>
-            <li>
-              <span class="timeline-tag">2018 – 2020</span>
-              <h3>Freelance Developer</h3>
-              <p>Delivered portfolios, dashboards and landing pages.</p>
-            </li>
-          </ul>
+    <div class="chatbot-shell">
+      <div class="chatbot-window" role="dialog" aria-label="AI Portfolio Assistant">
+        <div class="chatbot-header">
+          <div class="chatbot-header-main">
+            <div class="chatbot-avatar">AI</div>
+            <div>
+              <h3 class="chatbot-title">Ask Talha AI</h3>
+              <p class="chatbot-subtitle">AI Portfolio Assistant</p>
+            </div>
+          </div>
+          <button class="chatbot-close" aria-label="Close chat">×</button>
+        </div>
+        <div class="chatbot-body"></div>
+        <div class="chatbot-suggestions"></div>
+        <div class="chatbot-input-wrap">
+          <textarea class="chatbot-input" placeholder="Ask about Talha..." rows="1"></textarea>
+          <button class="chatbot-send" aria-label="Send message">➤</button>
         </div>
       </div>
-    </section>
-    
-  </main>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Talha Amin. All rights reserved.</p>
-  </footer>
+      <button class="chatbot-toggle" aria-label="Open AI assistant" aria-expanded="false">
+        <span class="chatbot-toggle-icon">🤖</span>
+        <span class="chatbot-toggle-label">Ask Talha AI</span>
+      </button>
+    </div>
 
-  <script src="main.js"></script>
-</body>
+    <script src="script.js"></script>
+    <script src="assets/chatbot.js"></script>
+  </body>
 </html>
