@@ -199,15 +199,3 @@ if (statNumbers.length) {
 // Select contact form
 const contactForm = document.querySelector(".contact-form");
 
-// Handle form submission (demo only)
-if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault(); // Stop actual submission
-
-    // Show message
-    alert("Form submitted! Connect this to your backend or a form service.");
-
-    // Clear form fields
-    contactForm.reset();
-  });
-}

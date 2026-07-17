@@ -2,8 +2,7 @@ import json
 import os
 from urllib import error as urllib_error
 from urllib import request as urllib_request
-
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, jsonify, render_template, request,flash, redirect, url_for
 
 
 def create_app() -> Flask:
@@ -11,6 +10,7 @@ def create_app() -> Flask:
     app.config["CHATBOT_API_URL"] = os.getenv(
         "CHATBOT_API_URL", "http://localhost:3001/api/chat"
     )
+
 
     # Keep route registration simple now; this structure is ready for future blueprints
     # (e.g., auth/database modules) without changing current behavior.
@@ -29,11 +29,26 @@ def create_app() -> Flask:
     def projects():
         return render_template("projects.html")
 
-    @app.route("/contact")
-    @app.route("/contact.html")
+    @app.route("/contact.html",methods=["GET", "POST"])
+    @app.route("/contact", methods=["GET", "POST"])
     def contact():
-        return render_template("contact.html")
 
+        if request.method == "POST":
+
+            name = request.form.get("name")
+            email = request.form.get("email")
+            subject = request.form.get("subject")
+            message = request.form.get("message")
+
+            print(name)
+            print(email)
+            print(subject)
+            print(message)
+
+            return redirect(url_for("contact",success=1))
+
+        return render_template("contact.html")
+        
     @app.route("/api/chat", methods=["POST"])
     def chat_proxy():
         payload = request.get_json(silent=True)

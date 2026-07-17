@@ -972,3 +972,10 @@ body.light .btn-ghost {
     hyphens: auto;
   }
 }
+.success-message {
+    background: #d1fae5;
+    color: #065f46;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
