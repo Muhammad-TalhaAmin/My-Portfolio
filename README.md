@@ -1,9 +1,23 @@
-Portfolio Website
+Portfolio Website (Flask)
 
-This is a code for a portfoio website
+This portfolio is now served as a Flask application while preserving the existing UI, layout, responsiveness, animations, and chatbot front-end behavior.
 
-The code is written in HTML,JAVA and CSS
+## Run locally
 
-You can clone or copy it ,(recommended) to VS code
+1. Install dependencies once:
+   - `pip install flask`
+   - in `chatbot/`: `npm install`
+2. Start both Flask + chatbot from the project root with one command:
+   - `start-dev.bat`
+   - (This runs chatbot on an internal port and wires Flask automatically.)
+3. Open:
+   - `http://127.0.0.1:5000`
 
-keep it in a single folder and preview it
+## Routes
+
+- `/` (home)
+- `/about`
+- `/projects`
+- `/contact`
+
+Legacy `.html` URLs are also supported (`/index.html`, `/about.html`, `/projects.html`, `/contact.html`).

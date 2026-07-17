@@ -6,7 +6,7 @@
   const inputEl = document.querySelector('.chatbot-input');
   const sendBtn = document.querySelector('.chatbot-send');
   const suggestionsWrap = document.querySelector('.chatbot-suggestions');
-  const API_URL = 'http://localhost:3001/api/chat';
+  const API_URL = '/api/chat';
   const ERROR_MESSAGE = 'Sorry, something went wrong. Please try again.';
 
   let isOpen = false;

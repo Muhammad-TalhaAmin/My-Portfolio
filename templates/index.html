@@ -33,8 +33,8 @@
         opacity: 1;
       }
     </style>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="assets/chatbot.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/chatbot.css') }}" />
   </head>
   <body>
     <div class="cursor-dot"></div>
@@ -49,10 +49,10 @@
 
       <nav class="nav">
         <ul>
-          <li><a href="index.html" class="nav-link active">Home</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="projects.html" class="nav-link">Projects</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="{{ url_for('home') }}" class="nav-link active">Home</a></li>
+          <li><a href="{{ url_for('about') }}" class="nav-link">About</a></li>
+          <li><a href="{{ url_for('projects') }}" class="nav-link">Projects</a></li>
+          <li><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
         </ul>
       </nav>
 
@@ -79,11 +79,11 @@
           </p>
 
           <div class="hero-cta reveal-up delay-3">
-            <a href="projects.html" class="btn btn-primary">
+            <a href="{{ url_for('projects') }}" class="btn btn-primary">
               View Projects
               <span class="btn-glow"></span>
             </a>
-            <a href="about.html" class="btn btn-ghost">More About Me</a>
+            <a href="{{ url_for('about') }}" class="btn btn-ghost">More About Me</a>
           </div>
 
           <div class="hero-stats reveal-up delay-4">
@@ -166,7 +166,7 @@
       </button>
     </div>
 
-    <script src="script.js"></script>
-    <script src="assets/chatbot.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/chatbot.js') }}"></script>
   </body>
 </html>
