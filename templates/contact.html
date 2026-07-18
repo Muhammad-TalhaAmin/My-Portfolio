@@ -78,24 +78,38 @@
         <div class="contact-layout">
 
           <form class="contact-form reveal-fade delay-1" action="{{url_for('contact')}}" method="POST">
+            {{form.hidden_tag()}}
             <div class="field">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" placeholder="Your name" required />
+              {{form.name.label(for="name")}}
+              {{form.name(id="name", placeholder="Your name", required=True)}}  
+              {% for error in form.name.errors %}
+              <span class="field-error">{{error}}</span>
+              {% endfor %}
             </div>
 
             <div class="field">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+              {{form.email.label(for="email")}}
+              {{form.email(id="email", placeholder="you@example.com", required=True)}}
+              {% for error in form.email.errors %}
+              <span class="field-error">{{error}}</span>
+              {% endfor %}
             </div>
 
             <div class="field">
-              <label for="subject">Subject</label>
-              <input id="subject" name="subject" type="text" placeholder="Project, collaboration..." required />
+              {{form.subject.label(for="subject")}}
+              {{form.subject(id="subject", placeholder="Project, collaboration...", required=True)}}
+              {% for error in form.subject.errors %}
+              <span class="field-error">{{error}}</span>
+              {% endfor %}
             </div>
 
             <div class="field">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="1" placeholder="Share your idea..." required></textarea>
+              {{form.message.label(for="message")}}
+              {{form.message(id="message",rows=2, placeholder="Share your idea...", required=True)}}
+              {% for error in form.message.errors %}
+              <span class="field-error">{{error}}</span>
+              {% endfor %}
             </div>
 
             <button type="submit" class="btn btn-primary">

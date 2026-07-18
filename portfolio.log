@@ -1,0 +1,415 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:48:53] "GET /contact HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:48:54] "GET /static/css/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:48:54] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:48:54] "GET /static/assets/chatbot.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:48:54] "GET /static/assets/chatbot.js HTTP/1.1" 200 -
+INFO:app:POST /api/chat received
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:49:01] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:49:56] "[32mPOST /contact HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:49:56] "GET /contact?success=1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:49:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:49:56] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:49:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:49:56] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:51:51] "[32mGET /index.html HTTP/1.1[0m" 302 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:51:51] code 400, message Bad request version ('\x99#§²;!ð¾Â')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:51:51] "[31m[1m\x16\x03\x01\x07\x06\x01\x00\x07\x02\x03\x03íý\x90¡*ÄÈ±vÿr\x94°ÞÜ\x95ý°2\x08\x06\x07\x81E\x94å<×¹P^é ÿ«\x90àðû¦z!ª&\x02k1-r\x17\x99ø(Ê¢¼õ¨"·Ö]ú\x90\x0e\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x99\x1a\x1a\x00\x00\x00\x0d\x00\x18\x00\x16\x09\x04\x09\x05\x09\x06\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x17\x00\x00\x00-\x00\x02\x01\x01\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x1b\x00\x03\x02\x00\x02\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x0b\x00\x02\x01\x00\x00+\x00\x07\x06úú\x03\x04\x03\x03\x00\x12\x00\x00\x003\x04ï\x04í::\x00\x01\x00\x11ì\x04ÀE\\®\x7fá_<VÂ\x94Ë5,\x15¯Ñði6\x13a\x92\x85©X\x91|GcO0·.°ò\x862£Á\x16ä\x89Ì`i\x07KKw'\x1føà|tQ\x9aÕJ(±ìvMë\x99\x9fb\x8dÉR&3ê\x97!\x98<`h\x9a\x0b;VÃd\x86ùC=\x80aH8e$\x99É+«ñ^Dì(\x81Tv.G\x13¢k®ñQÅ=yo>«\x81\x8dr\x1d\x09«¨'s¿'S\x04\x98¨¤¡yGZ\x09\x85\x88j\x8e>ø\x87°¶*|\x94ÍàÙeñU¶Ê¦xóó1\x80Xvûi|ZR\x1bn{Z\x00íguØ\x89\x9ct,*\x82{Ê\x87µ 5~½\x82g\x89b1ä\x19\x90\x10Sz\x09dR,y\x0e\x1aY\x9a\x03Uzy"\x9bFj \x0d\x05¸ûó²X³U*\x1c[Ô \x16®Ç{2Â\x97§·\x10\x9c8s\x05E\x81[\x12\x94¢¢\x0b@÷3Ï+\x99½È¹\x07K¡³Ç\x19z\x96\x91\x14FHAÙ¹\x00SPp\x065lÉ\x86AÌ/U\x05\x7fIj¤n\x9a\x7fT\x12\x07°Ü¶\x9ez%ñ\x07\x07r7m®\x9a\x0c_\x80\x9dª"JdÀ\x12\x83\x03qDæ\x1a<É¤\x87ø\x15¹xÃÒ\x85o¦üE)E(öÂJà4\x83\x09\x99#§²;!ð¾Â[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:51:51] code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:51:51] "[31m[1m\x16\x03\x01\x06æ\x01\x00\x06â\x03\x03Ït´"´úöÇmºW¿ûrßË\x960QÊRq£Ê\x80\\\x1e\x17\x86b3d éÍÐ\x80\x15\x9b\x93\x9b\x92\x0c\x9a&Ñ>r0\x8d%x\x02Æ¤X\x91zÞ6;egq~\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06yúú\x00\x00\x00\x0d\x00\x18\x00\x16\x09\x04\x09\x05\x09\x06\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00\x0b\x00\x02\x01\x00\x00[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:51:54] code 400, message Bad request version ('µ»\x03¡,-X\x16\x9bÕ2Sz\x91')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:51:54] "[31m[1m\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03XW´ÚOýèöÄÅ×\x11;o¬\x12b\x93h¯aM\x80¡ü3\x99j¤©\x80þ c8[\x87Uî\x01&\x9f\x13\x17¨°Ëm\x0béù\x13Ìè!¢Ëwô|®\x02\x7fÃ:\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x069zz\x00\x00\x00#\x00\x00\x003\x04ï\x04íjj\x00\x01\x00\x11ì\x04Àz<'K\x10¿\x9ahÌI\x0bÊûàµ\x81¤j\\Ú²ÚW\x99Î\x95¢H³È\x89ÇoRaÄ:rRë\x17j\x02Ò2Ã\x03´~\x87\x8eµ\x94,p\x9b+\x05µ¦M\x10Z9,GY°¤\x88¢\x02ÌÊ\x8a3ã\x19«Ú&7\x9c^#di6q;Á\x83\x1dµ»\x03¡,-X\x16\x9bÕ2Sz\x91[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:51:54] code 400, message Bad request version ("ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x069**\x00\x00\x003\x04ï\x04ízz\x00\x01\x00\x11ì\x04À³öB_\x86'ç")
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:51:54] "[31m[1m\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03\x03\x01ê\x12!w¢\x9a>\x18Ã\x17HxpÑÏe°E5ÁôÅêñÍ¿\x08¯sN DÒÂl}ÈOÚ 4ájÇ%Wk3ÎÀ(ú¯\x17Ù\x98ô\x08¥ÿw\x97ü\x00 ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x069**\x00\x00\x003\x04ï\x04ízz\x00\x01\x00\x11ì\x04À³öB_\x86'ç[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:51:54] code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x99úú\x00\x00\x00')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:51:54] "[31m[1m\x16\x03\x01\x07\x06\x01\x00\x07\x02\x03\x03\x1fÜ\x10wÄw\x90JÒÓ\x1e0\x07\x1bG\x81âÜ³g\x1a"S&L¹Ê\x7f\x10Ì\x837 y\x95G\x82Ñn\x95\x03,\x8d\x90\x96i7Q\x14/@I\x1ca[\x10«w\x0b±#Ëz²\x0e\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x99úú\x00\x00\x00[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:51:54] code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Yºº\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00+\x00\x07\x06ÚÚ\x03\x04\x03\x03\x00-\x00\x02\x01\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x17\x00\x00\x00')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:51:54] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03óÔì\x82÷`Íi0\x8fÑ³]Þã\x9bã\x17<\x88T ü¢àfíì\x9cX\x8cã «V\x94\x9ds2\x85å=c¯xõ\x03!\x17o\x1d\x97\x00%Hï\x1dOl\x80\x12Ài]þ\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Yºº\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00+\x00\x07\x06ÚÚ\x03\x04\x03\x03\x00-\x00\x02\x01\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x17\x00\x00\x00[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:51:57] code 400, message Bad request version ('m÷\x12\x86')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:51:57] "[31m[1m\x16\x03\x01\x06æ\x01\x00\x06â\x03\x03\x85B1â2ÄiN\x14Dah\x81\x89Y[V¾ÎE\x90¹c?ÀÑ\x9bc\x17\x08u\x01 \x96rj\x0e!P¿«\x1e½¤\x04ô\x8a\x88?`Ö\x9aI\x08«\x93-íÕO\x08ü\x15þ\x15\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06yzz\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x1b\x00\x03\x02\x00\x02ÿ\x01\x00\x01\x00\x00\x17\x00\x00\x003\x04ï\x04í::\x00\x01\x00\x11ì\x04À©)\x03{5r\x03¤\x01\x91G(\x0dõ!ËrtÖ!S\x03\x8cx1óX§\x9aÍ5d\x89f\x82\x0e%ún;¸|;$\x08¢\x08·ÜG\x1b\x92ÌGûÕ\x8f%Õ?¾2³óÔ«:Ò\x04q5\x1c*÷É\x87¬Vÿk.Ô Cá%Å\x8a#[ÊC7¬ÌH½<\x9c6àWJ¥~¬\x94#\x8fe­p\x8c\x96Ò|fA\x0b¶±\x16Ë\x87Ktx´(d\x14YXé;3D\x9d!Ö-\x9bÓ*µ6\x97\x82\x02\x05#Û=Uh@þì\x9c$@\x1d\x1cV¨dS^æFL°\x8c0ÍY¹pÐ¿C\x89dÉºJð\x9cCõ\\+\x08Ô\x8f3¸|ÈÑ\x9d?,nBd]bàzu\x96ÁÙ\x0c_×´ÂB\x10\x15\x19Ê\x98^×Fý@n¦¦I\x18 S\x0d¤¥8\x82fÜ \x0bØL\x07ê\x16q\x0b¤Ê\x06§(\x8eè[Ã%n¡÷T\x14Y\x92\x0c»+Eáaï\x8cÅéµ²\x061\x95»W:~q»\x93\x13\x12&Z;vS\x99b\x12\x1fT \x85\x0cLÈ\x95\x96\x90ò|BC3µÖ\x94C(Ð\x06H±d1#Uá*\x9b\x8d2s~8sTl\x14l23\x93xIÁ4\x92\x9db\x1f1\x09t\x92\x03\x8akR\x94\x13:\x87[¸«\x00{~õ\x124\x93!dJñ\x14G¥uh\x05$\x84²½6\x9ajÝ±e%Á\x01\x87\x00:AÖK2\x17ªú5\x1cç\x95\x85\x0f0Q¼×Ã4cXª1U`\x8b7(àwæc\x81\x00Õ\x08Æ\x86AÓÖÄ\x14X\x06þ\x95\x01\x99;Åµª4'\x80\x85­q!\x86\x00\x975å1çéÄ\x16³h¾é\x09j@\x9f\x1a\x99¥4Ú«\x03\x86:}{²µd§âÐTÃ5¸áà\x8c7w\x8fÕ\x0cÃÒv\x86°\x878O\x17\x9fÓ jN,w1ùsq²D·Ä³h¢\x96\x80òg\x0e\x9b@2vZD\x9ard\x09'hvS\x9e\x85\x04äG¿#\x00Ê\x12i\x1fm÷\x12\x86[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:51:57] code 400, message Bad request version ('Xææ8')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:51:57] "[31m[1m\x16\x03\x01\x07\x06\x01\x00\x07\x02\x03\x03|aéóØ\x96\x87\x91ÎMy\x0ec·NëYÎñÞ¦|r\x96:\x0cí\x02\x8fâã\x04 \x13~Á\x03¬þH²\x10?,\x82Ò\x99é\x81ã\x9bÄ,¶\x14£]ÐIÍ\x7fÍ\x13­\x02\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x99ºº\x00\x00\x00\x0d\x00\x18\x00\x16\x09\x04\x09\x05\x09\x06\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01þ\x0d\x01\x1a\x00\x00\x01\x00\x01R\x00 âX\x8b\x1eÃ5\x1b\x97óÑràÜ@Y\x15ü\x14à°m\x91¹¤Æ\x00^Ë\x09\x9e´c\x00ð\x04\x06\x92u®Û\x1ey¤£´ÿj«\x1eãüªQG\x9dí\x84f+ôÐUß\x85']\x07\x1eN\x8f®õùß\x91\x09\x01£X\x8b8²ä\x11ý5L©\x05 \x95\x84\x9b\x1fúö\x1b2°\x1bëË:\x88å\x7f;±ýz¬®×\x15\x85ÔÙSü\x89P\x03\x9bU\x86¢Vx0AwTbâ²ònÃ1\x00c\x83)\x06Û7ze4È=C7cû,\x8d©\x97¾9ü\x7fF\x83ÒÊjß\x1eÚÁ\x9eÔ\x80½\x05ùP´,\x9du×È\x0cüw <ÚÆ\x9dÆo\x85Ö\x9c\x9aâá\x1bBÞ\x11ø\x1fP S\x9b\x9d¿þiHÚ"\x0d#\x1eXææ8[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:51:57] code 400, message Bad request version ('Ê\x00')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:51:57] "[31m[1m\x16\x03\x01\x07\x06\x01\x00\x07\x02\x03\x03åÇºÈSg\x87þ¦ÄÊ\x01n°`qs\x00oD'\x979¯z\x8a\x15Ç×@u1 !\x85jÂ\x04M\x00lË\x0eE\x16Ééz\x18\x99\x9e\x0b\x957B\x85\x9ckH\x88Ó\x0dð\x1eÊ\x00 [0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:51:57] code 400, message Bad request version ('Ã\x10\x1bv\x15\'îa\x9dF\x16x{J"Y\x01)ük½Zj\x9f;Ø\x94%3¬ü¼Ì')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:51:57] "[31m[1m\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03d:"Î\x04\x9fo`z_\x0b\x03é¹;\x15¶÷É9· /Þ1ì2 ô`É\x09 5\x07´\x10\x06Mí#µº\x02R\x8dln³Uç\x95\x09Ð\x06\x0eËC¬\x04\x1c\x1eõï\x97\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x069\x9a\x9a\x00\x00\x00\x0b\x00\x02\x01\x00\x00+\x00\x07\x06êê\x03\x04\x03\x03\x00#\x00\x00\x003\x04ï\x04í\x9a\x9a\x00\x01\x00\x11ì\x04À\x9b\x80\x1dHÕw\x97\x10\x19´3&\x00-^\x13\x9at2Ái-Ù\x0cÃ\x10\x1bv\x15'îa\x9dF\x16x{J"Y\x01)ük½Zj\x9f;Ø\x94%3¬ü¼Ì[0m" 400 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:09] code 400, message Bad request version ('\x06\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:09] "[31m[1m\x16\x03\x01\x06æ\x01\x00\x06â\x03\x03b\x8dï?ÀøõÍ¥,\x9a\x111\x81ûó&åÀ° ¨3è»ûöte\x094B GXÜ\x17\x1cî\x84\x91\x1f\x11\x8få+ÜÏbÿû­äBÜ\x10m`\x0e3¨:BmQ\x00 ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06yªª\x00\x00\x00-\x00\x02\x01\x01DÍ\x00\x05\x00\x03\x02h2\x00\x0d\x00\x18\x00\x16\x09\x04\x09\x05\x09\x06\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:09] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06æ\x01\x00\x06â\x03\x03\x03\x05ü\x8fë')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:09] "[31m[1m\x16\x03\x01\x06æ\x01\x00\x06â\x03\x03\x03\x05ü\x8fë\x0diLÊló[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:09] code 400, message Bad request version ('\x00\x02\x01\x00\x003\x04ï\x04í\x1a\x1a\x00\x01\x00\x11ì\x04À:u?9÷!Â;,')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:09] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03\x16Ùû¯\x87e^'ÊÒ\x1ckN÷\x99}ô]>¢b£©ûë`\x81;ï&K  zò\x9bb?DÂxÖ^\x81*ÉL\x97ÂP\x8få®E^hV 3\x16òNõ\x7f¦\x00 \x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Yêê\x00\x00\x00\x0b\x00\x02\x01\x00\x003\x04ï\x04í\x1a\x1a\x00\x01\x00\x11ì\x04À:u?9÷!Â;,[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:09] code 400, message Bad request version ('-ÛQ¿;')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:09] "[31m[1m\x16\x03\x01\x06æ\x01\x00\x06â\x03\x03F\x14-^\x83\x98º2e\x83=\x98!ò\x01\x7fP2\x95\x13]ë\x06æÂwsÊ±çùo §\x95¨\x93\x9f§Y\x0e\x0c\x0c\x8f\x98ò[\x12\x0f6\x94\x9a®¹¯¶¯äá¿R\\\x17y«\x00 ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06yÚÚ\x00\x00\x00#\x00\x00\x00\x17\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x1b\x00\x03\x02\x00\x02\x00\x0d\x00\x18\x00\x16\x09\x04\x09\x05\x09\x06\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x12\x00\x00ÿ\x01\x00\x01\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00-\x00\x02\x01\x01\x003\x04ï\x04íºº\x00\x01\x00\x11ì\x04À\x07âF\x1aóÃ¬d\x8e\x13!\x84S\x99¦aÄ{\x8e°\x9e\x9bX\x15\x95Æ\x9f¯Ó3\x92,ÎtÜ}ÀÒ³\x85\x01\x956z¸\x08!Yx\x19(ñó¸Cµ"ùÚ\x19\x1a\x16\x0b\x9dâVHÀ¬&@\x7f\x83¤49· \x82z¾{ö|\x96\x873À\\¡Ât\x03\x18¼­Þó\x1dd'g\x8b±\x1bdb\x92.»W¬õ P\x91L\x02p\x98jª\x9aâ\x1c'\x12\x11\x1aJw4Òg\x99§ò\x7f\x80â\x91d"Ì¶"uõøÍêY\x87ç\x16\x91ºË\x0dÈ\x00\x85ùáÀ#\x83sºµ3¦Z¸2¥3üû5ñ\x8c\x01ò\x87x1Ë!\x92ü\x85ù\x82\x9fm\x85H±\x86\x05GUK!øy\x82Ä\x8c<áÍæ+g'\x0bµnV¾\x94T*íãP.w\x86¯\x05\x8e,¹\x9b@tsÚy.8À\x17fÈ\x82\x9f\x81¹fg+ý÷\x8fí\x80L^Æ¬Àf\x91wàiËè\x87¬{\x05°\x82¼wu½Ø¹·m\x97¢©¡À\x02Õ\x81§Ç\x95Þ\x12\x95\x9f\x93k\x8f\x9b.ièvaTÄØ¦1hªqR\x04\x977\x0c¡,"2\x9f·i\x91\x1bI'\x10,¾G\x82fÅ\x17é)È½ª¨z\x04G\x8be\x1ct÷{)¤Ï\x94i¤Â\x13\x87V\x8a4\x93³B$\x80\x16ZÆ¯Y@\x00.×\x88J\x16£ö|»\x90ñ\x0b\x04j\x09\x13\x89"oxS\x8e\x9bs\x1aü\x8d ©#\x15Å¾\x82\x1b\x07»@D\x1c\x0b\x9e!åc$\x1b»åÑ\x1bÈ\x81\x98É8i¾\x92\x07\x10\x0c-ÛQ¿;[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:11] code 400, message Bad request version ('o\x00S¥«e÷/\x13\x81ó>WÝÀ½}ÿÁ\x18Þc%Y¶`\x0f_G)0\x00\x00')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:11] "[31m[1m\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03­<±\x01\x15\x00Z\x8f\x9eoßÎ8]¯\x9a\x97H~#Ç/VU£\x87M\x0b4BA\x09 o\x00S¥«e÷/\x13\x81ó>WÝÀ½}ÿÁ\x18Þc%Y¶`\x0f_G)0\x00\x00 [0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:11] code 400, message Bad request version ('»1Ä\xadÓ6\x13²bÿ\x90¢\x19*ÈtÄUtû\x8d\x07a·ÊÆV\x8ck\x8c')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:11] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03k=\x82f \x8a\x80\x10ìL¢\x13e0[\x14Üa\x1dHS\x8d\x1dG¦/@{¢ýs; YÓnßÓ\x97Á\x9c\x9a\x11Ç;;\x1bÿ\x81y£\x08u\x898¸¼\x7fÍdâ6v\x83Ý\x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Yjj\x00\x00ÿ\x01\x00\x01\x00\x00#\x00\x00\x00\x0d\x00\x18\x00\x16\x09\x04\x09\x05\x09\x06\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x17\x00\x00\x003\x04ï\x04íêê\x00\x01\x00\x11ì\x04À1©NG¥u^\x8ayC\x88Y\x0d7Ïò¤\\1¸\x97\x1fzH¿ö\x10®²v\x1b|\x9e÷\x83\x07\x0fY\x87¡©Æ­æª\x7f\x00FsØÄM0\x04R!\x83\x8dú¬\x08ö+)§ATtt[\x98Î0©C¡\x1a\x11õØ¢\x1bGÇáÉ\x19\x18°^\x04¼È\x03ê\x9f®\x92\x16e¢6ãg?iê\x9f¼\x88V¹\x09\x077»³úxÅ°\x04J]hj²\x1bf³´y\x1a´"\x19òD_:dµ\x95\x86\x1b\x8b6òÙ\x84éPª\x1aôq±&S\x12*4"b\x11»Â1«*Q~¤V-\x03#ÔEª,ºOð\x1c\x1e»1Ä­Ó6\x13²bÿ\x90¢\x19*ÈtÄUtû\x8d\x07a·ÊÆV\x8ck\x8c[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:11] code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x12\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:11] "[31m[1m\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03áÐf\x0f°·\x1ep\\ªÃvÆá\x08ëÐ¥\x9cTYO\x13FzW\x9bô=\x04\x91ª \x8c\x10½è\x8a\x83Éõ\x82\x9f$48\x11v$¦\x95"¢:è\x18´^Þ\x85ûJ\x05\x9c\x9b\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x069ªª\x00\x00\x00\x0d\x00\x18\x00\x16\x09\x04\x09\x05\x09\x06\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x12\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:11] code 400, message Bad request syntax ('\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03\x1b\x07{\x14Õ\x8dU¤\x9dÌ{ÄV')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:11] "[31m[1m\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03\x1b\x07{\x14Õ\x8dU¤\x9dÌ{ÄV[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:15] code 400, message Bad request syntax ("\x16\x03\x01\x06æ\x01\x00\x06â\x03\x03|'l0\x101ãîBo\x98\x15ý")
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:15] "[31m[1m\x16\x03\x01\x06æ\x01\x00\x06â\x03\x03|'l0\x101ãîBo\x98\x15ý[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:15] code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x99')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:15] "[31m[1m\x16\x03\x01\x07\x06\x01\x00\x07\x02\x03\x03ÌU\x02¾¶\x96ñ\\\x99j\x88\x06x]h\x9bJÏFÜ\x83l\x04ËÈßgMwBy% \x10RQ@;®½èï\x1d\x1eßªÉ¬\x94³^sû¥\x0fD\x9fÊ¨º&\x9e\x11Â¡\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x99[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:15] code 400, message Bad request version ('gàgK0')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:15] "[31m[1m\x16\x03\x01\x06æ\x01\x00\x06â\x03\x03\x8f\x89\x12f\x90\x87\x1c®\x8cá®ý,\x15%uñ\x9b|\x0c\x13@\x00\x7fw\x04×\x9b{³C3 ,î°44\x88¢{ý°?ËòqS\x02;øÉ\x0f\x1e\x11.gù»uÖ\x09_¼ë\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06y\x8a\x8a\x00\x00\x00\x17\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00-\x00\x02\x01\x01\x00\x12\x00\x00\x003\x04ï\x04íZZ\x00\x01\x00\x11ì\x04Àì\x10¤\x0bãw\\\x99\x1d\x15\x8cg\x1c\x9b?\x93\x9cÌº\\n$W¾\x01j\x8cæ¼¸\x1bé§Ì\x89)Î\x1a¬\x17ta9Ä\x7fÜ"»4Çq\x8dÜ\x8f\x8d\x93hgú\x98¼Ë\x81vµN\x836eîÃHÃ|\x1fÉª\x97cÄ'3zL¯¨Á:×\x90\x85\\.\x17\x13R7E\x87íT2¨\x87uik\x82T×`¢\x9bd'Ó æ1\x1eH\x8cÆdÆ\x9d\x7fë\x1e\x99\x13\x0c=c\x01w\x889¢#+<Á+î´\x97ôF\x80Ú\x1c\x1d\x85êP¤@q\x8b\x02°,\x9aN\x94\x1c|\x05\x16J\x95`\x07\x1a3O=°·b3\x98\x8365Ú\x15lùHj\x81 \x84½¥\x14·ãvpÙ\x15yö}þÐ,B\x03É\x89ê\x06º@u½(\x8f\x9bà®*J\x93HÐ\x912\x8c\x8b\x04 \x09gàgK0[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:15] code 400, message Bad request version ('ë\x82å54"0-VòT')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:15] "[31m[1m\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03 XÿK\x03î5;\x1cÚ\x11Tùä¿\x82×(^×èÓ\x17[E\x00£Ëd×%\x98 bÁ[\x0f¡\x8eº@\x16Ì\x15\x09Ä\x00`×S)\x85\x11\x09Ì¾<b^0×\x10[\x8b\x9f\x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x069JJ\x00\x00\x00+\x00\x07\x06êê\x03\x04\x03\x03\x003\x04ï\x04íêê\x00\x01\x00\x11ì\x04À\x82B3.áz»%@Ü\x0bL©¨§{IµEì±«8£Aµ\x99ÎØ<\x02h=\x8bæ\x06Ï$\x92§i\x05ÜÂ\x9dÿ¬½}w\x8e\x86E*!k;0S\x08¥Æ¢JcO\x19:;\x93S\x02ÍE\x8c\x8c°©¤B$ÐÌK\x04¥]\x9b\x9az)\x131¾É\x925\x1bÂ\x92\x19<d¥}¨\x97wÉjÊ\x9f8\x93Ö\x13\x8fã \x9d¹|\x0fMGzeè\x14ºõ³ë\x1a½ñ\x17º[\x8aP/÷¹\x1dõ\x0eíY»ÑPc\x0c\x1cÌÊºh}õ{N±\x00\x13Ú\x8fÐ\x903¸Jiª\x1a¨ÍZ\x9dî@ÏÃFj\x9dQ%\x02l°\x8eè_\x7fqS<è¤9"\x02\x9bÛ\x08eF[/\x8bz0P\x08=á)©Ì»-xµ9\x84mF(]\x8fÅ\x91·É4k {;\x87\x02Ì\x1a\x03\x15\x1c@\x03\\£Ú1\x06gÉhùr7\x1eë\x82å54"0-VòT[0m" 400 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:59] code 400, message Bad request version ('SÛ\x8c°I=Vú¾\x87û|\x91HR]Dk\x05¦N\x8er')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:59] "[31m[1m\x16\x03\x01\x06æ\x01\x00\x06â\x03\x03/\x9fif"#Ms\x0eîEÞªf\x0e»åDSN7DBù\x02µù²S­Í9 \x98\x9f\x91\x95ò\x81ÓF\x09ÕQ"è\x05ú|ÚU\x15Û!Êo\x90\x89ñX\x1a$7¡\x16\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06y::\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x12\x00\x00\x00#\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x003\x04ï\x04íêê\x00\x01\x00\x11ì\x04À^\x88\x8cÃ\x1a\x0f±\x84\x0bSÛ\x8c°I=Vú¾\x87û|\x91HR]Dk\x05¦N\x8er[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:59] code 400, message Bad request version ('¨Ã\x81\x80u\x158')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:59] "[31m[1m\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03\x80\x97\x03!\x89[\x07ü`ö¸E<[Ùº(î×3lÞóv(\x09\x8b(r\\N\x0c ¨Ã\x81\x80u\x158[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:59] code 400, message Bad request version ('*\x14q!Îñe´\x10Vj\x05\x1b')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:59] "[31m[1m\x16\x03\x01\x07\x06\x01\x00\x07\x02\x03\x03\x11'¨(T0\x0dQÆbÎñ÷¡\x96³\x9e?"¡E#\x99\x07VyíXZFßÔ áW¦ªÓ\x9f\x1c\x8em²Ýn\x8f¯)­>üq\x0d ÃÅwÉZ\x9f×\x9bh(#\x00 \x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x99\x9a\x9a\x00\x00\x003\x04ï\x04íÚÚ\x00\x01\x00\x11ì\x04À\x08åÈ\x1cv·¤\x9bÌ¾ÒG,\x81\x06¿¦ÆÎ\x901\x8b\x81\x93\x93÷\x02\x0f¬\x13ñÅq\x06ÂiX\x14\x07þ³9\x9aÄ\x84©Ûx¶÷#M\x91\x0f@g0ÎÇ\x17Ù\x16m«\x0cX\x17õW\x0b%\x96ÜH'§f··U\x1a3\x9cp@Òq~l}E°no4mÉ¦\x8aï÷§!Ñ¶\x83\x93\x95\x00\x86¥d\x98µNRj\\\x00¼\x7f\x13ËÂc\x7fh\x96\x86zj&%\x0cÁ\\ h­kG¥#\x89¢p\x98_&OH\x01eºµv|S7VÐG&\\i\x88«\x1dU\x87lGü<º@=ëª3\x81D!#"ÁÃp\x8eô¦w\x1eà3åU¸{rNf²¤ª\x81Ç\x95z|gY½©Ù\x9cÐÈ\x89w¤OLÄJåY?ðU\x8d|\x87 v\x8aÀ\x83a,¶Át\x08\x85\x8f\x18\x82=\x8a1\x9c·Tx*¸Ë¢\x8c\x06ôëÊ\x9aÐ$Å\x80À\x82V\x13\x94\x89\x005´XÎegáÄ\x9a¿\x95\x00\x84F¦_Ù\x86ºpb±\x97h\x94\x9aÂPü¸è\x02\x87òÌDüñ¨æË\x1aÅ\x8c\x08sC3\x16\x9cK\x14\x86ÏN\x86,`á8ä\x14(\x1d4\x0fi@¹\x7fã\x88\x86\x89tt\x9a\x89A(J FE9\x8c\x94¿èD \x06\x0c²z`O[\x16\x0eðKï)Xû\x02uMª\x14\x96$4H\x95Y\x07×\x0dîµyî|.¥\x92\x96\x0b³(«¨$*ä"Ox$b\x08nÄy\x86n\x84ÁÓSW%JP\x14pj|·\x18QW\x1a;à£53\x06\x17\x03RìirÙ¡¾yù\x8f\x9d\x91Â¿ÇOÝXÆoV\x1c\x1ee"ó\x9c\x9c ¥Á\x06Â\x1cI!Á\x88\\=`¼[\x140\x11-ë.¿\x06[û\x91H¢cE\x1b\x88\x85F\x034#\x9c\x15zÀ+Ôf7\x92Sz\x17A´n\x12@zK\x7f*´\x87*÷j\x99·¯â\x85[ *\x14q!Îñe´\x10Vj\x05\x1b[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:59] code 400, message Bad request syntax ('\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03Ø[A\x81P§Wàª\x87¥\x93\x84\x13,\x1bÌ¾OP.ÐµÃWZà³ç')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:53:59] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03Ø[A\x81P§Wàª\x87¥\x93\x84\x13,\x1bÌ¾OP.ÐµÃWZà³ç[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:01] code 400, message Bad request syntax ('\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03±>\x95\x05OB\x8fà%\x9eÎQ\x03\x84dTî,ñ\xad')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:01] "[31m[1m\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03±>\x95\x05OB\x8fà%\x9eÎQ\x03\x84dTî,ñ­[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:01] code 400, message Bad request version ('Â\x9d°jS\x83tY\x05D`V\x8c&\x99\x17áF²ÊcV')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:01] "[31m[1m\x16\x03\x01\x06æ\x01\x00\x06â\x03\x03öå\x1a{r"\x16ªÇ*Çuº\x9a¹\x83\x87aBðé\x91¾~×\x1b\x07«ãy{~ Ðj½Ñb\x0dn\x99ÔV¬\x16åjn\x01\x99;íä29­\x81ûÿ\x97Ï\x9e\x1c0-\x00 \x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06yêê\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00\x0d\x00\x18\x00\x16\x09\x04\x09\x05\x09\x06\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x003\x04ï\x04íªª\x00\x01\x00\x11ì\x04À¥\x84[GÉ\x12eÓ\x0e)\x10\x93/\x10Wa{*ñ\x8b¾O\x89+réd\x80Å\x12Rëw\x1c©Ê´+\x12ð\x8cA/z\x17pC?9\x99\x10Ó\x97iî²+@kNßöÂÜØ=BóvdÓ\x8cRbF»ë2:LX0\x9c3è\x08Fæ\x82^7Ü;\x0fÑ³\x9c©\x04\x7fp\x05ÜñqãKÆLö\x05x\x0b\x1c\x9d\x06¸¶Ìs¿\x17?\x88Q«É@\x8dj`yyyod\x89]2\x87J\x8bd\x81\x89@Ç\x172Ì»ìw»ñ´\x06 'Ü\x15ÎX±\x9a¥õNþ7\x95o$¸\x08*¯ÿT@\x08\x13ÉÉ\x96\x97*\x83\x9f×¦xô+]¬ \x97C\x90mïk\x81Nc±¸Ã\x05ød\x04bDÍ\x16ìE\x01\x9c3mU{0\x98ÍèøÂXé\x0b\x1cY\x08TÃ\x93åA²×¢È\x1fl4\x94ç\x9bÝ\x06¿*\x86\x9c÷\x91cÊB\x93¸cl\x97\x8a\x95|\x93\x8eÿ\x86¬äs.bD§Ô\x84¤Y2a\x98À\x98ß\x09\x8eAI\x86\x02Ü+ÁGcaÛHöÑU:ê\x9e\x07I*\x96£\x8cnGwZa\x94\x8du¾5C\x19\x00\x8dKEk&Ç2\x1a.1\x91ÓÀb\x16ò{ú9u!´7\x15w.£\x0bÂ\x9d°jS\x83tY\x05D`V\x8c&\x99\x17áF²ÊcV[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:01] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03\x84í\x0fà!~î5Ãüxµ£l,s\x9duÊ\x96²Ä´«\x04g\x8f>ÿ\x82\x81i')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:01] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03\x84í\x0fà!~î5Ãüxµ£l,s\x9duÊ\x96²Ä´«\x04g\x8f>ÿ\x82\x81i /®[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:01] code 400, message Bad request version ('ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Yzz\x00\x00\x00-\x00\x02\x01\x01DÍ\x00\x05\x00\x03\x02h2\x00+\x00\x07\x06êê\x03\x04\x03\x03\x00')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:01] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03ú¯\x132p\\\x9b¸[=ö\x09\x1a\x0eÕr\x0fÖ\x7fáv¦F\x01úÔäd\x19\x07£\x1b Ír²î-|å\x19\x19-*\x88æQ\x92\x04*¡­2êÐ\x86S\x97<&g\x01\x1e\x00@\x00 ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Yzz\x00\x00\x00-\x00\x02\x01\x01DÍ\x00\x05\x00\x03\x02h2\x00+\x00\x07\x06êê\x03\x04\x03\x03\x00[0m" 400 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:44] code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x069ÊÊ\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:44] "[31m[1m\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03µ¦\x17»ÒÆVX±û&F)Ö8M5¦\x1b½U"Ïûi\x04!"\x0d]-\x00 ¯èÆ§\x80\x92ï\x0fs«\x8a\x0e÷îÈ\x13l÷ä\x81\x86{ìY0úß(/Øð4\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x069ÊÊ\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:44] code 400, message Bad request version ('$Ý¢%.\x03\x91åÑ\x9c\xadI\x19²»\x9bZç\x88')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:44] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03\x05Ú\x82<hV\x9d\x0bVm¦\x0fÖáOØ8'®êw\x88(\x17¹?Åé\x12?\x07q \x07¶eJ©\x80ûD\x8bz­\x9cMØçV÷+à2¢p\x01\x02\x99o´\x1dõUiJ\x00 ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06YÚÚ\x00\x00\x00-\x00\x02\x01\x01\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1DÍ\x00\x05\x00\x03\x02h2\x00\x0b\x00\x02\x01\x00\x003\x04ï\x04í::\x00\x01\x00\x11ì\x04Àÿi\x91\x1b{>(T\x9d\x1f\x19BÓªÍ\x8fve·\x8bBÖ`ºöÈ\x09ý·(4\x16£}4\x83z¶Á\x0b\\¢\x9baOw\x92\x98÷\x1c$Ý¢%.\x03\x91åÑ\x9c­I\x19²»\x9bZç\x88[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:44] code 400, message Bad request version ('ZNÐ!\x8ep27·\x91döw\x02\x8b®\x8a\x88»Ö÷%>Xv\x90Æ\x9d§')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:44] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03¾\x85æ¶2\x91°nGb~\x82\x9d]:Õ\x7f\x8cÞ¥Ê4¥Nz\x1bT[Þ\x03¾y ÓG¦¡»\x91\x80\x87Ü\x14~>Å\x0b\x1ccöÁÎµrt0\x1aÇVM\x125\x01ns\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06YJJ\x00\x00\x00\x17\x00\x00\x00\x12\x00\x00\x00\x0d\x00\x18\x00\x16\x09\x04\x09\x05\x09\x06\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00-\x00\x02\x01\x01þ\x0d\x00Ú\x00\x00\x01\x00\x01\x15\x00 \x07Óæì\x18·;/ñ¿³\x85ßõ\x9b\x9aµ\x81öú\x04-\x07ã^\x86\x13´\x9cÚ\x85w\x00°\x84¯j\x8c#xç8\x95\x9d¹p0~A`\x15A¬(ü¬¿»Ä\x94\x96\x96Ì#í~Á8\x92x¦\x19I3@y\x18)ïêÈLS>\x8b\x8b\x152Oº£ÏS\x0f_4¾\x08¢jÿ÷¸\x9d¿Õ\x8f(½\x03 õw\x0fÏt¡ÎÄ\x1f\x0b\x02lÄ\x0f\x82:\x05ó\x971³Þ\x88{¿0ÕÆi\x1b)wY35\x04D]Âþa:3³=2&\x9c1'B`(eµt\x9eÄÉÃ\x10ôá\x9bfb$é\x9eå\x95j\x04ïÔ\x03:pn¸Ç3Ê¼´VÃiÑí\x03á0PÈ\x82gÒÿ\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x003\x04ï\x04íZZ\x00\x01\x00\x11ì\x04À¬*V\x82ÓD)Alñf¨\x08V\x1cb\x95\x19\x9eão#\x1c¥\x19h\x87É\x9bN;\x0b\x82ÅR\x95`a\x98\x817bªÈT«\x03¢óc9}\x11§Ü\x09ZNÐ!\x8ep27·\x91döw\x02\x8b®\x8a\x88»Ö÷%>Xv\x90Æ\x9d§[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:44] code 400, message Bad request version ('**\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x069ÚÚ\x00\x00\x00#\x00\x00\x00')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:44] "[31m[1m\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03\x06\x0c\x85\x16\x93\x9bÕ\x12:©ÿ\x8cî¥% \x0f<í]ÿø@\x9dÙoÏ\x0d\x14£Îj x¢\x9c»ÂekqÓÍµÜóQ*\x85´¦,%¢%ÕX\x9a[4w]vÆ\x0f\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x069ÚÚ\x00\x00\x00#\x00\x00\x00[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:45] code 400, message Bad request version ('lô')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:45] "[31m[1m\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03\x93«ç\x9dGÕó\x1eÈ\x90í\x0blô[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:45] code 400, message Bad request version ('Í\x8bÜ-:&0È\x88\x90*3]î(¤Ä(\x00')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:45] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03\x14þ|¬ðu4`+\x82j\x96á\x00\x9f,ß©»\x0eµ<ðü1\x88\x1eØ·01t ¨&Ø\x12\x17\x07dS~rÀ\x8bº\x1eÍ\x8bÜ-:&0È\x88\x90*3]î(¤Ä(\x00 [0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:45] code 400, message Bad request version ('\x0f-ûñct«à\\>´<½±\x95©nZëºëñé¡\x99DÍ\x00\x05\x00\x03\x02h2\x00\x17\x00\x00\x00')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:45] "[31m[1m\x16\x03\x01\x07\x06\x01\x00\x07\x02\x03\x03\x8c\x0d\x83Ô÷tÌeÖ²auAB\x1e¢\x06¯5YãÅÊP\x80ù\x7fÝ|\x9eñ¼ ¢8:).2>Î\x9c\x1aä«)ÎÁvÇ\x1aÅsPª«¢dT\x03\x0dùl±º\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x99**\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00+\x00\x07\x06zz\x03\x04\x03\x03þ\x0d\x01\x1a\x00\x00\x01\x00\x01"\x00 HáÇç7d§\x95§\x89tÜ6I¹\x17Ü4-½É\x99\x90ÚÌñ\x8f~Ë\x0d_J\x00ðÚ\x93¾qd¿3TD¾Ùk[\x9e\x05\x0dN\x17¢àº n¸\x05\x17p\x11]å\x1b~\x89©\x90-çÁär\x0c_á/:{½4ë\x16ºb\x9a\x9e4/\x0f¿\x84­²\x96\x00Ïïi\x04ñ©§\x12J­ï\x00\x1a¡\x80\x96ãÓÐsgD\x1f\x7f¼2à,äÙ\x8cFúÑVe\x99a¤©]Ð1\x83ß\x89q¸iÃÙ#fUÛ]\x8fÖ\x01\x86è\x05Å\x98\x03\x09kÅÌ5\\-\x90\x80\x81yÃ2sjó8M;\x1d^ì\x9e¦8\x19\x04\x9e.*\x09@ìæ\x1ff\x0e<\x7fí¦ÛÝáK­Pð?¿=à#®L¤i\x93à¦\x1e!®ø@¸³5\x0eMlz6=_ó*\x00´\x1eä\x10ìÙÉ­\x1e\x0f-ûñct«à\\>´<½±\x95©nZëºëñé¡\x99DÍ\x00\x05\x00\x03\x02h2\x00\x17\x00\x00\x00[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:45] code 400, message Bad request syntax ('\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03P\x0eø\x9c\x9bM:y¼\\\x82³þë>÷\x8b¨>p?¡2Ù\x02\x80ã³\x05')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:45] "[31m[1m\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03P\x0eø\x9c\x9bM:y¼\\\x82³þë>÷\x8b¨>p?¡2Ù\x02\x80ã³\x05[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:46] code 400, message Bad request syntax ('\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:46] "[31m[1m\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:46] code 400, message Bad request version ('JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x99\x1a\x1a\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06ªª\x03\x04\x03\x03\x00\x12\x00\x00\x00')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:46] "[31m[1m\x16\x03\x01\x07\x06\x01\x00\x07\x02\x03\x03\x02ce{\x89µ¸êR\\\x87õ\x04[}4=E=ê\x10\x7fÕ \x13\x88×fJ°\x19Ý Äãª¼³pÅ'þ`G(2\x01ÍUé\x08ïæL"n:"À\\Kn°\x93~\x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x99\x1a\x1a\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06ªª\x03\x04\x03\x03\x00\x12\x00\x00\x00[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:46] code 400, message Bad request version ("\x08I/n\x0e¥=¢3ynçë\x1a\x8d¨{å\x1b'Í¦\x9bDú^Z\x05")
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:46] "[31m[1m\x16\x03\x01\x07\x06\x01\x00\x07\x02\x03\x03Ìú\x82@Üß\x84ífÁë7(\x9auT\x8fÇÞòÑ\x99\x0cÀ\x00Ïê+/v\x82j f¤u\x91HÄ;Ú\x8aF&\x14ÿ\x9e\x15%F4%òPlë&_ûÁÏN2? \x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x99zz\x00\x00þ\x0d\x01\x1a\x00\x00\x01\x00\x01\x8c\x00 Ã\x92JïæE\x9e\x8aþQãòé`¶\x00çC@§$laC\x9e£Öè.ê\x90:\x00ð\x1d²\x0fh\x05\x09\x08I/n\x0e¥=¢3ynçë\x1a\x8d¨{å\x1b'Í¦\x9bDú^Z\x05[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:46] code 400, message Bad request version ('\x890Ò')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:46] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03\x89ä\x92©\x94\x10t\x18ò\x16\x14\x8fqDþ\x01C\x90\x8d×¡î\x0ffþj1hòÔd\x96 ´PÀ1\x16Û2\x16F)L_\x9e:ã3sÈß\x0d\x0b1C1¿\x99èc\x95\x1fVÞ\x00 \x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Y\x1a\x1a\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x003\x04ï\x04í**\x00\x01\x00\x11ì\x04À\\rX¿\x07\x8eJì\x8d=|\x7fÌ\x0ch\x9f¸_Ié\x0e\x1a\x99l±X«Iø\x05ö¤\x09Å\x11\x02Îð¼a\x89TîD)ûi\x15Þ¡Ã÷\x96Qô@\x99Ç\x85\x82îuj·ê\x84ðÁg\x0dËGæ\\S\x88I\x1fM#°ÃZrãÕ\x1a\x1a\x8cÅr&Äð©\x9fÃÈÀ\x06ø'â"\x81\x87#\x1d¨`])K\x0eÊ¥4¬S\x02ÙÈP\x1d¨4\x18¸Nó\x97Âî\x15Ë\x18vj\x1clu_GÏñå\x0eU\x96\x1bþâÀZ\x81\x05-\x81A\x154\x0b>R,\x18\x85\x94\x92#jB*$5¨.Qc\x16\x1bd_ÈåyÉ\x94=ç\x01\x1a¼;À±\x88\x8d\x1f\x19y·Ó»2÷\x80>tÊLè\x8eZk\x9eÏ\x05±éå\x9d¶9\x05È$\x18Òcv\x9b\x01]2*ÎÅV\x9c\x90\x16"j\x95oO\x8c;K¨uáI\x8f\x0cU e\x14x4«®6\x19\x97EÚ\x14Ï\x9c\x0cÊ2qRgN\x0fè\x09\x8f¢·Ñ%\x1aj\x0c$fT#Üd¿Z\x99\x8e±\x07oÇ'`Ç\x96cÂ\x19EÔIµY\x06£¶kj?t\x82Çå\\}i`é\x92u\x83¥\x19\x7f;\x82÷¹\x19Ñ\x88\x96\x8dq;ÌF=\x92\x04#B\x9cÀ\x19hC/Ç\x0e9ÂÈRl2ÇÐÇüðÌ¬+H¹4bM`Ç:C\x86\x97&y\x9bû½ü§ÉV\x8aHP§\x01|¤ ¤\x96Tª\x15®\x92:\x8b¹\x038¥Ìx­º?ËfZU\x81\x8e82.¯ÂÆ5êÂ\x13Ì\x9bôÇ\x08O7\x8a7\x14ºã\x9bÂ£t°bg~Ö \x890Ò[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:48] code 400, message Bad request version ('Y\x15Ôq*\x8d\x8d\x8ayòñõ')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:48] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03j ²°M¾\x8eK\x01^óæ\x0e®hÊ&£/\x0cY\x15Ôq*\x8d\x8d\x8ayòñõ [0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:48] code 400, message Bad request version ('â)')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:48] "[31m[1m\x16\x03\x01\x07\x06\x01\x00\x07\x02\x03\x03àtXª\x08\x16;Ô¨TW«¡\x8f\x09JÙöûq\x93íä\x1e\x88`VosìE% ?·ÆÅ^Ã\x8eUÒ(Yd\x8eè\x8dÎFë-\x9a$"\x1eâ)[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:48] code 400, message Bad request version ('Ô~¦ê\x11¯Rñc¼bX"üÐ\x9d\x7fÕG[\\G°côûm½')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:48] "[31m[1m\x16\x03\x01\x06æ\x01\x00\x06â\x03\x03Z\x139UT\x03ò\x09\x12*SË»CpûI¤ÿÿÂÍ?á¼×\x8f¿\x0b\x7fô\x8b Æ\x88dÂð¸ôkX0ó;t\x93ÓºÔ;ïj¼®ÿ xª\x13%²Mû\x0e\x00 êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06yJJ\x00\x00ÿ\x01\x00\x01\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00þ\x0d\x00ú\x00\x00\x01\x00\x01¢\x00 \x84×_cxuà9w]Ëq¤t\x00=Ì¯\x8c£N\x16\x9d(º¦´\x87!@\x9fG\x00Ðù]¨8ë\x1aOO'ÀÒ\x96ç¨t`\x88i¥S\x01\x80Û\x80\x1eÜUïÞÑW8Xí×áTÎÚ\x0e\x1dÔ~¦ê\x11¯Rñc¼bX"üÐ\x9d\x7fÕG[\\G°côûm½[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:48] code 400, message Bad request version ('&\x95ãT&\x9c5æüÁ\x1bq\x87vñ\x87\\U½½\x94½æã¾xwX[ûw»#ÂW)Êöú\x12\x0e³wR\x19')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:48] "[31m[1m\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03ÒÃ\x8b li\x18\x96ßàªÙ\x9aÍV«±`\x86ÙP×+À\x92Ãu/]O\x01À ÊÖ^/hòä\x7f\x85£\x93\x015K\x0fB$¼tWV_\x80)I\x82\\\x06\x9c\x87\x87¯\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x069úú\x00\x00\x00#\x00\x00\x00-\x00\x02\x01\x01\x00\x0b\x00\x02\x01\x00\x00\x12\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00þ\x0d\x00º\x00\x00\x01\x00\x015\x00 è\x7f\x94\x03\x0eðk\x9c\x03\x80\x04ö®ÆlÚ5«\x18\x07+\x11«ú÷ª\x9ec-O}N\x00\x9076¯qß\x96CPÚ­8Ëk$=1HÁ{ìj^ÿ\x83ã¥\x94´êÕUsõ`Ï,¹Ù&üéÛ³ \x90\x01\x19S2\x13òl­D¨\x92>\x08é´Ôg\x1d\x87\x9bÛ\x9cBk*P6B\x1aùsÄª©\x87Õ\x0b.èN=$ê\x1b!^[¾\x8b(>g\x15¸ãr\x14[ÏÂ/k(QGA.\x89]{\x88"W1È\x1eÄ\x1e\x7fîHÃ\x1e¯\x84\x0fÉq\x14\x1a\x9c:Â2÷Üø)\x8a\x00\x0d\x00\x18\x00\x16\x09\x04\x09\x05\x09\x06\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01DÍ\x00\x05\x00\x03\x02h2\x00+\x00\x07\x06ÊÊ\x03\x04\x03\x03\x00\x1b\x00\x03\x02\x00\x02\x003\x04ï\x04íÚÚ\x00\x01\x00\x11ì\x04ÀõèÊi¨SÎ\x09+çl1\x7fä¹±ÃWwFÏ\x04Õ\x1cùZP\x84#¬\x92!(\x7fq\x8bËvI\x1eò5\x8f\x02|m(\x00¤¢\x9ff\x1aÀ\x0e \x13þY\x9e}f£@µ@â\x91p>¸ }\x9c;õ8\x85½pUøæ¤YÉtÅIË\x8eF\\ÏÑ­\x8e\x85\x1dÎ\x08]\x8a¼d\x85So\x91<\x15\x92ô1æë\x88Ì\x8b5lÔ@r< OA\x04\x97Ì\x13\x0bÑ¨\x1aq\x80\x14\x08$¸ò\x86\x1c·®\x9d &\x95ãT&\x9c5æüÁ\x1bq\x87vñ\x87\\U½½\x94½æã¾xwX[ûw»#ÂW)Êöú\x12\x0e³wR\x19[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:50] code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06YJJ\x00\x00\x00+\x00\x07\x06')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:50] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03\x86±\x99B!ÿú§Å³mýËäGKÒ\x9fÆ\x03°ðáÖa¯ön³ËÊ( Þ\x11ø\x1bW\x8b@}\x16Ù,¾?\x9e\x85RÕÛ¾èx\x1f·õ¦\x98Òì @½ \x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06YJJ\x00\x00\x00+\x00\x07\x06[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:50] code 400, message Bad request version ('\x06\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:50] "[31m[1m\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03_ZX,åÛÃóX×CÈ\x92 5Çæf¬\x84jM@¨\x91[\x8efdÆ¿Ý \x9açç3¯º¹5\x14¢I\x98/\x17ÍmE\x05¥XÎ\x10Óp?þ [²îõf\x00 ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x069ÊÊ\x00\x00\x00\x12\x00\x00\x00\x0b\x00\x02\x01\x00\x00\x1b\x00\x03\x02\x00\x02ÿ\x01\x00\x01\x00\x00#\x00\x00\x00\x17\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00-\x00\x02\x01\x01þ\x0d\x00º\x00\x00\x01\x00\x01\x10\x00 \x9e7\x82ý\x1a»ä\x95Ö\x00¢½b\x85\x9b\x94\x9a¿Jàçh3k\x14\x83a#\x83¢T\x1a\x00\x90%(îé)\x80 \\\x13\x13yè"¹ÎÉfÕ,Ý`\x18 aØ%\x01sÑa\x012¢Â\x0b\x82°V{µÊ\x04½}ML³\x9bÅe{Ëþ)g\x96[GE)\x96\x9c\x1b\x8f\x82\x90\x964¢å)CJ+\x88\x87ãbuÌvø\x1c2/é\x1cÉî9\x1aô5\x11dY(Ò¯\x87\x04Ï\x0fj/¢Þ°Ð8·fübR\x0e\x94!\x82ñ­Üp\x87özöÆ¸\x15<\x7fÕ\x1fõÖ\x88\x8fUàîÌ^ô\x00\x0d\x00\x18\x00\x16\x09\x04\x09\x05\x09\x06\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:50] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x06\x01\x00\x07\x02\x03\x03ir\x8d')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:50] "[31m[1m\x16\x03\x01\x07\x06\x01\x00\x07\x02\x03\x03ir\x8d (ß\x91:³kÚ·QZÜø¨Y©,\x97»\x0eû\x8a¡)¼\x9bÞ¦v [0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:50] code 400, message Bad request version ('í«\x02\x9f')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:54:50] "[31m[1m\x16\x03\x01\x07\x06\x01\x00\x07\x02\x03\x03Üï5;§·0À\x0e\x95ÕÝq0xn\x05q;-\x82¶Dé½\x99|7¥Õóé \x0e4\x11ÕÚ_6FbúãØ\x16Ò~ôBqÁSm\x96\\\x1ec\x03)Ù³í\x14\x0d\x00 ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x99JJ\x00\x00\x00\x0b\x00\x02\x01\x00\x00\x0d\x00\x18\x00\x16\x09\x04\x09\x05\x09\x06\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01DÍ\x00\x05\x00\x03\x02h2\x00\x1b\x00\x03\x02\x00\x02\x00+\x00\x07\x06**\x03\x04\x03\x03\x00\x17\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1þ\x0d\x01\x1a\x00\x00\x01\x00\x01Ä\x00 \x05\x8c¶\x19|¿\x19#\\N\x9bµÐáâ3~ÁeË3£2¥û\x8a\x8b!Ä[º&\x00ð\x12­aCò`ëa|\x02"ã(1øïÇ\x9fÌÞeQó¹ö\x1e\x10¼7\x99vääy\x1e²Ñ5·ÎÖ£\x13¼®\x9e+\x1f4Ñ\x07¼%\x97}\x86\x8a\x00LÕìÆoz¶wÊ\x9b\x0bâáì»Uü\x09z\x0dÍ2Îtd!«È8e&=¢[ÂÜâ'R\x08\x9c*¡Ød\x06ØÕÃ=¾a4QjÏãC¸(\x85Ö1¸\x9b\x8d¨\x1eÀ±ý\x04\x01X©\x16³òò*HÃà(7$\x11l\x1a\x12´ç\x96\x09ä0aCã-ÝX\x8c\x05\x00û\x18åP¹Å%Å\x9c\x9a"\x80\x1b\x9a\x97°÷\x9c×Í¸\x1c°SÒpW¬Ú\x93tF%ö¼L±íÚâ\x1a©ßa{ð-SXÞª¹0Sç$HNoþ)÷\x1c\x0f°](Å;CÞÔR<åsâÿ\x01\x00\x01\x00\x00-\x00\x02\x01\x01\x003\x04ï\x04íÊÊ\x00\x01\x00\x11ì\x04ÀEXSÝá#\x99% \x87H\x02\x1d[_ï÷+Dô\x0dJL<³1\x8c\x01\x87\x80©¤cô\x99In\x11·þÐ\x87þÁÆ°\x95¤O\x96AÃ´K9:(ª\x80­\x9fR³u\x17\x91Ê\x13N\x01æ\x1a\x89â\x04\x09{\x08\x03Ú¿«åt6 Bôv..)q²7®\x11ð¨Æ|/\x7fashãµi¥rb\x87³ÎVÊ\x01T3+Ò¥Y´XB\x09\x1a;¡x\x87)xEõ\x81,É£e\x84gk\x0bÉÀiJÝqH:ç\x13\x06¢Ç°r\x9fÙBpLB\x14\x13\x87ÄBª\x1eneZ\x06\x87;Ù&WÎYÅlÆ\x9d%7\x85»bTÔ#W\x82×\x85í«\x02\x9f[0m" 400 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:56:16] "GET /about.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:56:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:56:17] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:56:18] "GET /static/assets/portfolio.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:56:18] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:56:18] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:56:21] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:56:21] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:56:21] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:56:21] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:56:21] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:21] "[32mGET /index.html HTTP/1.1[0m" 302 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:21] code 400, message Bad request version ('òÀ\x81C7\x9a\x89')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:21] "[31m[1m\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03\x03ü7Tåè#\x0d)\x8b\x18'oßY&\x94\x94\x02\x02\x09o\x0eô.\x1f\x87·ZÇxª i+3n, òÀ\x81C7\x9a\x89[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:21] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x07\x06\x01\x00\x07\x02\x03\x03R9\x7fØKÒ5\x80é£éE\x16(3r\x07/\x7fXp`¶D._Yý\x844ØB')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:21] "[31m[1m\x16\x03\x01\x07\x06\x01\x00\x07\x02\x03\x03R9\x7fØKÒ5\x80é£éE\x16(3r\x07/\x7fXp`¶D._Yý\x844ØB \x95:\x1b4rÚW[0m" 400 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:58] code 400, message Bad request version ('jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Y')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:58] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03é_xd»v\x0eGÖìÀN"ç\x9e\x10ÕÞ»6Fª\x99g¾\x91q>3QÅÁ Q/À\x12õÎ0\x98ø G.~\x15{\x8cÛÒ$¶\x0cÃö\x016\x04b@us?ô\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Y[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:58] code 400, message Bad request version ('ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Y')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:58] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03\x83\x85'\x03{\x9bÓ¡$Î\x00û\x89Y[>¾®éè[~\x89\x89Õ\x16.l½|±S (\x1dÕ\x9de\x82\x99S§+X4¯$¡ÚuHàRèI\x88DÀî\x14ö\x132½9\x00 ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Y[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:58] code 400, message Bad request version ('¨}ä)YgJ@\x82aª\x17\x90\x80\x11¡d\x91\x058¹\x89\x8a\x80i\x15ÂVÝã\x82[³\x8c9Ù')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:58] "[31m[1m\x16\x03\x01\x06æ\x01\x00\x06â\x03\x03m<\x8d.\x87®Óñ_nm5æ\x8a_\x95\x11c¢ÿÁ*_ª­\x9d5<\x19ÿÆ9 ÕþuÝÖÇ²\x94]ÖÒi\x93°Ö\x98{\x92õ\x8e\x82\x17ó÷k\x9fçö|®g_\x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06yÚÚ\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00#\x00\x00\x00\x0d\x00\x18\x00\x16\x09\x04\x09\x05\x09\x06\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x17\x00\x00\x003\x04ï\x04íúú\x00\x01\x00\x11ì\x04Àëð\x95\x96\x93ÌÒ\x11\x98}\x9cD¸,l®(u¡vc÷ûfi\x86\x95£F¸_U\x98¿ð¨Ùq\x83%³Ápç\x97\x06\x80È_hD\x87\x15,ÞÌ<?CÉ©º .\x15\x95Zá2\x88É¡ÇUzÅu\x05\x91Ç\x97R³\x08¶R}\x8cDO+\x07\x1cE´D\x92<NmÈ\x05*\x0b¨}ä)YgJ@\x82aª\x17\x90\x80\x11¡d\x91\x058¹\x89\x8a\x80i\x15ÂVÝã\x82[³\x8c9Ù[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:58] code 400, message Bad request version ('ÙO¯')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:58] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03eB¦´\x15ý\x17N\x0d"Ýü\x0fËÃNZ\x1a0 ýÃ\x96}8ô¶e\x08\x8f\x87ú d{@È ¶ð\x972\x99§ã}>®0jÍ)VJoÝ\x09ú\x00Ð4¿%>ø\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Y\x8a\x8a\x00\x00\x00\x0d\x00\x18\x00\x16\x09\x04\x09\x05\x09\x06\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x05\x00\x05\x01\x00\x00\x00\x00\x003\x04ï\x04íÚÚ\x00\x01\x00\x11ì\x04ÀÞá,x\x97£\x9c\x96\x9b\x935Kø\x05jÓ¡\x86¤#\x17.\x08`@LB\x87`Åð\x00ÊJeiD\x8bÈÏ\x12\x8bÑç\x1d\x0dÔ³J%\x07$¤\x16;u_«uBq\x97¢\x96A\x94y\x98Î\x05YvÒù¬\x91Æib¸\x0f3\x99Z\x01\x91¸\x0bÙO¯[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:59] code 400, message Bad request version ('\x02h2\x08http/1.1\x00#\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00+\x00\x07\x06\x9a\x9a\x03\x04\x03\x03\x00')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:59] "[31m[1m\x16\x03\x01\x06æ\x01\x00\x06â\x03\x03-\x1drª*\x84:Ö&Ú7å"p\x96zèÀÎ.üKuÕó\x80_hs\x19ô½ \x90\x9f½à\x1ecï\x1fì\x1cè\\\x9e\x0dóª\x8dn^å·¾\\³ØQ°f\x17\x16\x83§\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06y\x9a\x9a\x00\x00\x00-\x00\x02\x01\x01ÿ\x01\x00\x01\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00#\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00+\x00\x07\x06\x9a\x9a\x03\x04\x03\x03\x00[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:59] code 400, message Bad request syntax ('\x16\x03\x01\x07\x06\x01\x00\x07\x02\x03\x03»æ§\x8f')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:59] "[31m[1m\x16\x03\x01\x07\x06\x01\x00\x07\x02\x03\x03»æ§\x8f[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:59] code 400, message Bad request version ('2eEà¢¡«xÍ»³z\x93¬\x10ÁEæâBhó\x8dÜ\x9a\x91\x8b¹R/\x02Ã\x004\x06íã')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:59] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03¬àg\x95DÂÉ6Z±>Ê«½\x9cF9ùf¹xbÿàx\x06sÚø\x9cD\x87 \x99S«t\x93o\x13óÌ0ß\x0f\x10Îàï\x84\x7f¹\x80Ay\x04X\x16·D°V"%a\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Yêê\x00\x00\x00\x0d\x00\x18\x00\x16\x09\x04\x09\x05\x09\x06\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x003\x04ï\x04í\x9a\x9a\x00\x01\x00\x11ì\x04À\x00-Uq\x98¶Fª(øk\x096D\x8b\x19ò|Õ\x14\x07Qkª®\x9b\x89à\x16A§s\x1aÌ\x87°\x0b2eEà¢¡«xÍ»³z\x93¬\x10ÁEæâBhó\x8dÜ\x9a\x91\x8b¹R/\x02Ã\x004\x06íã[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:59] code 400, message Bad request version ('\x06\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:59] "[31m[1m\x16\x03\x01\x07\x06\x01\x00\x07\x02\x03\x03é\x8d \x9bÖ|ì«v¡s\x0c¬=pØ¡\x81\x7fNy E·Wý@p\x91©`å ÈW\x16¯\x8eAC\x91à\x0f\x9bÀ<Û@iÌ\x09+­(\x13ì¶Ñ½Ã\x88")\x1bj\x00 ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x99úú\x00\x00\x00-\x00\x02\x01\x01\x00\x0d\x00\x18\x00\x16\x09\x04\x09\x05\x09\x06\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:59] code 400, message Bad request version ('\x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x99ÊÊ\x00\x00\x003\x04ï\x04íZZ\x00\x01\x00\x11ì\x04À½xjxñx')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:59] "[31m[1m\x16\x03\x01\x07\x06\x01\x00\x07\x02\x03\x038\x10\x05QÜÐÀ\\ÑX\x0fô\x8bàW¥v\x84îÊ\x84K\x12\x9a1¦b¥È³¦t En`À\x9c-ø\x91\x83 G$R§q·ûz\x80vß\x1cÖ\x90Êêm\x9fÞ5\x93\x82\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x99ÊÊ\x00\x00\x003\x04ï\x04íZZ\x00\x01\x00\x11ì\x04À½xjxñx[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:59] code 400, message Bad request version ('\x9fv\x94')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:59] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03ÂÇË *\x15\x15U\x0etW$|ì\x98\x84¯\x87\x1f]\x91\x98hH/\x87|£«\x1f­w *ÏxµTò<\x02qîÃW¶*R\x86:S\x8b¦­Xz?Å\x1b\x15w\x15\x82Ü\x1b\x00 \x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Yêê\x00\x00\x00#\x00\x00\x00\x12\x00\x00\x003\x04ï\x04íjj\x00\x01\x00\x11ì\x04À¢æh\x9e<-\x8cÓ{\x84\x08\x11áy@Ûä{Vp\x9c\x19¶\x0fgÉ\x05?F)Ì[¹Y\x139^ª\x11Êº¼vÃ\x97}\x96ÅÈå\x15ªØ\x91\x1aÜ\x01À\x10\x08Ì\x94¢ñ§6û$\x05+Ë\\¯µ\x1elÚQ\x8a16pr\\ü\x01=n\x84QÿºN\x1a\x8a\x1fwµ:\x1e\x00VºÛ\x1b3&-õå\x99\x95hÂ¾ò=[\x85N\x90$\x03Î°\x08éÙ\x91Ý\x1a7üá\x81&,É\x9a\x82v\x10\x05\x91X:\x81ßð¤»'\x1d\x9fv\x94[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:59] code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Y\x1a\x1a\x00\x00\x003\x04ï\x04í')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:59] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03Û£\x9fo\x91¶%@ä\x9bfÃXÎ\x8b:)4ÔÐþ³¼ø\x94±ék3\x82g÷ \x08Þ\x91Ä{ûb/\x99ÌºXõ\x9b*@6r\x86l¾\x0d@y½¦®\x1cì3S~\x00 \x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Y\x1a\x1a\x00\x00\x003\x04ï\x04í[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:59] code 400, message Bad request version ('p¿^ä\x17\x97è\x11âCç\x8fp5')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:57:59] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03½«¥N\x1a\x1e\x01¶Ìê¯óx>Æýë\x8b;H\x00/ZÍ¯\x02\x88\\¬\x8a¾\x1b p¿^ä\x17\x97è\x11âCç\x8fp5[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:58:00] code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x069')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:58:00] "[31m[1m\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03MÈ\x1fly0ß½Ò\x87Z\x0b4öwr\x0ezãhû'\x0fÒ&Wk`¥Cb¯ á8°\x04\x978Â¿ý§eô\x14>fã­¹|\x81O\x07ò¡Ë6ÔÕ«Gâµ\x00 \x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x069[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:58:00] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06æ\x01\x00\x06â\x03\x03n')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:58:00] "[31m[1m\x16\x03\x01\x06æ\x01\x00\x06â\x03\x03n\x09¹[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:58:00] code 400, message Bad request version ('eç²!B¶q\x15KÄð\x05KK)\x19')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:58:00] "[31m[1m\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x031S¿x\x02¶Õâ\x14Ðr\x91mÙ\x8fS\x81\x10§S\x1aé\x05vaL\x1d¦\x9eeC\x9b ×};\x0431g\x98ç%\x99_ûTmdf èÏ\x90\x82â®û\x00\x99RõÍaP\x00 êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x069zz\x00\x00\x003\x04ï\x04íúú\x00\x01\x00\x11ì\x04ÀlÄR^³4\x17×\x8aò\x0chÎú\x81f\x8ci\\Ö\x01gÔa)§5à$\x85\x17Dd\x02c¢b`*Z\x11Xí\x07|ÕÆ\x1bl£B\x18¬\x0faÐËÀtQ%ëL\x01öi|Ña;7\x80W©\x99\x858\x13èºe\x99i åð²fb\x92'\x1c\x92\x01\x97væi\x85¬øo\x1bF_é\x0bÌYÃl\x9dÖ\x8b\x1a\x80Fdá\x19\x0e\x9c\x7f³\x18\x0b\x9f\x10@\x98¬Bo\x01 dð­$÷Z\x91\x01Âf\x9bW.ºTÇë^;à\x97*\x94>ÎP%\x1cºfV¸Y\x1cìSEã2a\x00Àæ7\x096µ¡££sÒC¶y\x87MX\x9b"6ÂÂGa¶\x04\x8cMÇÕ\x82Èµ¹\x0eQz¿\x16\x09¦º5þ\x18¼×\x85\x9a\x18©`\x83\x91/ÕR´Q"³ÞúL[¡\x90,U)<$-×\x1b.¿ÔËÞ7,\x9d»ÏTp\x07ãÑ\x0b\x87ô\x8d\x11ôpÐl\x00.ã%\x95»\x02é±2y;\x98W\x17\x13áä1>AV\x1ag¯CôÎí´8\x85E\x95[a\x98ë{u\x0e $)¬\x038§\x86\x0c*\x1deç²!B¶q\x15KÄð\x05KK)\x19[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:58:00] code 400, message Bad request version ('Z\x03¿ì')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:58:00] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03faýëñ%\x09\x18'ÜÆ·\x91EÅ<]ë6à,'¢3pG¡z&\x15w| 1ødô\x9fHkHÛ-Oþ\x1a¦si¾¼\x07à\x1fD'\x9e©\x98ä\x9esäëþ\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Y**\x00\x00\x00-\x00\x02\x01\x01\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x12\x00\x00\x003\x04ï\x04íÚÚ\x00\x01\x00\x11ì\x04À¤²P\x99t\\"T\x09¶´\x9e\x1bhFE\x15\x8b\\\x8a5n\x17r\x1d:\x97(k Z\x03¿ì[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:58:02] code 400, message Bad request version ('BÉ')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:58:02] "[31m[1m\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03\x1c\x06\x09¦%5ÈÜ|°\x87ïNIìÂ\x85\x13@iÃú\x84Fân\x85J\x89¾F\x18 ~\x94Âä\x00\x8a\x9a_Ú\x17Ò\x1b\x99%Ñ©iÓãa?5Å\x12\x93è¦J7&Ûî\x00 ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x069ÚÚ\x00\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x003\x04ï\x04í\x8a\x8a\x00\x01\x00\x11ì\x04Àí\x1c\x17vñ*çú6ã¡\x84\x8e¤\x8a¼{¦ÓE¤¬;Qõ\x97\x93\x03§\x9c\x99vÎæ8L<÷­\x16àL\x8b\x1b)\x87¡`VÕ«êâ£³°!Â¦VÍ\x12\x0c\x01¡\x08½\x0bBÉ[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:58:02] code 400, message Bad request version ('êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Y::\x00\x00\x00#\x00\x00\x00+\x00\x07\x06\x8a\x8a\x03\x04\x03\x03\x00\x12\x00\x00\x00')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:58:02] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03\x07\x1cjä6ÖO\x9bÖÓ\x88eº \x82\x90\x04W\x13\x1e©hym<L:ó²Z\x9dS \x8d\x9aHíÅ-\x03©×1z\x9c¬®5\x96\x1e\x03le¤9ÃØ/ð\x8eµRÊxp\x00 êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Y::\x00\x00\x00#\x00\x00\x00+\x00\x07\x06\x8a\x8a\x03\x04\x03\x03\x00\x12\x00\x00\x00[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:58:02] code 400, message Bad request syntax ("\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03ÿ-Ï\x19'\x7fýX\x06\x0e]°l5\x80^J")
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:58:02] "[31m[1m\x16\x03\x01\x06¦\x01\x00\x06¢\x03\x03ÿ-Ï\x19'\x7fýX\x06\x0e]°l5\x80^J[0m" 400 -
+ERROR:werkzeug:127.0.0.1 - - [19/Jul/2026 01:58:02] code 400, message Bad request version ('Çl\x15\x81\x07\x99S7GÃT÷5\x19')
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:58:02] "[31m[1m\x16\x03\x01\x06Æ\x01\x00\x06Â\x03\x03d\x1f\x99Q1\x0c\x90\x8dKª1Ø#\x0b\x98Y\x19IÚæW\x0f\x18\x0cZs³+\x10\x0fLM ë&\x8ev\x13JÌ\x1aéäTÙ`«\x0f÷4\x01PíÀ$Þ\x10.Õ\x8d¼ÒþAð\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Yêê\x00\x00\x00\x0d\x00\x18\x00\x16\x09\x04\x09\x05\x09\x06\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x003\x04ï\x04í\x9a\x9a\x00\x01\x00\x11ì\x04ÀÛR\x8cd\x00Ëx'\x80ÆV]T<£»K%\x10¢@H3\x0eÁ\x07MÌfC"ªMºP)¼\x1a~HÚ\x19\x11¶Kõ\x12\x80w+©ñ\x9a\x81ÉÆÉI!@\x09÷\x97ÑÓ\x7fDÀSÑ\x84Q±ùD÷|§­¢^Eèvî¥?é²\x19\x0bA\x8f®#°\x1d\x18/%\x08k\x91ô³|K\x8d?!s}\x1c=¹ \x83\x07ô\x163%¢äÈ\x0cFçÌçBxW\x80\x1b%$¡\x8có¿ß\x1brõçtóV\x99K\x838Y³\x98\x9ai\x0eíël\x01EZ\x10I\x1d\x80üÌ\x81e\x12KÉ!½Ç\x192Ð\x195\x13a\x19øOÚð}úD¸@W\x8fe@RE9\x7f©¸\x8b² \x00jQnØG¤ëi#ùR±ªù\x92\x19ÛY°\x10¸9s\x1a&\x07´}(\x81\x97B\x9eÆÅ0rÂl+Úx¬\x94RyÐ£n\x09·ðC\x11$Ö\x89¿Ó\x9c\x82\x9c\x1f\x03,\x8bµØ7m\x88\x00Ë*5fpX\x14\x88yub\x8c<g~+\x057î\x95vOá6+Ú3\x0eEÆ"\x14%A\x18\x12\x81\x80Va\x84\x81ÿuOÔ!®(ö\x10§Ó¦|\x9c\x8ac£\x92/6küÚGÌgnÄ\x0cÇl\x15\x81\x07\x99S7GÃT÷5\x19[0m" 400 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 448-211-676
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:58:58] "GET /contact HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:02] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:03] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:03] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\talha\\Documents\\myPortfolio\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 448-211-676
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:38] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:39] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:40] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:40] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:45] "GET /about.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:46] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:46] "[36mGET /static/assets/portfolio.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:46] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:47] "GET /projects.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:48] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:48] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:49] "GET /contact HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:50] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:50] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:50] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:52] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:52] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:52] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:57] "GET /contact HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:57] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 01:59:57] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:app:POST /api/chat received
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:00:35] "[35m[1mPOST /api/chat HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:00:39] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:00:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:00:40] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:00:40] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:00:40] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:app:POST /api/chat received
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:00:47] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:00:52] "GET /projects.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:00:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:00:52] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:00:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:00:52] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:app:POST /api/chat received
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:00:57] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:01:01] "GET /contact HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:01:01] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:01:01] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:01:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:01:01] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:app:POST /api/chat received
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:01:06] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\talha\\Documents\\myPortfolio\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 448-211-676
+INFO:werkzeug: * Detected change in 'C:\\Users\\talha\\Documents\\myPortfolio\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 448-211-676
+INFO:werkzeug: * Detected change in 'C:\\Users\\talha\\Documents\\myPortfolio\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 448-211-676
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:01:59] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:00] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:00] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:00] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:05] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:05] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:05] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:05] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:07] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:07] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:07] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:07] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:08] "GET /about.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:08] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:08] "[36mGET /static/assets/portfolio.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:08] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:10] "GET /projects.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:10] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:10] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:10] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:11] "GET /contact HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:11] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:11] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:11] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:app:POST /api/chat received
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:15] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:32] "[32mPOST /contact HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:32] "GET /contact?success=1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:32] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:32] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:42] "[32mPOST /contact HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:42] "GET /contact?success=1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:42] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:42] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:52] "[32mPOST /contact HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:52] "GET /contact?success=1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:52] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:02:52] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:03] "[32mPOST /contact HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:04] "GET /contact?success=1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:04] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:04] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:13] "[32mPOST /contact HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:13] "GET /contact?success=1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:14] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:14] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:14] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:24] "[32mPOST /contact HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:24] "GET /contact?success=1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:25] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:25] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:34] "[32mPOST /contact HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:34] "GET /contact?success=1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:34] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:34] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:34] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:50] "[32mPOST /contact HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:50] "GET /contact?success=1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:50] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:50] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:03:50] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 448-211-676
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:04:48] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:04:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:04:49] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:04:49] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:04:49] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\talha\\Documents\\myPortfolio\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 448-211-676
+INFO:werkzeug: * Detected change in 'C:\\Users\\talha\\Documents\\myPortfolio\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 448-211-676
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:08:38] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:08:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:08:39] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:08:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:08:39] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:11:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:11:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:11:11] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:11:11] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:11:11] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:11:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:11:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:11:20] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:11:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 02:11:20] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -

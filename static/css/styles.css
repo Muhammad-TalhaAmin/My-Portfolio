@@ -818,7 +818,7 @@ body.light .field textarea {
 }
 
 .hero-title {
-  font-size: 40px;
+  font-size: 36px;
   line-height: 1.15;
   margin: 10px 0 8px;
   color: #f9fafb;
@@ -978,4 +978,13 @@ body.light .btn-ghost {
     padding: 12px;
     border-radius: 8px;
     margin-bottom: 20px;
+}
+.field-error {
+    display: block;
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 12px;
+    border-radius: 6cap;
+    margin-top: 6px;
+    font-size: 0.9rem;
 }
