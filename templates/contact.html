@@ -35,6 +35,7 @@
     </style>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='assets/chatbot.css') }}" />
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   </head>
   <body class="inner-page">
     <div class="bg-gradient"></div>
@@ -112,6 +113,12 @@
               {% endfor %}
             </div>
 
+            <div class="cf-turnstile"
+                 data-sitekey="0x4AAAAAAD5EkNdyOQaWaBEC"
+                 data-callback="onTurnstileSuccess">
+            </div>
+            <input type="hidden" id="turnstile-response" name="cf-turnstile-response">
+
             <button type="submit" class="btn btn-primary">
               Send Message
               <span class="btn-glow"></span>
@@ -119,6 +126,26 @@
 
             
           </form>
+
+          <script>
+            function onTurnstileSuccess(token) {
+              document.getElementById('turnstile-response').value = token;
+            }
+            
+            document.addEventListener('DOMContentLoaded', function() {
+              const form = document.querySelector('.contact-form');
+              if (form) {
+                form.addEventListener('submit', function(e) {
+                  const turnstileResponse = document.getElementById('turnstile-response').value;
+                  if (!turnstileResponse) {
+                    e.preventDefault();
+                    alert('Please complete the Turnstile verification');
+                    return false;
+                  }
+                });
+              }
+            });
+          </script>
 
           <div class="contact-details reveal-fade delay-2" >
             <h2>Contact Details</h2>
