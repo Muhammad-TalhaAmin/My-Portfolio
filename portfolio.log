@@ -818,3 +818,228 @@ INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 18:35:16] "[36mGET /static/js/script.j
 INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 18:35:16] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
 INFO:app:POST /api/chat received
 INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 18:35:39] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 448-211-676
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 19:55:05] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 19:55:05] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 19:55:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 19:55:06] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 19:55:06] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 19:55:15] "GET /projects.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 19:55:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 19:55:15] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 19:55:15] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 19:55:15] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:app:POST /api/chat received
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 19:58:59] "POST /api/chat HTTP/1.1" 200 -
+INFO:app:POST /api/chat received
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2026 19:59:11] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 131-956-585
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 00:04:05] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 00:04:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 00:04:05] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 00:04:06] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 00:04:06] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 00:04:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 00:04:09] "GET /contact.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 00:04:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 00:04:09] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 00:04:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 00:04:09] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 00:04:23] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 00:04:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 00:04:23] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 00:04:23] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 00:04:23] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:app:POST /api/chat received
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 00:04:27] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 131-956-585
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:19:36] "GET /contact.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:19:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:19:37] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:19:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:19:37] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:19:39] "GET /projects.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:19:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:19:39] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:19:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:19:39] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:app:POST /api/chat received
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:20:32] "POST /api/chat HTTP/1.1" 200 -
+INFO:app:POST /api/chat received
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:20:59] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\talha\\Documents\\myPortfolio\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 131-956-585
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:25:13] "GET /index.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:25:14] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:25:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:25:14] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:25:14] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:25:16] "GET /contact.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:25:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:25:16] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:25:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:25:17] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:app:POST /api/chat received
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:25:46] "POST /api/chat HTTP/1.1" 200 -
+INFO:app:POST /api/chat received
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:26:11] "POST /api/chat HTTP/1.1" 200 -
+INFO:app:POST /api/chat received
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 18:26:55] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 131-956-585
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:19:12] "GET /projects.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:19:13] "GET /static/css/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:19:13] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:19:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:19:13] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:app:POST /api/chat received
+ERROR:app:Invalid JSON from chatbot service: Muhammad Talha Amin is a student currently pursuing a Bachelor of Science in Data Science at the Punjab University College of Information Technology (PUCIT), Lahore, Pakistan. He is passionate about Artificial Intelligence, Machine Learning, Data Science, Automation, and Software Development. Talha enjoys solving real-world problems by combining analytical thinking with practical programming skills. His goal is to become a highly skilled Machine Learning Engineer or Data Scientist capable of building intelligent systems that create real-world impact.
+Traceback (most recent call last):
+  File "C:\Users\talha\Documents\myPortfolio\app.py", line 179, in chat_proxy
+    response_payload = json.loads(raw_body)
+  File "C:\Users\talha\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\talha\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\talha\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:19:21] "[35m[1mPOST /api/chat HTTP/1.1[0m" 502 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:21:24] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:21:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:21:24] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+INFO:app:POST /api/chat received
+ERROR:app:Invalid JSON from chatbot service: Muhammad Talha Amin is a student currently pursuing a Bachelor of Science in Data Science at the Punjab University College of Information Technology (PUCIT), Lahore, Pakistan. He is passionate about Artificial Intelligence, Machine Learning, Data Science, Automation, and Software Development.
+Traceback (most recent call last):
+  File "C:\Users\talha\Documents\myPortfolio\app.py", line 179, in chat_proxy
+    response_payload = json.loads(raw_body)
+  File "C:\Users\talha\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\talha\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\talha\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:21:53] "[35m[1mPOST /api/chat HTTP/1.1[0m" 502 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:23:04] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:23:22] "GET /projects.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:23:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:23:22] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:23:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:23:22] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:23:22] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 131-956-585
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:27:32] "GET /projects.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:27:32] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:27:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:27:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:27:33] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:app:POST /api/chat received
+ERROR:app:Invalid JSON from chatbot service: Muhammad Talha Amin is a student currently pursuing a Bachelor of Science in Data Science at the Punjab University College of Information Technology (PUCIT), Lahore, Pakistan. He is passionate about Artificial Intelligence, Machine Learning, Data Science, Automation, and Software Development. Talha enjoys solving real-world problems by combining analytical thinking with practical programming skills. His goal is to become a highly skilled Machine Learning Engineer or Data Scientist capable of building intelligent systems that create real-world impact.
+Traceback (most recent call last):
+  File "C:\Users\talha\Documents\myPortfolio\app.py", line 179, in chat_proxy
+    response_payload = json.loads(raw_body)
+  File "C:\Users\talha\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\talha\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\talha\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:27:40] "[35m[1mPOST /api/chat HTTP/1.1[0m" 502 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\talha\\Documents\\myPortfolio\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 131-956-585
+INFO:werkzeug: * Detected change in 'C:\\Users\\talha\\Documents\\myPortfolio\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 131-956-585
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:34:36] "GET /projects.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:34:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:34:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:34:37] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:34:37] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:34:45] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 19:35:12] "POST /api/chat HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 131-956-585
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 20:12:24] "GET /projects.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 20:12:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 20:12:25] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 20:12:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 20:12:25] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:app:POST /api/chat received
+ERROR:app:Invalid JSON from chatbot service: 
+Traceback (most recent call last):
+  File "C:\Users\talha\Documents\myPortfolio\app.py", line 179, in chat_proxy
+    response_payload = json.loads(raw_body)
+  File "C:\Users\talha\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\talha\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\talha\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 20:12:36] "[35m[1mPOST /api/chat HTTP/1.1[0m" 502 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 448-211-676
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 21:58:46] "GET /contact.html HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 21:58:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 21:58:47] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 21:58:48] "[36mGET /static/assets/chatbot.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 21:58:48] "[36mGET /static/assets/chatbot.js HTTP/1.1[0m" 304 -
+INFO:app:POST /api/chat received
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 21:58:53] "POST /api/chat HTTP/1.1" 200 -
+INFO:app:POST /api/chat received
+INFO:werkzeug:127.0.0.1 - - [21/Jul/2026 21:59:16] "POST /api/chat HTTP/1.1" 200 -

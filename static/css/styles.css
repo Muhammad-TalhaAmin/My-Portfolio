@@ -988,3 +988,16 @@ body.light .btn-ghost {
     margin-top: 6px;
     font-size: 0.9rem;
 }
+.cursor{
+    animation:blink .8s infinite;
+}
+
+@keyframes blink{
+
+50%{
+
+opacity:0;
+
+}
+
+}
