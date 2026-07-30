@@ -1,3 +1,7 @@
 portfolio.jpg
 node_modules/
 .env
+instance/
+portfolio.log
+__pycache__/
+*.pyc

@@ -115,7 +115,7 @@ Some planned improvements include:
 ## Repository
 
 GitHub Repository:
-https://github.com/Muhammad-TalhaAmin/<portfolio-repository>
+https://github.com/Muhammad-TalhaAmin/My-Portfolio
 
 If a user asks to see the source code, GitHub repository, or implementation details of this project, provide the repository link above.
 ---

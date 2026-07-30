@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin – Contact Messages</title>
+    <script>
+      (function () {
+        const storedTheme = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = storedTheme || (prefersDark ? "dark" : "light");
+        const isLight = theme === "light";
+        document.documentElement.classList.toggle("light", isLight);
+        document.documentElement.setAttribute("data-theme", theme);
+        document.documentElement.style.backgroundColor = isLight ? "#f8fafc" : "#050816";
+        document.documentElement.style.color = isLight ? "#0f172a" : "#f9fafb";
+      })();
+    </script>
+    <style>
+      html {
+        background-color: #050816;
+        color: #f9fafb;
+      }
+      html.light {
+        background-color: #f8fafc;
+        color: #0f172a;
+      }
+      body {
+        opacity: 0;
+        transition: opacity 120ms ease;
+      }
+      html.ready body {
+        opacity: 1;
+      }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+  </head>
+  <body>
+    <div class="bg-gradient"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <header class="header">
+      <div class="logo">{ T<span>A }</span></div>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <span class="toggle-thumb"></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="admin-header">
+          <div>
+            <h1 class="section-title">Contact Messages</h1>
+            <p class="section-subtitle">All submissions from the contact form.</p>
+          </div>
+          <a href="{{ url_for('admin_logout') }}" class="btn btn-ghost btn-logout">Logout</a>
+        </div>
+
+        {% if messages %}
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Subject</th>
+                <th>Message</th>
+                <th>Date / Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for msg in messages %}
+              <tr>
+                <td>{{ msg.name }}</td>
+                <td><a href="mailto:{{ msg.email }}">{{ msg.email }}</a></td>
+                <td>{{ msg.subject }}</td>
+                <td class="message-text">{{ msg.message }}</td>
+                <td class="nowrap">{{ msg.created_at.strftime('%b %d, %Y %I:%M %p') if msg.created_at else 'N/A' }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        {% else %}
+        <div class="admin-empty">
+          <p>No contact messages yet.</p>
+        </div>
+        {% endif %}
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Talha Amin. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>

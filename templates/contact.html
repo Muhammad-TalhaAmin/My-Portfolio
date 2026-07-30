@@ -12,8 +12,8 @@
         const isLight = theme === "light";
         document.documentElement.classList.toggle("light", isLight);
         document.documentElement.setAttribute("data-theme", theme);
-        document.documentElement.style.backgroundColor = isLight ? "#f7f4ee" : "#050816";
-        document.documentElement.style.color = isLight ? "#111827" : "#f9fafb";
+        document.documentElement.style.backgroundColor = isLight ? "#f8fafc" : "#050816";
+        document.documentElement.style.color = isLight ? "#0f172a" : "#f9fafb";
       })();
     </script>
     <style>
@@ -22,8 +22,8 @@
         color: #f9fafb;
       }
       html.light {
-        background-color: #f7f4ee;
-        color: #111827;
+        background-color: #f8fafc;
+        color: #0f172a;
       }
       body {
         opacity: 0;
@@ -151,16 +151,17 @@
             <h2>Contact Details</h2>
             <ul>
               <li><strong>Name:</strong> Muhammad Talha Amin</li>
-              <li><strong>Email:</strong> talhaamin741@gmail.com</li>
-              <li><strong>Phone:</strong> +92 370 6172268</li>
+              <li><strong>Email:</strong> <a href="mailto:talhaamin741@gmail.com">talhaamin741@gmail.com
+              </a></li>
+              <li><strong>Phone:</strong> <a href="tel:+923706172268">+92 370 6172268</a></li>
               <li><strong>Location:</strong> Lahore, Pakistan</li>
             </ul>
 
             <h3>Social</h3>
             <ul class="social-list">
-              <li><a href="https://www.linkedin.com/in/talha-amin-1a3785288/" target="_blank" rel="noreferrer">LinkedIn</a></li>
-              <li><a href="https://github.com/Muhammad-TalhaAmin" target="_blank" rel="noreferrer">GitHub</a></li>
-              <li><a href="{{ url_for('static', filename='assets/Muhammad_Talha_Amin_CV.pdf') }}" target="_blank" rel="noreferrer">Resume</a></li>
+              <li><a href="https://www.linkedin.com/in/talha-amin-1a3785288/" target="_blank" rel="noreferrer"><img src="{{ url_for('static', filename='assets/linkedin-logo.png') }}" alt="LinkedIn" height="25" width="25" /> LinkedIn</a></li>
+              <li><a href="https://github.com/Muhammad-TalhaAmin" target="_blank" rel="noreferrer"><img src="{{ url_for('static', filename='assets/github_logo.png') }}" height="25" width="25" alt="GitHub" />  GitHub</a></li>
+              <li><a href="{{ url_for('static', filename='assets/Muhammad_Talha_Amin_CV.pdf') }}" target="_blank" rel="noreferrer"><img src="{{ url_for('static', filename='assets/Resume_icon.png') }}" alt="Resume" height="25" width="25" />  Resume</a></li>
             </ul>
           </div>
         </div>
