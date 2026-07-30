@@ -26,14 +26,13 @@ instance/
 # Python cache
 .pytest_cache/
 .mypy_cache/
-
+static/portfolio.jpg
 # VS Code
 .vscode/
-
+portfolio.log
 # Node
 chatbot/node_modules/
 npm-debug.log*
-portfolio.log
 # OS
 .DS_Store
 Thumbs.db
