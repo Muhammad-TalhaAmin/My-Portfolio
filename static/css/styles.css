@@ -31,16 +31,35 @@
 
 :root.light,
 body.light {
-  --bg: #f8fafc;
-  --bg-alt: #f1f5f9;
+  --bg: #ffffff;
+  --bg-alt: #f8fafc;
   --text: #0f172a;
   --muted: #475569;
-  --accent: #4f46e5;
-  --accent-soft: rgba(79, 70, 229, 0.1);
-  --accent-strong: rgba(79, 70, 229, 0.18);
+  --accent: #6d28d9;
+  --accent-soft: rgba(109, 40, 217, 0.1);
+  --accent-strong: rgba(109, 40, 217, 0.18);
   --card: rgba(255, 255, 255, 0.94);
   --border-subtle: rgba(148, 163, 184, 0.22);
   --shadow-soft: 0 20px 44px rgba(15, 23, 42, 0.07);
+
+  --emerald: #059669;
+  --emerald-soft: rgba(5, 150, 105, 0.2);
+  --emerald-light: rgba(5, 150, 105, 0.05);
+  --purple: #7c3aed;
+  --purple-soft: rgba(124, 58, 237, 0.2);
+  --purple-light: rgba(124, 58, 237, 0.04);
+  --terracotta: #c1694f;
+  --terracotta-soft: rgba(193, 105, 79, 0.2);
+  --terracotta-light: rgba(193, 105, 79, 0.05);
+  --amber: #d97706;
+  --amber-soft: rgba(217, 119, 6, 0.2);
+  --amber-light: rgba(217, 119, 6, 0.05);
+  --sage: #84a98c;
+  --sage-soft: rgba(132, 169, 140, 0.2);
+  --burgundy: #722f37;
+  --burgundy-soft: rgba(114, 47, 55, 0.2);
+  --gold: #b8860b;
+  --gold-soft: rgba(184, 134, 11, 0.2);
 }
 
 /* ================= BODY ================= */
@@ -55,11 +74,12 @@ body {
 }
 
 body.light {
-  background-image:
-    radial-gradient(circle at top left, rgba(99, 102, 241, 0.06), transparent 40%),
-    radial-gradient(circle at bottom right, rgba(79, 70, 229, 0.04), transparent 35%),
-    linear-gradient(180deg, #ffffff 0%, #f8fafc 50%, #f1f5f9 100%);
-  background-attachment: fixed;
+  background: #ffffff;
+}
+
+body.light .bg-gradient,
+body.light .bg-glow {
+  display: none;
 }
 
 /* ================= BACKGROUND EFFECTS ================= */
@@ -399,6 +419,78 @@ body.light .section-alt {
   border-color: rgba(148, 163, 184, 0.18);
 }
 
+/* ================= LIGHT MODE SECTION ACCENTS ================= */
+body.light .section::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+  opacity: 0.85;
+}
+
+body.light .section:has(.hero-content) {
+  --section-accent: var(--emerald);
+}
+body.light .section:has(.hero-content)::before {
+  background: var(--section-accent);
+}
+body.light .section:has(.hero-content) {
+  background: linear-gradient(135deg, var(--emerald-light), rgba(255,255,255,0.92) 60%);
+}
+
+body.light .section-alt:has(.projects-grid) {
+  --section-accent: var(--amber);
+}
+body.light .section-alt:has(.projects-grid)::before {
+  background: var(--section-accent);
+}
+body.light .section-alt:has(.projects-grid) {
+  background: linear-gradient(135deg, var(--amber-light), rgba(255,255,255,0.92) 60%);
+}
+
+body.light .skills-section {
+  --section-accent: var(--sage);
+}
+body.light .skills-section::before {
+  background: var(--section-accent);
+}
+body.light .skills-section {
+  background: linear-gradient(135deg, var(--sage-soft), rgba(255,255,255,0.92) 60%);
+}
+
+body.light .section:has(.about-layout) {
+  --section-accent: var(--purple);
+}
+body.light .section:has(.about-layout)::before {
+  background: var(--section-accent);
+}
+body.light .section:has(.about-layout) {
+  background: linear-gradient(135deg, var(--purple-light), rgba(255,255,255,0.92) 60%);
+}
+
+body.light .section:has(.contact-layout) {
+  --section-accent: var(--burgundy);
+}
+body.light .section:has(.contact-layout)::before {
+  background: var(--section-accent);
+}
+body.light .section:has(.contact-layout) {
+  background: linear-gradient(135deg, var(--burgundy-soft), rgba(255,255,255,0.92) 60%);
+}
+
+body.light .section:has(.projects-gallery) {
+  --section-accent: var(--terracotta);
+}
+body.light .section:has(.projects-gallery)::before {
+  background: var(--section-accent);
+}
+body.light .section:has(.projects-gallery) {
+  background: linear-gradient(135deg, var(--terracotta-light), rgba(255,255,255,0.92) 60%);
+}
+
 /* Section heading wrapper */
 .section-header {
   max-width: 680px;
@@ -437,7 +529,7 @@ body {
 }
 
 body.light .hero-kicker {
-  color: #4f46e5;
+  color: #6d28d9;
   font-weight: 600;
 }
 
@@ -598,6 +690,116 @@ body.light .field textarea {
   box-shadow: 0 14px 32px rgba(99, 102, 241, 0.22);
 }
 
+/* ================= LIGHT MODE CARD ACCENTS ================= */
+body.light .project-card {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,255,255,0.88));
+}
+
+body.light .project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 18px 18px 0 0;
+  opacity: 0.7;
+  transition: opacity var(--transition-fast);
+}
+
+body.light .project-card:hover::before {
+  opacity: 1;
+}
+
+body.light .project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px var(--card-accent-shadow, rgba(124, 58, 237, 0.2));
+  border-color: var(--card-accent, rgba(139, 92, 246, 0.5));
+}
+
+body.light .section-alt:has(.projects-grid) .project-card:nth-child(4n+1) {
+  --card-accent: var(--emerald);
+  --card-accent-shadow: rgba(5, 150, 105, 0.2);
+}
+body.light .section-alt:has(.projects-grid) .project-card:nth-child(4n+1)::before {
+  background: var(--card-accent);
+}
+body.light .section-alt:has(.projects-grid) .project-card:nth-child(4n+2) {
+  --card-accent: var(--purple);
+  --card-accent-shadow: rgba(124, 58, 237, 0.2);
+}
+body.light .section-alt:has(.projects-grid) .project-card:nth-child(4n+2)::before {
+  background: var(--card-accent);
+}
+body.light .section-alt:has(.projects-grid) .project-card:nth-child(4n+3) {
+  --card-accent: var(--amber);
+  --card-accent-shadow: rgba(217, 119, 6, 0.2);
+}
+body.light .section-alt:has(.projects-grid) .project-card:nth-child(4n+3)::before {
+  background: var(--card-accent);
+}
+body.light .section-alt:has(.projects-grid) .project-card:nth-child(4n+4) {
+  --card-accent: var(--terracotta);
+  --card-accent-shadow: rgba(193, 105, 79, 0.2);
+}
+body.light .section-alt:has(.projects-grid) .project-card:nth-child(4n+4)::before {
+  background: var(--card-accent);
+}
+
+body.light .projects-gallery .project-card:nth-child(4n+1) {
+  --card-accent: var(--emerald);
+  --card-accent-shadow: rgba(5, 150, 105, 0.2);
+}
+body.light .projects-gallery .project-card:nth-child(4n+1)::before {
+  background: var(--card-accent);
+}
+body.light .projects-gallery .project-card:nth-child(4n+2) {
+  --card-accent: var(--purple);
+  --card-accent-shadow: rgba(124, 58, 237, 0.2);
+}
+body.light .projects-gallery .project-card:nth-child(4n+2)::before {
+  background: var(--card-accent);
+}
+body.light .projects-gallery .project-card:nth-child(4n+3) {
+  --card-accent: var(--terracotta);
+  --card-accent-shadow: rgba(193, 105, 79, 0.2);
+}
+body.light .projects-gallery .project-card:nth-child(4n+3)::before {
+  background: var(--card-accent);
+}
+body.light .projects-gallery .project-card:nth-child(4n+4) {
+  --card-accent: var(--amber);
+  --card-accent-shadow: rgba(217, 119, 6, 0.2);
+}
+body.light .projects-gallery .project-card:nth-child(4n+4)::before {
+  background: var(--card-accent);
+}
+
+body.light .skills-section .project-card {
+  --card-accent: var(--sage);
+  --card-accent-shadow: rgba(132, 169, 140, 0.2);
+}
+body.light .skills-section .project-card::before {
+  background: var(--card-accent);
+}
+body.light .skills-section .project-card {
+  background: linear-gradient(135deg, var(--sage-soft), rgba(255,255,255,0.92) 70%);
+}
+
+body.light .project-card:nth-child(4n+1) {
+  background: linear-gradient(135deg, var(--emerald-light), rgba(255,255,255,0.92) 70%);
+}
+body.light .project-card:nth-child(4n+2) {
+  background: linear-gradient(135deg, var(--purple-light), rgba(255,255,255,0.92) 70%);
+}
+body.light .project-card:nth-child(4n+3) {
+  background: linear-gradient(135deg, var(--terracotta-light), rgba(255,255,255,0.92) 70%);
+}
+body.light .project-card:nth-child(4n+4) {
+  background: linear-gradient(135deg, var(--amber-light), rgba(255,255,255,0.92) 70%);
+}
+
 .project-card h3,
 .project-card h2 {
   font-size: 1.08rem;
@@ -627,9 +829,9 @@ body.light .field textarea {
 body.light .project-tags li,
 body.light .pill,
 body.light .social-list a {
-  background: rgba(99, 102, 241, 0.08);
-  color: #4f46e5;
-  border: 1px solid rgba(99, 102, 241, 0.15);
+  background: rgba(124, 58, 237, 0.08);
+  color: #6d28d9;
+  border: 1px solid rgba(124, 58, 237, 0.15);
   font-weight: 600;
 }
 
@@ -641,7 +843,7 @@ body.light .social-list a {
 }
 
 body.light .project-link {
-  color: #4f46e5;
+  color: #6d28d9;
 }
 
 .project-link:hover {
@@ -887,6 +1089,15 @@ body.light .field textarea {
   box-shadow: 0 18px 34px rgba(99, 102, 241, 0.36);
 }
 
+body.light .btn-primary {
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 50%, #059669 100%);
+  box-shadow: 0 14px 30px rgba(124, 58, 237, 0.28);
+}
+
+body.light .btn-primary:hover {
+  box-shadow: 0 18px 34px rgba(124, 58, 237, 0.36);
+}
+
 .btn-ghost {
   color: var(--text);
   background: rgba(255, 255, 255, 0.06);
@@ -1025,12 +1236,12 @@ a[href^="tel:"]:hover {
 
 body.light a[href^="mailto:"],
 body.light a[href^="tel:"] {
-    color: #4f46e5;
+    color: #6d28d9;
 }
 
 body.light a[href^="mailto:"]:hover,
 body.light a[href^="tel:"]:hover {
-    color: #4338ca;
+    color: #5b21b6;
 }
 
 /* ================= ADMIN LOGIN ================= */
@@ -1133,7 +1344,7 @@ body.light a[href^="tel:"]:hover {
 }
 
 body.light .admin-table a[href^="mailto:"] {
-  color: #4f46e5;
+  color: #6d28d9;
 }
 
 .admin-empty {
@@ -1379,4 +1590,7 @@ body.light .btn-logout {
   .admin-card {
     padding: 18px 16px;
   }
+}
+.chatbot-logo {
+    border-radius: 50%;
 }

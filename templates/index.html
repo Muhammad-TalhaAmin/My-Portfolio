@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Talha Amin - Data Scientist</title>
     <script>
       (function () {
         const storedTheme = localStorage.getItem("theme");
@@ -35,6 +35,19 @@
     </style>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='assets/chatbot.css') }}" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="34x34"
+          href="{{ url_for('static', filename='assets/favicon.png') }}">
+
+    <link rel="icon" type="image/png" sizes="18x18"
+          href="{{ url_for('static', filename='assets/favicon.png') }}">
+
+    <!-- Apple devices -->
+    <link rel="apple-touch-icon"
+          href="{{ url_for('static', filename='assets/favicon.png') }}">
+
+    <!-- Browser theme color -->
+  <meta name="theme-color" content="#0F172A">
   </head>
   <body>
     <div class="cursor-dot"></div>
@@ -161,7 +174,7 @@
       </div>
 
       <button class="chatbot-toggle" aria-label="Open AI assistant" aria-expanded="false">
-        <span class="chatbot-toggle-icon">🤖</span>
+        <span class="chatbot-toggle-icon"><img src="{{ url_for('static', filename='assets/favicon.png') }}" alt="AI Assistant" height="40" width="40" class="chatbot-logo"/></span>
         <span class="chatbot-toggle-label">Ask Talha AI</span>
       </button>
     </div>
