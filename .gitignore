@@ -1,7 +1,39 @@
-portfolio.jpg
 node_modules/
 .env
 instance/
 portfolio.log
 __pycache__/
 *.pyc
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+
+# Flask instance
+instance/
+
+# Logs
+*.log
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+
+# VS Code
+.vscode/
+
+# Node
+chatbot/node_modules/
+npm-debug.log*
+portfolio.log
+# OS
+.DS_Store
+Thumbs.db
