@@ -159,6 +159,18 @@ def create_app() -> Flask:
     @app.route("/.well-known/security.txt")
     def security():
         return send_from_directory(".well-known", "security.txt")
+    @app.route("/robots.txt")
+    def robots():
+        return send_from_directory(app.static_folder, "robots.txt")
+    @app.route("/sitemap.xml")
+    def sitemap():
+        return send_from_directory(app.static_folder, "sitemap.xml")
+    @app.route("/humans.txt")
+    def humans():
+        return send_from_directory(app.static_folder, "humans.txt")
+    @app.route("/manifest.webmanifest")
+    def manifest():
+        return send_from_directory(app.static_folder, "manifest.webmanifest")
     @app.route("/admin/login", methods=["GET", "POST"])
     def admin_login():
         if session.get("admin_logged_in"):

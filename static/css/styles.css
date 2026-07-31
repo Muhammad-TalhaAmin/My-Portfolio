@@ -512,6 +512,22 @@ body.light .section:has(.projects-gallery) {
   max-width: 660px;
 }
 
+/* Error pages (404 / 500) */
+.error-layout {
+  text-align: center;
+  padding: 48px 16px;
+}
+.error-layout .section-title {
+  font-size: clamp(3rem, 8vw, 5rem);
+  margin-bottom: 12px;
+}
+.error-layout .section-subtitle {
+  margin: 0 auto 28px;
+}
+.error-layout .btn {
+  display: inline-flex;
+}
+
 /* ================= TYPOGRAPHY & CONTENT FLOW ================= */
 body {
   line-height: 1.6;
