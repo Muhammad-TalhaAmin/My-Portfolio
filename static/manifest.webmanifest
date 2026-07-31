@@ -1,0 +1,15 @@
+{
+  "name": "Muhammad Talha Amin Portfolio",
+  "short_name": "Talha Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/static/images/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

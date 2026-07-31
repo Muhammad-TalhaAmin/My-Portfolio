@@ -15,6 +15,8 @@ import subprocess
 import atexit
 import time
 import requests
+from flask import send_from_directory
+
 logging.basicConfig(
     filename="portfolio.log",
     level=logging.INFO
@@ -154,6 +156,9 @@ def create_app() -> Flask:
 
         return render_template("contact.html", form=form)
     # Admin login
+    @app.route("/.well-known/security.txt")
+    def security():
+        return send_from_directory(".well-known", "security.txt")
     @app.route("/admin/login", methods=["GET", "POST"])
     def admin_login():
         if session.get("admin_logged_in"):
