@@ -1,6 +1,6 @@
 Portfolio Website (Flask)
 
-This portfolio is now served as a Flask application while preserving the existing UI, layout, responsiveness, animations, and chatbot front-end behavior.
+The portfolio is now served as a Flask application while preserving the existing UI, layout, responsiveness, animations, and chatbot front-end behavior.
 
 ## Run locally
 
