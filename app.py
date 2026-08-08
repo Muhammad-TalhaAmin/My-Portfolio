@@ -10,12 +10,12 @@ from flask_limiter.util import get_remote_address
 import logging
 from flask_talisman import Talisman
 import os
+import json
 from dotenv import load_dotenv
-import subprocess
-import atexit
-import time
 import requests
 from flask import send_from_directory
+from services.chatbot import service as chatbot
+from services.chatbot import router as knowledge_router
 
 logging.basicConfig(
     filename="portfolio.log",
@@ -39,9 +39,6 @@ class ContactForm(FlaskForm):
     message = TextAreaField("Message", validators=[DataRequired(message="Please Enter Your Message"), Length(max=250, min=10, message="Message must be between 10 and 250 characters")])
 def create_app() -> Flask:
     app = Flask(__name__, template_folder="templates", static_folder="static",instance_relative_config=True)
-    app.config["CHATBOT_API_URL"] = os.getenv(
-        "CHATBOT_API_URL", "http://localhost:3001/api/chat"
-    )
     app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
     app.config["TURNSTILE_SECRET_KEY"] = os.getenv("TURNSTILE_SECRET_KEY")
     app.config["ADMIN_EMAIL"] = os.getenv("ADMIN_EMAIL")
@@ -209,76 +206,77 @@ def create_app() -> Flask:
         session.pop("admin_logged_in", None)
         return redirect(url_for("admin_login"))
 
-    # Chatbot proxy route
+    # Chatbot route (Python service -> Groq)
     @app.route("/api/chat", methods=["POST"])
     def chat_proxy():
         payload = request.get_json(silent=True)
         app.logger.info("POST /api/chat received")
 
         if not payload or "message" not in payload:
-            app.logger.error("Invalid /api/chat body: %s", payload)
+            app.logger.error("Invalid /api/chat body")
             return jsonify({"error": "Invalid request body"}), 400
 
-        upstream_payload = {
-            "message": payload["message"],
-            "history": payload.get("history", []),
-        }
+        message = payload.get("message")
+        history = payload.get("history", [])
 
-        # Ask the Node service to stream the reply back as SSE so the
-        # browser can render it token-by-token instead of waiting for the
-        # full response to be generated.
+        validation_error = chatbot.validate_message(message)
+        if validation_error:
+            return jsonify({"error": validation_error}), 400
+
+        trimmed_message = message.strip()
+        safe_history = chatbot.sanitize_history(history)
+        wants_stream = (
+            request.args.get("stream") == "1"
+            or request.headers.get("Accept") == "text/event-stream"
+        )
+
+        context = ""
         try:
-            upstream = requests.post(
-                app.config["CHATBOT_API_URL"],
-                json=upstream_payload,
-                params={"stream": "1"},
-                headers={"Accept": "text/event-stream"},
-                stream=True,
-                timeout=(5, 60),
-            )
-        except requests.exceptions.RequestException as err:
-            app.logger.exception("Chatbot service unavailable: %r", err)
-            return jsonify({"error": "Chatbot service unavailable"}), 502
+            context = knowledge_router.build_context(trimmed_message, safe_history)
+        except Exception:
+            # Missing/unreadable knowledge files shouldn't crash the request —
+            # fall back to the model's general knowledge only.
+            app.logger.exception("Knowledge load error")
 
-        if upstream.status_code >= 400:
-            app.logger.error(
-                "Chatbot upstream error: status=%s", upstream.status_code
-            )
-            try:
-                error_body = upstream.json()
-            except ValueError:
-                error_body = {"error": f"Chatbot upstream error: {upstream.status_code}"}
-            upstream.close()
-            return jsonify(error_body), upstream.status_code
+        system_prompt = chatbot.build_system_prompt(context)
 
-        def relay():
+        # Default JSON path — preserves the original response contract for any
+        # caller that doesn't explicitly ask for a stream.
+        if not wants_stream:
             try:
-                for chunk in upstream.iter_content(chunk_size=None):
-                    if chunk:
-                        yield chunk
-            except requests.exceptions.RequestException as err:
-                app.logger.exception("Streaming interrupted: %r", err)
-            finally:
-                upstream.close()
+                reply = chatbot.ask_ai(system_prompt, trimmed_message, safe_history)
+                return jsonify({"reply": reply})
+            except chatbot.ChatbotError as err:
+                app.logger.exception("Chat error: %s", err.message)
+                return jsonify({"error": err.message}), 502
+            except Exception:
+                app.logger.exception("Chat error")
+                return jsonify({"error": chatbot.DEFAULT_ERROR_MESSAGE}), 502
+
+        # Streaming (SSE) path — tokens are forwarded to the browser so the
+        # chat widget can render them as they arrive.
+        def stream():
+            try:
+                for token in chatbot.stream_ai(
+                    system_prompt, trimmed_message, safe_history
+                ):
+                    yield f"data: {json.dumps({'token': token})}\n\n"
+                yield f"data: {json.dumps({'done': True})}\n\n"
+            except chatbot.ChatbotError as err:
+                app.logger.error("Streaming error: %s", err.message)
+                yield f"data: {json.dumps({'error': err.message})}\n\n"
+            except Exception:
+                app.logger.exception("Streaming error")
+                yield f"data: {json.dumps({'error': chatbot.DEFAULT_ERROR_MESSAGE})}\n\n"
 
         return Response(
-            relay(),
+            stream(),
             mimetype="text/event-stream",
             headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
         )
 
     return app
-chatbot_process = subprocess.Popen(
-    ["npm", "start"],
-    cwd="chatbot",
-    shell=True
-)
 
-# Give the chatbot a few seconds to start
-time.sleep(3)
-
-# Stop the chatbot when Flask exits
-atexit.register(chatbot_process.terminate)
 app = create_app()
 
 if __name__ == "__main__":

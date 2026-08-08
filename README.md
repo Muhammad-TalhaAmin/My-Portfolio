@@ -4,13 +4,12 @@ The portfolio is now served as a Flask application while preserving the existing
 
 ## Run locally
 
-1. Install dependencies once:
-   - `pip install flask`
-   - in `chatbot/`: `npm install`
-2. Start both Flask + chatbot from the project root with one command:
-   - `start-dev.bat`
-   - (This runs chatbot on an internal port and wires Flask automatically.)
-3. Open:
+1. Install dependencies:
+   - `pip install -r requirements.txt`
+2. Copy `.env.example` to `.env` and fill in your values (including `GROQ_API_KEY`).
+3. Start the app from the project root:
+   - `python app.py` (or `start-dev.bat` on Windows)
+4. Open:
    - `http://127.0.0.1:5000`
 
 ## Routes
