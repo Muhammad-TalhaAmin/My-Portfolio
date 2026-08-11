@@ -1197,8 +1197,11 @@ body.light .footer {
   main {
     padding-inline: 16px;
   }
+
+  /* Keep Featured Projects in the desktop-style 2-column layout */
   .projects-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
   }
   .hero-title {
     font-size: 28px;
@@ -1438,8 +1441,9 @@ body.light .btn-logout {
     font-size: 0.92rem;
   }
 
+  /* Keep the desktop-style two-column stats layout on phones */
   .hero-stats {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
   }
 
@@ -1470,7 +1474,13 @@ body.light .btn-logout {
   }
 
   .project-card {
-    padding: 16px;
+    padding: 14px;
+    gap: 8px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
   }
 
   .contact-form .btn {
@@ -1579,6 +1589,16 @@ body.light .btn-logout {
 }
 
 @media (max-width: 360px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .project-card {
+    padding: 10px;
+    gap: 6px;
+  }
+
   .header {
     padding: 10px 10px 0;
   }
