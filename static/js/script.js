@@ -193,9 +193,3 @@ if (statNumbers.length) {
 
   statNumbers.forEach((el) => statsObserver.observe(el));
 }
-
-// ================= CONTACT FORM (DEMO) =================
-
-// Select contact form
-const contactForm = document.querySelector(".contact-form");
-

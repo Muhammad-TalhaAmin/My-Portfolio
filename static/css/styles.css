@@ -133,61 +133,6 @@ body.light .bg-glow {
   animation-delay: -6s;           /* Delay animation */
 }
 
-/* ================= PRELOADER ================= */
-/* Full-screen loading screen */
-#preloader {
-  position: fixed;
-  inset: 0;                       /* Full screen */
-  background: radial-gradient(circle at top, #020617 0, #020617 40%, #020617ef 100%);
-  display: flex;                  /* Center loader */
-  align-items: center;
-  justify-content: center;
-  z-index: 999;                   /* On top of all */
-  transition: opacity 0.4s ease, visibility 0.4s ease; /* Smooth hide */
-}
-
-/* Hide preloader after load */
-#preloader.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-/* Loader container */
-.loader-orbit {
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-
-/* Loader rings */
-.loader-orbit span {
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #6366f1;      /* Top border color */
-  animation: spinOrbit 1.6s linear infinite; /* Rotation */
-}
-
-/* Second ring style */
-.loader-orbit span:nth-child(2) {
-  border-top-color: #22d3ee;
-  border-bottom-color: transparent;
-  animation-direction: reverse;
-}
-
-/* Third ring smaller */
-.loader-orbit span:nth-child(3) {
-  border-top-color: #f97316;
-  inset: 8px;
-}
-
-/* Fourth ring smallest */
-.loader-orbit span:nth-child(4) {
-  border-top-color: #a855f7;
-  inset: 16px;
-}
-
 /* ================= CUSTOM CURSOR ================= */
 .cursor-dot,
 .cursor-outline {
@@ -213,6 +158,15 @@ body.light .bg-glow {
   border: 1px solid rgba(209, 213, 219, 0.6);
   backdrop-filter: blur(8px);
   opacity: 0.35;
+}
+
+/* Touch devices have no mouse to track, so the dot/ring never move off
+   their default position. Hide them rather than leave a stray artifact. */
+@media (hover: none) and (pointer: coarse) {
+  .cursor-dot,
+  .cursor-outline {
+    display: none;
+  }
 }
 
 /* ================= HEADER ================= */
@@ -539,9 +493,9 @@ body {
 
 .hero-kicker {
   font-size: 13px;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #c7d2fe;
+  color: #e5e7eb;
 }
 
 body.light .hero-kicker {
@@ -549,10 +503,13 @@ body.light .hero-kicker {
   font-weight: 600;
 }
 
+/* Fluid sizing: scales smoothly with viewport instead of stepping
+   through several fixed-pixel breakpoint overrides. Maxes out at
+   36px to match the site's existing desktop appearance. */
 .hero-title {
-  font-size: clamp(2rem, 4.2vw, 2.8rem);
+  font-size: clamp(1.7rem, 0.9rem + 4vw, 2.25rem);
   line-height: 1.15;
-  margin: 12px 0 14px;
+  margin: 10px 0 8px;
   color: #f9fafb;
 }
 
@@ -576,10 +533,11 @@ body.light .field label {
 }
 
 .hero-subtitle {
-  font-size: 1rem;
+  font-size: 14px;
   line-height: 1.8;
-  max-width: 620px;
+  max-width: 420px;
   margin-bottom: 24px;
+  color: #e5e7eb;
 }
 
 body.light .hero-subtitle,
@@ -826,6 +784,19 @@ body.light .project-card:nth-child(4n+4) {
   margin: 0;
 }
 
+/* Featured Projects on the home page are meant to be a short teaser
+   (the full description is one click away on the Projects page), so
+   clamp the blurb to 3 lines. Without this, a card with a longer blurb
+   (e.g. Tixora) grows much taller than its row-mate and drags the
+   whole row down with it, especially in the 2-column mobile layout. */
+.featured-projects-grid .project-card p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .project-tags {
   display: flex;
   flex-wrap: wrap;
@@ -1011,20 +982,6 @@ body.light .field textarea {
   color: var(--muted);
 }
 
-/* ================= RESPONSIVE ABOUT ================= */
-@media (max-width: 900px) {
-  .about-layout {
-    grid-template-columns: 1fr;   /* Stack columns */
-    gap: 20px;
-  }
-  .about-photo {
-    margin: 0 auto;
-  }
-  .about-photo img {
-    width: 200px;
-  }
-}
-
 /* ================= HERO SECTION ================= */
 .hero {
   display: grid;
@@ -1032,32 +989,6 @@ body.light .field textarea {
   gap: 32px;
   align-items: center;
   min-height: 360px;
-}
-
-.hero-kicker {
-  font-size: 13px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: #e5e7eb;
-}
-
-.hero-title {
-  font-size: 36px;
-  line-height: 1.15;
-  margin: 10px 0 8px;
-  color: #f9fafb;
-}
-
-/* Gradient text */
-.hero-title span {
-  background: linear-gradient(120deg, #22d3ee, #6366f1, #f97316);
-  background-clip: text;
-}
-
-.hero-subtitle {
-  font-size: 14px;
-  color: #e5e7eb;
-  max-width: 420px;
 }
 
 /* ================= BUTTONS ================= */
@@ -1177,18 +1108,67 @@ body.light .footer {
   color: #64748b;
 }
 
-/* ================= RESPONSIVE FIXES ================= */
+/* ================= RESPONSIVE (<=900px): layout stacking + mobile nav ================= */
 @media (max-width: 900px) {
+  /* --- Layout stacking --- */
   .hero,
   .about-layout,
   .contact-layout {
     grid-template-columns: minmax(0, 1fr);
   }
-  .hero-visual {
-    order: -1;                    /* Move image up */
+  .about-layout {
+    gap: 20px;
+  }
+  .about-photo {
+    margin: 0 auto;
+  }
+  .about-photo img {
+    width: 200px;
   }
   .projects-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* --- Mobile navigation --- */
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 100vh;
+    background: rgba(5, 8, 22, 0.97);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-left: 1px solid var(--border-subtle);
+    padding: 88px 28px 28px;
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 280ms ease, opacity 280ms ease;
+    z-index: 55;
+  }
+
+  body.light .nav {
+    background: rgba(248, 250, 252, 0.97);
+  }
+
+  .nav.open {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-link {
+    font-size: 16px;
   }
 }
 
@@ -1200,16 +1180,7 @@ body.light .footer {
 
   /* Keep Featured Projects in the desktop-style 2-column layout */
   .projects-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
-  }
-  .hero-title {
-    font-size: 28px;
-  }
-  /* Make paragraphs justified on small screens */
-  .about-text p {
-    text-align: justify;
-    hyphens: auto;
   }
 }
 .success-message {
@@ -1224,7 +1195,7 @@ body.light .footer {
     background: #fee2e2;
     color: #b91c1c;
     padding: 12px;
-    border-radius: 6cap;
+    border-radius: 6px;
     margin-top: 6px;
     font-size: 0.9rem;
 }
@@ -1387,60 +1358,8 @@ body.light .btn-logout {
   box-shadow: 0 4px 16px rgba(251, 113, 133, 0.2);
 }
 
-/* ================= MOBILE NAV (fix) ================= */
-@media (max-width: 900px) {
-  .nav-toggle {
-    display: flex;
-  }
-
-  .nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 260px;
-    height: 100vh;
-    background: rgba(5, 8, 22, 0.97);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border-left: 1px solid var(--border-subtle);
-    padding: 88px 28px 28px;
-    transform: translateX(100%);
-    opacity: 0;
-    pointer-events: none;
-    transition: transform 280ms ease, opacity 280ms ease;
-    z-index: 55;
-  }
-
-  body.light .nav {
-    background: rgba(248, 250, 252, 0.97);
-  }
-
-  .nav.open {
-    transform: translateX(0);
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .nav ul {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .nav-link {
-    font-size: 16px;
-  }
-}
-
 /* ================= SMALL SCREEN RESPONSIVE ================= */
 @media (max-width: 640px) {
-  .hero-title {
-    font-size: 24px;
-  }
-
-  .hero-subtitle {
-    font-size: 0.92rem;
-  }
-
   /* Keep the desktop-style two-column stats layout on phones */
   .hero-stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1504,10 +1423,6 @@ body.light .btn-logout {
 }
 
 @media (max-width: 480px) {
-  .hero-title {
-    font-size: 22px;
-  }
-
   .hero-kicker {
     font-size: 11px;
   }
@@ -1609,10 +1524,6 @@ body.light .btn-logout {
 
   .section {
     padding: 16px 14px 20px;
-  }
-
-  .hero-title {
-    font-size: 18px;
   }
 
   .hero-kicker {
