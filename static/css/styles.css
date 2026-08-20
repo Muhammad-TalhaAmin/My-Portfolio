@@ -216,6 +216,21 @@ body.light #theme-toggle {
   display: block;
 }
 
+/* Right-side actions (theme toggle + hamburger) stay grouped together */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Center the nav links as a group inside the header container so they
+   align with the centered hero content below it. */
+.nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* ================= NAVIGATION ================= */
 .nav ul {
   display: flex;                  /* Horizontal menu */
@@ -1229,6 +1244,7 @@ body.light .footer {
 
   .nav {
     position: fixed;
+    left: auto;
     top: 0;
     right: 0;
     width: 260px;

@@ -85,20 +85,22 @@
 
       <nav class="nav">
         <ul>
-          <li><a href="{{ url_for('home') }}" class="nav-link active">🏠Home</a></li>
-          <li><a href="{{ url_for('about') }}" class="nav-link">💻About</a></li>
-          <li><a href="{{ url_for('projects') }}" class="nav-link">🖥Projects</a></li>
-          <li><a href="{{ url_for('contact') }}" class="nav-link">📞Contact</a></li>
+          <li><a href="{{ url_for('home') }}" class="nav-link active">Home</a></li>
+          <li><a href="{{ url_for('about') }}" class="nav-link">About</a></li>
+          <li><a href="{{ url_for('projects') }}" class="nav-link">Projects</a></li>
+          <li><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
         </ul>
       </nav>
 
-      <button id="theme-toggle" aria-label="Toggle dark mode">
-        <span class="toggle-thumb"></span>
-      </button>
+      <div class="header-actions">
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+          <span class="toggle-thumb"></span>
+        </button>
 
-      <button class="nav-toggle" aria-label="Toggle menu">
-        <span></span><span></span>
-      </button>
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span>
+        </button>
+      </div>
     </header>
 
     <main>
@@ -118,7 +120,7 @@
               👁View Projects
               <span class="btn-glow"></span>
             </a>
-            <a href="{{ url_for('about') }}" class="btn btn-ghost">🧠More About Me</a>
+            <a href="{{ url_for('about') }}" class="btn btn-ghost">💬More About Me</a>
           </div>
 
           <div class="hero-stats reveal-up delay-4">
