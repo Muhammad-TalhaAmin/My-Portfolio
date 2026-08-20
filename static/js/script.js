@@ -207,3 +207,32 @@ if (statNumbers.length) {
 
   statNumbers.forEach((el) => statsObserver.observe(el));
 }
+
+// ================= READ MORE (PROJECT CARDS) =================
+
+// Add a "Read more..." toggle to card descriptions that are long enough
+// to be clamped, so every card stays compact and the same height.
+const cardDescriptions = document.querySelectorAll(".project-card > p");
+
+cardDescriptions.forEach((desc) => {
+  const moreBtn = document.createElement("button");
+  moreBtn.type = "button";
+  moreBtn.className = "card-more";
+  moreBtn.textContent = "Read more...";
+
+  const update = () => {
+    if (desc.classList.contains("is-expanded")) return;
+    const clamped = desc.scrollHeight > desc.clientHeight;
+    moreBtn.style.display = clamped ? "" : "none";
+  };
+
+  moreBtn.addEventListener("click", () => {
+    const expanded = desc.classList.toggle("is-expanded");
+    moreBtn.textContent = expanded ? "Read less" : "Read more...";
+  });
+
+  desc.insertAdjacentElement("afterend", moreBtn);
+  update();
+  window.addEventListener("resize", update);
+  window.addEventListener("load", update);
+});
