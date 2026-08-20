@@ -86,9 +86,10 @@
     bubble.appendChild(time);
 
     if (!isUser) {
-      const avatar = document.createElement('div');
+      const avatar = document.createElement('img');
       avatar.className = 'chatbot-avatar-badge';
-      avatar.textContent = 'T';
+      avatar.src = '/static/assets/favicon.png';
+      avatar.alt = 'TA';
       row.appendChild(avatar);
     }
     row.appendChild(bubble);
@@ -104,9 +105,10 @@
     const row = document.createElement('div');
     row.className = 'chatbot-message-row';
 
-    const avatar = document.createElement('div');
+    const avatar = document.createElement('img');
     avatar.className = 'chatbot-avatar-badge';
-    avatar.textContent = 'T';
+    avatar.src = '/static/assets/favicon.png';
+    avatar.alt = 'TA';
     row.appendChild(avatar);
 
     const bubble = document.createElement('div');
@@ -141,9 +143,10 @@
     const row = document.createElement('div');
     row.className = 'chatbot-message-row';
 
-    const avatar = document.createElement('div');
+    const avatar = document.createElement('img');
     avatar.className = 'chatbot-avatar-badge';
-    avatar.textContent = 'T';
+    avatar.src = '/static/assets/favicon.png';
+    avatar.alt = 'TA';
 
     const bubble = document.createElement('div');
     bubble.className = 'chatbot-bubble chatbot-typing';

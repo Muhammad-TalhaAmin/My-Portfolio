@@ -74,13 +74,13 @@
     <div class="bg-glow bg-glow-2"></div>
 
     <header class="header">
-      <div class="logo">{ T<span>A }</span></div>
+      <div class="logo"><img src="{{ url_for('static', filename='assets/favicon.png') }}" alt="TA" /></div>
 
       <nav class="nav">
         <ul>
-          <li><a href="{{ url_for('home') }}" class="nav-link active">🏠Home</a></li>
+          <li><a href="{{ url_for('home') }}" class="nav-link">🏠Home</a></li>
           <li><a href="{{ url_for('about') }}" class="nav-link">💻About</a></li>
-          <li><a href="{{ url_for('projects') }}" class="nav-link">🖥Projects</a></li>
+          <li><a href="{{ url_for('projects') }}" class="nav-link active">🖥Projects</a></li>
           <li><a href="{{ url_for('contact') }}" class="nav-link">📞Contact</a></li>
         </ul>
       </nav>
@@ -99,7 +99,7 @@
         <div class="section-header">
           <h1 class="section-title reveal-up">Projects</h1>
           <p class="section-subtitle reveal-up delay-1">
-            A focused collection of Python, automation, and data science projects from my CV and growing portfolio.
+            A focused collection of <a class="text-link" href="https://www.python.org" target="_blank" rel="noreferrer">Python</a>, automation, and data science projects from my CV and growing portfolio.
           </p>
         </div>
 
@@ -114,11 +114,11 @@
           <div class="projects-grid">
             <article class="project-card reveal-fade delay-1">
               <h3>Programming & Data Science</h3>
-              <p>Python, Data Structures, Pandas, NumPy, Matplotlib, Scikit-learn.</p>
+              <p><a class="text-link" href="https://www.python.org" target="_blank" rel="noreferrer">Python</a>, Data Structures, <a class="text-link" href="https://pandas.pydata.org" target="_blank" rel="noreferrer">Pandas</a>, <a class="text-link" href="https://numpy.org" target="_blank" rel="noreferrer">NumPy</a>, <a class="text-link" href="https://matplotlib.org" target="_blank" rel="noreferrer">Matplotlib</a>, <a class="text-link" href="https://scikit-learn.org" target="_blank" rel="noreferrer">Scikit-learn</a>.</p>
             </article>
             <article class="project-card reveal-fade delay-2">
               <h3>Development & Technical</h3>
-              <p>HTML, CSS, JavaScript (basic), UI/UX design fundamentals, C++, debugging & optimization.</p>
+              <p><a class="text-link" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer">HTML</a>, <a class="text-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer">CSS</a>, <a class="text-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">JavaScript</a> (basic), UI/UX design fundamentals, <a class="text-link" href="https://en.cppreference.com" target="_blank" rel="noreferrer">C++</a>, debugging & optimization.</p>
             </article>
             <article class="project-card reveal-fade delay-3">
               <h3>Tools & Concepts</h3>
@@ -134,11 +134,11 @@
               An AI-powered🤖 secure event ticketing platform built as a collaborative team project. Users can discover events, purchase tickets, receive verified QR-code tickets, and organizers can manage events and review suspicious transactions. I designed and built the AI-powered Fraud Detection System and designed the official Tixora logo.
             </p>
             <ul class="project-tags">
-              <li>Python</li>
-              <li>Scikit-learn</li>
-              <li>XGBoost</li>
+              <li><a href="https://www.python.org" target="_blank" rel="noreferrer">Python</a></li>
+              <li><a href="https://scikit-learn.org" target="_blank" rel="noreferrer">Scikit-learn</a></li>
+              <li><a href="https://xgboost.readthedocs.io" target="_blank" rel="noreferrer">XGBoost</a></li>
               <li>Machine Learning</li>
-              <li>FastAPI</li>
+              <li><a href="https://fastapi.tiangolo.com" target="_blank" rel="noreferrer">FastAPI</a></li>
             </ul>
             <a href="https://tixora-lemon.vercel.app" target="_blank" rel="noreferrer" class="project-link">Live Demo</a>
           </article>
@@ -149,9 +149,9 @@
               A beginner-friendly recommendation project that explores recommendation techniques, data preprocessing, and basic machine learning in Python.
             </p>
             <ul class="project-tags">
-              <li>Python</li>
-              <li>Pandas</li>
-              <li>Scikit-learn</li>
+              <li><a href="https://www.python.org" target="_blank" rel="noreferrer">Python</a></li>
+              <li><a href="https://pandas.pydata.org" target="_blank" rel="noreferrer">Pandas</a></li>
+              <li><a href="https://scikit-learn.org" target="_blank" rel="noreferrer">Scikit-learn</a></li>
             </ul>
             <a href="https://github.com/Muhammad-TalhaAmin/Music-Recommender-Model/blob/main/music%20(2).ipynb" target="_blank" rel="noreferrer" class="project-link">Open GitHub</a>
           </article>
@@ -162,8 +162,8 @@
               An application that recreates playlists from a selected historical date using the Spotify API and improved API integration skills.
             </p>
             <ul class="project-tags">
-              <li>Python</li>
-              <li>Requests</li>
+              <li><a href="https://www.python.org" target="_blank" rel="noreferrer">Python</a></li>
+              <li><a href="https://requests.readthedocs.io" target="_blank" rel="noreferrer">Requests</a></li>
               <li>API Integration</li>
             </ul>
             <a href="https://github.com/Muhammad-TalhaAmin/Musical-Time-Machine" target="_blank" rel="noreferrer" class="project-link">Open GitHub</a>
@@ -175,8 +175,8 @@
               A desktop password manager for securely storing and retrieving credentials while learning GUI development and local data storage.
             </p>
             <ul class="project-tags">
-              <li>Python</li>
-              <li>Tkinter</li>
+              <li><a href="https://www.python.org" target="_blank" rel="noreferrer">Python</a></li>
+              <li><a href="https://docs.python.org/3/library/tkinter.html" target="_blank" rel="noreferrer">Tkinter</a></li>
               <li>JSON</li>
             </ul>
             <a href="https://github.com/Muhammad-TalhaAmin/Password-Manager-App" target="_blank" rel="noreferrer" class="project-link">Open GitHub</a>
@@ -188,8 +188,8 @@
               A browser automation script designed to simplify online gym booking and build hands-on Selenium experience.
             </p>
             <ul class="project-tags">
-              <li>Python</li>
-              <li>Selenium</li>
+              <li><a href="https://www.python.org" target="_blank" rel="noreferrer">Python</a></li>
+              <li><a href="https://www.selenium.dev" target="_blank" rel="noreferrer">Selenium</a></li>
               <li>Automation</li>
             </ul>
             <a href="https://github.com/Muhammad-TalhaAmin/GYM-Booker" target="_blank" rel="noreferrer" class="project-link">Open GitHub</a>
@@ -201,7 +201,7 @@
               A custom C++ CString library built using Object-Oriented Programming principles. The project implements dynamic string manipulation from scratch using constructors, destructors, operator overloading, and manual memory management, demonstrating a strong understanding of C++ memory management and OOP concepts.
             </p>
             <ul class="project-tags">
-              <li>C++</li>
+              <li><a href="https://en.cppreference.com" target="_blank" rel="noreferrer">C++</a></li>
               <li>Object-Oriented Programming</li>
               <li>Memory Management</li>
               <li>Data Structures</li>
@@ -215,7 +215,7 @@
               A classic Snake Game built in Python using the Turtle graphics module. Features smooth gameplay, score tracking, collision detection, keyboard controls, and a modular object-oriented architecture.
             </p>
             <ul class="project-tags">
-              <li>Python</li>
+              <li><a href="https://www.python.org" target="_blank" rel="noreferrer">Python</a></li>
               <li>Turtle Graphics</li>
               <li>Object-Oriented Programming</li>
               <li>Game Development</li>
@@ -229,7 +229,7 @@
               A two-player Pong game built in Python using the Turtle graphics module. Features paddle controls, realistic ball movement, collision detection, score tracking, and an object-oriented architecture.
             </p>
             <ul class="project-tags">
-              <li>Python</li>
+              <li><a href="https://www.python.org" target="_blank" rel="noreferrer">Python</a></li>
               <li>Turtle Graphics</li>
               <li>Object-Oriented Programming</li>
               <li>Game Development</li>
@@ -248,7 +248,7 @@
       <div class="chatbot-window" role="dialog" aria-label="AI Portfolio Assistant">
         <div class="chatbot-header">
           <div class="chatbot-header-main">
-            <div class="chatbot-avatar">{TA}</div>
+            <div class="chatbot-avatar"><img src="{{ url_for('static', filename='assets/favicon.png') }}" alt="TA" /></div>
             <div>
               <h3 class="chatbot-title">Ask Talha AI</h3>
               <p class="chatbot-subtitle">AI Portfolio Assistant</p>

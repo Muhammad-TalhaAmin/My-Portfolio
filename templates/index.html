@@ -81,7 +81,7 @@
     <div class="bg-glow bg-glow-2"></div>
 
     <header class="header">
-      <div class="logo">{ T<span>A }</span></div>
+      <div class="logo"><img src="{{ url_for('static', filename='assets/favicon.png') }}" alt="TA" /></div>
 
       <nav class="nav">
         <ul>
@@ -104,12 +104,12 @@
     <main>
       <section class="hero section" id="home">
         <div class="hero-content">
-          <p class="hero-kicker reveal-up">Data Science Undergraduate & Python Programmer<br/>Machine Learning Intern</p>
+          <p class="hero-kicker reveal-up">Data Science Undergraduate & <a class="text-link" href="https://www.python.org" target="_blank" rel="noreferrer">Python</a> Programmer<br/>Machine Learning Intern</p>
           <h1 class="hero-title reveal-up delay-1">
             Hi, I’m <span>Muhammad Talha Amin</span>.
           </h1>
           <p class="hero-subtitle reveal-up delay-2">
-            A Data Science undergraduate at <a href="https://www.pucit.edu.pk" target="_blank" rel="noreferrer">PUCIT</a> with a strong foundation in Python🐍,
+            A Data Science undergraduate at <a class="text-link" href="https://www.pucit.edu.pk" target="_blank" rel="noreferrer">PUCIT</a> with a strong foundation in <a class="text-link" href="https://www.python.org" target="_blank" rel="noreferrer">Python</a>🐍,
             data analysis, machine learning 🤖, and practical automation projects.
             I enjoy turning ideas into useful tools🛠 and learning through hands-on work.
           </p>
@@ -132,13 +132,17 @@
             </div>
           </div>
         </div>
+
+        <div class="hero-photo reveal-up delay-2">
+          <img src="{{ url_for('static', filename='assets/portfolio.png') }}" alt="Muhammad Talha Amin" />
+        </div>
       </section>
 
       <section class="section section-alt">
         <div class="section-header">
           <h2 class="section-title reveal-up">Featured Projects</h2>
           <p class="section-subtitle reveal-up delay-1">
-            A quick look at my recent data science and Python projects. Explore the full list on the Projects page.
+            A quick look at my recent data science and <a class="text-link" href="https://www.python.org" target="_blank" rel="noreferrer">Python</a> projects. Explore the full list on the Projects page.
           </p>
         </div>
 
@@ -179,7 +183,7 @@
       <div class="chatbot-window" role="dialog" aria-label="AI Portfolio Assistant">
         <div class="chatbot-header">
           <div class="chatbot-header-main">
-            <div class="chatbot-avatar">{TA}</div>
+            <div class="chatbot-avatar"><img src="{{ url_for('static', filename='assets/favicon.png') }}" alt="TA" /></div>
             <div>
               <h3 class="chatbot-title">Ask Talha AI</h3>
               <p class="chatbot-subtitle">AI Portfolio Assistant</p>

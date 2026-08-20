@@ -75,14 +75,14 @@
     <div class="bg-glow bg-glow-2"></div>
 
     <header class="header">
-      <div class="logo">{ T<span>A }</span></div>
+      <div class="logo"><img src="{{ url_for('static', filename='assets/favicon.png') }}" alt="TA" /></div>
 
      <nav class="nav">
         <ul>
-          <li><a href="{{ url_for('home') }}" class="nav-link active">🏠Home</a></li>
+          <li><a href="{{ url_for('home') }}" class="nav-link">🏠Home</a></li>
           <li><a href="{{ url_for('about') }}" class="nav-link">💻About</a></li>
           <li><a href="{{ url_for('projects') }}" class="nav-link">🖥Projects</a></li>
-          <li><a href="{{ url_for('contact') }}" class="nav-link">📞Contact</a></li>
+          <li><a href="{{ url_for('contact') }}" class="nav-link active">📞Contact</a></li>
         </ul>
       </nav>
 
@@ -208,7 +208,7 @@
       <div class="chatbot-window" role="dialog" aria-label="AI Portfolio Assistant">
         <div class="chatbot-header">
           <div class="chatbot-header-main">
-            <div class="chatbot-avatar">{TA}</div>
+            <div class="chatbot-avatar"><img src="{{ url_for('static', filename='assets/favicon.png') }}" alt="TA" /></div>
             <div>
               <h3 class="chatbot-title">Ask Talha AI</h3>
               <p class="chatbot-subtitle">AI Portfolio Assistant</p>

@@ -117,6 +117,20 @@ if (nav && navToggle) {
   navToggle.addEventListener("click", () => {
     nav.classList.toggle("open");
   });
+
+  // Close the menu when the user clicks anywhere outside it
+  document.addEventListener("click", (event) => {
+    if (!nav.classList.contains("open")) return;
+    if (nav.contains(event.target) || navToggle.contains(event.target)) return;
+    nav.classList.remove("open");
+  });
+
+  // Close the menu after clicking a link inside it
+  nav.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("open");
+    });
+  });
 }
 
 // ================= SCROLL REVEAL ANIMATION =================
