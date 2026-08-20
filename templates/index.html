@@ -85,10 +85,10 @@
 
       <nav class="nav">
         <ul>
-          <li><a href="{{ url_for('home') }}" class="nav-link active">Home</a></li>
-          <li><a href="{{ url_for('about') }}" class="nav-link">About</a></li>
-          <li><a href="{{ url_for('projects') }}" class="nav-link">Projects</a></li>
-          <li><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
+          <li><a href="{{ url_for('home') }}" class="nav-link active">🏠Home</a></li>
+          <li><a href="{{ url_for('about') }}" class="nav-link">💻About</a></li>
+          <li><a href="{{ url_for('projects') }}" class="nav-link">🖥Projects</a></li>
+          <li><a href="{{ url_for('contact') }}" class="nav-link">📞Contact</a></li>
         </ul>
       </nav>
 
@@ -104,22 +104,21 @@
     <main>
       <section class="hero section" id="home">
         <div class="hero-content">
-          <p class="hero-kicker reveal-up">Data Science Undergraduate & Python Programmer</p>
+          <p class="hero-kicker reveal-up">Data Science Undergraduate & Python Programmer<br/>Machine Learning Intern</p>
           <h1 class="hero-title reveal-up delay-1">
             Hi, I’m <span>Muhammad Talha Amin</span>.
           </h1>
           <p class="hero-subtitle reveal-up delay-2">
-            A Data Science undergraduate at PUCIT with a strong foundation in Python,
-            data analysis, machine learning, and practical automation projects.
-            I enjoy turning ideas into useful tools and learning through hands-on work.
+            A Data Science undergraduate at <a href="https://www.pucit.edu.pk" target="_blank" rel="noreferrer">PUCIT</a> with a strong foundation in Python🐍,
+            data analysis, machine learning 🤖, and practical automation projects.
+            I enjoy turning ideas into useful tools🛠 and learning through hands-on work.
           </p>
-
-          <div class="hero-cta reveal-up delay-3">
+          <div class="hero-cta reveal-up <div class="hero-cta reveal-up delay-3">
             <a href="{{ url_for('projects') }}" class="btn btn-primary">
-              View Projects
+              👁View Projects
               <span class="btn-glow"></span>
             </a>
-            <a href="{{ url_for('about') }}" class="btn btn-ghost">More About Me</a>
+            <a href="{{ url_for('about') }}" class="btn btn-ghost">🧠More About Me</a>
           </div>
 
           <div class="hero-stats reveal-up delay-4">
@@ -145,25 +144,25 @@
 
         <div class="projects-grid featured-projects-grid">
           <article class="project-card reveal-fade delay-1">
-            <h3>Tixora</h3>
-            <p>An AI-powered secure event ticketing platform with real-time fraud detection, verified QR-code tickets, and an organizer analytics dashboard.</p>
+            <h3><img src="{{ url_for('static', filename='assets/logo.jpeg') }}" alt="Tixora Logo" height="20" width="20" /> Tixora</h3>
+            <p>An AI-powered🤖 secure event ticketing platform with real-time fraud detection, verified QR-code tickets, and an organizer analytics dashboard.</p>
             <a href="https://tixora-lemon.vercel.app" target="_blank" rel="noreferrer" class="project-link">View Project</a>
           </article>
 
           <article class="project-card reveal-fade delay-2">
-            <h3>Musical Time Machine</h3>
+            <h3>🎶Musical Time Machine</h3>
             <p>An app that recreates playlists from a chosen historical date using API integration.</p>
             <a href="https://github.com/Muhammad-TalhaAmin/Musical-Time-Machine" target="_blank" rel="noreferrer" class="project-link">View Project</a>
           </article>
 
           <article class="project-card reveal-fade delay-3">
-            <h3>Password Manager</h3>
+            <h3>🔒Password Manager</h3>
             <p>A desktop tool for safely storing credentials while learning GUI development.</p>
             <a href="https://github.com/Muhammad-TalhaAmin/Password-Manager-App" target="_blank" rel="noreferrer" class="project-link">View Project</a>
           </article>
 
           <article class="project-card reveal-fade delay-4">
-            <h3>GYM Booker</h3>
+            <h3>🏋️‍♂️GYM Booker</h3>
             <p>A browser automation script that simplifies online gym booking and builds Selenium experience.</p>
             <a href="https://github.com/Muhammad-TalhaAmin/GYM-Booker" target="_blank" rel="noreferrer" class="project-link">View Project</a>
           </article>

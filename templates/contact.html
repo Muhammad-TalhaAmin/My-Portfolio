@@ -77,12 +77,12 @@
     <header class="header">
       <div class="logo">{ T<span>A }</span></div>
 
-      <nav class="nav">
+     <nav class="nav">
         <ul>
-          <li><a href="{{ url_for('home') }}" class="nav-link">Home</a></li>
-          <li><a href="{{ url_for('about') }}" class="nav-link">About</a></li>
-          <li><a href="{{ url_for('projects') }}" class="nav-link">Projects</a></li>
-          <li><a href="{{ url_for('contact') }}" class="nav-link active">Contact</a></li>
+          <li><a href="{{ url_for('home') }}" class="nav-link active">🏠Home</a></li>
+          <li><a href="{{ url_for('about') }}" class="nav-link">💻About</a></li>
+          <li><a href="{{ url_for('projects') }}" class="nav-link">🖥Projects</a></li>
+          <li><a href="{{ url_for('contact') }}" class="nav-link">📞Contact</a></li>
         </ul>
       </nav>
 
@@ -183,13 +183,13 @@
             <h2>Contact Details</h2>
             <ul>
               <li><strong>Name:</strong> Muhammad Talha Amin</li>
-              <li><strong>Email:</strong> <a href="mailto:talhaamin741@gmail.com">talhaamin741@gmail.com
+              <li><strong>Email✉:</strong> <a href="mailto:talhaamin741@gmail.com">talhaamin741@gmail.com
               </a></li>
-              <li><strong>Phone:</strong> <a href="tel:+923706172268">+92 370 6172268</a></li>
-              <li><strong>Location:</strong> Lahore, Pakistan</li>
+              <li><strong>Phone📞:</strong> <a href="tel:+923706172268">+92 370 6172268</a></li>
+              <li><strong>Location📍:</strong> Lahore, Pakistan</li>
             </ul>
-
-            <h3>Social</h3>
+            <br/>
+            <h2>Social</h2>
             <ul class="social-list">
               <li><a href="https://www.linkedin.com/in/talha-amin-1a3785288/" target="_blank" rel="noreferrer"><img src="{{ url_for('static', filename='assets/linkedin-logo.png') }}" alt="LinkedIn" height="25" width="25" /> LinkedIn</a></li>
               <li><a href="https://github.com/Muhammad-TalhaAmin" target="_blank" rel="noreferrer"><img src="{{ url_for('static', filename='assets/github_logo.png') }}" height="25" width="25" alt="GitHub" />  GitHub</a></li>

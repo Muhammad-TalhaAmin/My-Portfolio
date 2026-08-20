@@ -14,7 +14,7 @@ from groq import Groq
 
 load_dotenv()
 
-MODEL = "llama-3.3-70b-versatile"
+MODEL = "openai/gpt-oss-120b"
 MAX_TOKENS = 700
 TEMPERATURE = 0.3
 REQUEST_TIMEOUT_SECONDS = 30.0

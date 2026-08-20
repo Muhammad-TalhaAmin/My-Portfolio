@@ -268,7 +268,9 @@ def create_app() -> Flask:
                     yield f"data: {json.dumps({'token': token})}\n\n"
                 yield f"data: {json.dumps({'done': True})}\n\n"
             except chatbot.ChatbotError as err:
-                app.logger.error("Streaming error: %s", err.message)
+                app.logger.exception(
+                    "Streaming error: %s", err.message, exc_info=err.__cause__
+                )
                 yield f"data: {json.dumps({'error': err.message})}\n\n"
             except Exception:
                 app.logger.exception("Streaming error")
