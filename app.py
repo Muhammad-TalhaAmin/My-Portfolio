@@ -47,9 +47,9 @@ def create_app() -> Flask:
         key_func=get_remote_address,
         default_limits=["200 per day", "50 per hour"],
     )
-    app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv(
-        "DATABASE_URI",
-        f"sqlite:///{os.path.join(app.instance_path, 'portfolio.db')}",
+    app.config["SQLALCHEMY_DATABASE_URI"] = (
+    os.getenv("DATABASE_URI")
+    or f"sqlite:///{os.path.join(app.instance_path, "portfolio.db")}"
     )
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
