@@ -1,8 +1,29 @@
 # Data Science
 
-A collection of Jupyter notebooks exploring data science and Python fundamentals through real-world datasets. These projects cover pandas, NumPy, data visualisation, and linear regression.
+> A collection of Jupyter notebooks exploring data science and Python fundamentals through real-world datasets.
 
-## Notebooks
+**GitHub Repository:** https://github.com/Muhammad-TalhaAmin/data-science-notebooks
+
+---
+
+# About
+
+The Data Science Notebooks repository contains a set of Jupyter notebooks that explore data science and Python fundamentals using real-world datasets. These notebooks cover pandas, NumPy, data visualisation, linear regression, and interactive visualisations with **Plotly**.
+
+---
+
+# Key Libraries
+
+- **pandas** – data cleaning and manipulation
+- **NumPy** – numerical computing and N-dimensional arrays
+- **matplotlib** – static data visualisations
+- **Seaborn** – statistical visualisations
+- **Plotly** – interactive data visualisations
+- **SciPy** – scientific computation
+
+---
+
+# Notebooks
 
 ### Computation with NumPy and N-Dimensional Arrays
 Learn how to use NumPy to work with numerical data, including N-dimensional arrays, images and numerical computation with the SciPy ecosystem.
