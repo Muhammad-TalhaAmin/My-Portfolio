@@ -27,3 +27,6 @@ https://github.com/Muhammad-TalhaAmin/Password-Manager-App
 
 Music Recommender
 https://github.com/Muhammad-TalhaAmin/Music-Recommender-Model
+
+Data Science Notebooks
+https://github.com/Muhammad-TalhaAmin/data-science-notebooks
